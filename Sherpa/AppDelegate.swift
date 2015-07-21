@@ -8,6 +8,7 @@
 
 import UIKit
 import Bolts
+import FBSDKLoginKit
 
 
 @UIApplicationMain
