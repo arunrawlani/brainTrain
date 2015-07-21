@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		47C9F46BB5D6332375F285EB /* Pods.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2FDF4AD90058FF2F009FC4F2 /* Pods.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		659895AE1B5B249400607B5E /* Tour.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659895AD1B5B249400607B5E /* Tour.swift */; };
 		659895B01B5B253600607B5E /* Review.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659895AF1B5B253600607B5E /* Review.swift */; };
 		659895B21B5B270E00607B5E /* Netwerker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659895B11B5B270E00607B5E /* Netwerker.swift */; };
@@ -16,9 +17,7 @@
 		659F004C1B5ADECE00E4267B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659F004B1B5ADECE00E4267B /* Images.xcassets */; };
 		659F004F1B5ADECE00E4267B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659F004D1B5ADECE00E4267B /* LaunchScreen.xib */; };
 		659F005B1B5ADECE00E4267B /* SherpaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659F005A1B5ADECE00E4267B /* SherpaTests.swift */; };
-		8C807532B003CF4827491277 /* libPods-Sherpa.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BC8DCF1BF1E97482422AA2AE /* libPods-Sherpa.a */; };
 		A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B61321B5B9E0D00F81B3D /* CallViewController.swift */; };
-		A4E6BEE51B5B7E1800F1D0A1 /* Sinch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6BEE41B5B7E1800F1D0A1 /* Sinch.framework */; };
 		A4E6BEE71B5B7E2600F1D0A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6BEE61B5B7E2600F1D0A1 /* Security.framework */; };
 		A4E6BEE91B5B7E4F00F1D0A1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6BEE81B5B7E4F00F1D0A1 /* AVFoundation.framework */; };
 		A4E6BEEB1B5B80F900F1D0A1 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6BEEA1B5B80F900F1D0A1 /* AudioToolbox.framework */; };
@@ -45,6 +44,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1502D0D9AE54FAE1581751AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		2FDF4AD90058FF2F009FC4F2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		446762A846708892DC51486B /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		659895AD1B5B249400607B5E /* Tour.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tour.swift; sourceTree = "<group>"; };
 		659895AF1B5B253600607B5E /* Review.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Review.swift; sourceTree = "<group>"; };
 		659895B11B5B270E00607B5E /* Netwerker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Netwerker.swift; sourceTree = "<group>"; };
@@ -59,12 +61,9 @@
 		659F00591B5ADECE00E4267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659F005A1B5ADECE00E4267B /* SherpaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaTests.swift; sourceTree = "<group>"; };
 		A49B61321B5B9E0D00F81B3D /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
-		A4E6BEE41B5B7E1800F1D0A1 /* Sinch.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Sinch.framework; path = "../Desktop/Sinch-im/Sinch/Sinch.framework"; sourceTree = "<group>"; };
 		A4E6BEE61B5B7E2600F1D0A1 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		A4E6BEE81B5B7E4F00F1D0A1 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		A4E6BEEA1B5B80F900F1D0A1 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
-		A4E6BEEC1B5B816B00F1D0A1 /* BridgeHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
-		BC8DCF1BF1E97482422AA2AE /* libPods-Sherpa.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Sherpa.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E2A3443F1B5B0516004CAF3A /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		E2A344411B5B053C004CAF3A /* TableViewForExplore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewForExplore.swift; sourceTree = "<group>"; };
 		E2A344431B5B0550004CAF3A /* ExploreTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableCell.swift; sourceTree = "<group>"; };
@@ -75,8 +74,7 @@
 		E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourOverviewViewController.swift; sourceTree = "<group>"; };
 		E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E2A3445B1B5C25F8004CAF3A /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
-		ED68B4AB042A0681479B15CD /* Pods-Sherpa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherpa.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Sherpa/Pods-Sherpa.debug.xcconfig"; sourceTree = "<group>"; };
-		FE6B432872783BA3BDC1B01E /* Pods-Sherpa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Sherpa.release.xcconfig"; path = "Pods/Target Support Files/Pods-Sherpa/Pods-Sherpa.release.xcconfig"; sourceTree = "<group>"; };
+		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,8 +85,7 @@
 				A4E6BEEB1B5B80F900F1D0A1 /* AudioToolbox.framework in Frameworks */,
 				A4E6BEE91B5B7E4F00F1D0A1 /* AVFoundation.framework in Frameworks */,
 				A4E6BEE71B5B7E2600F1D0A1 /* Security.framework in Frameworks */,
-				A4E6BEE51B5B7E1800F1D0A1 /* Sinch.framework in Frameworks */,
-				8C807532B003CF4827491277 /* libPods-Sherpa.a in Frameworks */,
+				47C9F46BB5D6332375F285EB /* Pods.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -105,8 +102,8 @@
 		09F94F2278F539BB0D25A8B0 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				ED68B4AB042A0681479B15CD /* Pods-Sherpa.debug.xcconfig */,
-				FE6B432872783BA3BDC1B01E /* Pods-Sherpa.release.xcconfig */,
+				446762A846708892DC51486B /* Pods.debug.xcconfig */,
+				1502D0D9AE54FAE1581751AF /* Pods.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -169,8 +166,8 @@
 		659F00421B5ADECE00E4267B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */,
 				659F00431B5ADECE00E4267B /* Info.plist */,
-				A4E6BEEC1B5B816B00F1D0A1 /* BridgeHeader.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -198,8 +195,7 @@
 				A4E6BEEA1B5B80F900F1D0A1 /* AudioToolbox.framework */,
 				A4E6BEE81B5B7E4F00F1D0A1 /* AVFoundation.framework */,
 				A4E6BEE61B5B7E2600F1D0A1 /* Security.framework */,
-				A4E6BEE41B5B7E1800F1D0A1 /* Sinch.framework */,
-				BC8DCF1BF1E97482422AA2AE /* libPods-Sherpa.a */,
+				2FDF4AD90058FF2F009FC4F2 /* Pods.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -216,6 +212,7 @@
 				659F003C1B5ADECE00E4267B /* Frameworks */,
 				659F003D1B5ADECE00E4267B /* Resources */,
 				A2DF7387A623F4E33E544614 /* Copy Pods Resources */,
+				B6A686A185F4CAA287D00B22 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -316,7 +313,22 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Sherpa/Pods-Sherpa-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B6A686A185F4CAA287D00B22 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		DB6B0D8E2429B781ADCBAE99 /* Check Pods Manifest.lock */ = {
@@ -480,7 +492,7 @@
 		};
 		659F005F1B5ADECE00E4267B /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = ED68B4AB042A0681479B15CD /* Pods-Sherpa.debug.xcconfig */;
+			baseConfigurationReference = 446762A846708892DC51486B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
@@ -493,7 +505,7 @@
 		};
 		659F00601B5ADECE00E4267B /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = FE6B432872783BA3BDC1B01E /* Pods-Sherpa.release.xcconfig */;
+			baseConfigurationReference = 1502D0D9AE54FAE1581751AF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				FRAMEWORK_SEARCH_PATHS = (

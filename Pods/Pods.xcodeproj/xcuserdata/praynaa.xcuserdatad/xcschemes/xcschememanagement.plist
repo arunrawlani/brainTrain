@@ -6,43 +6,83 @@
 	<dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>1</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Bond.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FBSDKCoreKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>2</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
 		<key>FBSDKLoginKit.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>3</integer>
+			<key>isShown</key>
+			<false/>
 		</dict>
-		<key>Pods-Sherpa.xcscheme</key>
+		<key>Parse.xcscheme</key>
 		<dict>
-			<key>orderHint</key>
-			<integer>4</integer>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ParseFacebookUtilsV4.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>ParseUI.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
+		<key>Pods.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>1486AB50C1062A01A4CAE7988961EA8E</key>
+		<key>0F42237F3CBDF6FC95169CC04EE06056</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1653BD6130C2A31424EBEA80652AAAE4</key>
+		<key>1874FD419324E7CD260567E062E82711</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C3E5F9D96B367BFB8D62558771B09748</key>
+		<key>4CE006AC19D70EBE0C4DE2FA3E43EA85</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>E89BD8045FEC465589E212262790DFBA</key>
+		<key>528795E10747F301647ED400D18D6331</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5C392012B215F44C4B3FEED6580B91C9</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>5E88604D6B54B4175A0730DEB1766484</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>C7F03823B7724DA3C87796A091FA65B3</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F4C24AD7822C36BDDB6BF6950BA4AFA5</key>
 		<dict>
 			<key>primary</key>
 			<true/>

@@ -1,14 +1,11 @@
 # Uncomment this line to define a global platform for your project
-# platform :ios, '6.0'
+platform :ios, '8.0'
 
-target 'Sherpa' do
-	pod 'SinchRTC'
-  pod 'FBSDKCoreKit', '~> 4.4'
-  pod 'FBSDKLoginKit', '~> 4.4'
-  pod 'CSStickyHeaderFlowLayout'
-end
+use_frameworks!
 
-target 'SherpaTests' do
-
-end
-
+pod 'Parse'
+pod 'ParseUI'
+pod 'FBSDKCoreKit'
+pod 'ParseFacebookUtilsV4'
+pod 'Bond'
+pod 'SinchRTC'

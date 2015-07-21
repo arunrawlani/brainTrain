@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Bolts
+
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {

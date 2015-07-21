@@ -6,11 +6,11 @@
 //  Copyright (c) 2015 Derek Argueta. All rights reserved.
 //
 
-#ifndef Sherpa_BridgeHeader_h
-#define Sherpa_BridgeHeader_h
+#ifndef _BridgeHeader_h
+#define _BridgeHeader_h
 
-#import "Sinch.h"
 #import <FBSDKCoreKit/FBSDKCoreKit.h>
 #import <FBSDKLoginKit/FBSDKLoginKit.h>
+#import <Sinch/Sinch.h>
 
 #endif
