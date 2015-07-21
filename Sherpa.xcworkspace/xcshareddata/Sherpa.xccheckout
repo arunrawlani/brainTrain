@@ -12,20 +12,24 @@
 	<dict>
 		<key>5FFE0201759369CEAD45FE5D8A72919EF2844175</key>
 		<string>https://bitbucket.org/sherpaah8/ios.git</string>
+		<key>F2E710CE6EF177C04AB2728786E12407BB9C6D4D</key>
+		<string>https://github.com/arunrawlani/Development-Sherpa</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Sherpa.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>5FFE0201759369CEAD45FE5D8A72919EF2844175</key>
+		<string>../../ios</string>
+		<key>F2E710CE6EF177C04AB2728786E12407BB9C6D4D</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://bitbucket.org/sherpaah8/ios.git</string>
+	<string>https://github.com/arunrawlani/Development-Sherpa</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5FFE0201759369CEAD45FE5D8A72919EF2844175</string>
+	<string>F2E710CE6EF177C04AB2728786E12407BB9C6D4D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -35,6 +39,14 @@
 			<string>5FFE0201759369CEAD45FE5D8A72919EF2844175</string>
 			<key>IDESourceControlWCCName</key>
 			<string>ios</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>F2E710CE6EF177C04AB2728786E12407BB9C6D4D</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Sparta</string>
 		</dict>
 	</array>
 </dict>
