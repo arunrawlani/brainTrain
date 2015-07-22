@@ -31,6 +31,8 @@
 		E2A344561B5B8861004CAF3A /* TourOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */; };
 		E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */; };
 		E2A3445C1B5C25F8004CAF3A /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A3445B1B5C25F8004CAF3A /* incoming.wav */; };
+		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
+		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +77,8 @@
 		E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E2A3445B1B5C25F8004CAF3A /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
+		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
+		F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,10 +144,12 @@
 		659F00411B5ADECE00E4267B /* Sherpa */ = {
 			isa = PBXGroup;
 			children = (
+				F1EEC4571B5F3386008A04CF /* Helper */,
 				659895AC1B5B248500607B5E /* Data Models */,
 				659F00441B5ADECE00E4267B /* AppDelegate.swift */,
 				A49B61321B5B9E0D00F81B3D /* CallViewController.swift */,
 				659F00481B5ADECE00E4267B /* Main.storyboard */,
+				F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */,
 				659895B31B5B989F00607B5E /* LoginViewController.swift */,
 				E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */,
 				E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */,
@@ -187,6 +193,14 @@
 				659F00591B5ADECE00E4267B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F1EEC4571B5F3386008A04CF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		F3F325134F7855C435F574E4 /* Frameworks */ = {
@@ -356,8 +370,10 @@
 				659895B41B5B989F00607B5E /* LoginViewController.swift in Sources */,
 				659895AE1B5B249400607B5E /* Tour.swift in Sources */,
 				659895B01B5B253600607B5E /* Review.swift in Sources */,
+				F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */,
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
+				F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */,
 				E2A344441B5B0550004CAF3A /* ExploreTableCell.swift in Sources */,
 				E2A344421B5B053C004CAF3A /* TableViewForExplore.swift in Sources */,
 				E2A344561B5B8861004CAF3A /* TourOverviewViewController.swift in Sources */,

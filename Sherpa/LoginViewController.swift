@@ -7,6 +7,10 @@
 //
 
 import UIKit
+import FBSDKLoginKit
+import FBSDKCoreKit
+import Parse
+
 
 class LoginViewController: UIViewController {
   
@@ -17,7 +21,8 @@ class LoginViewController: UIViewController {
     super.viewDidLoad()
   }
   
-  @IBAction func loginAction() {
+  /*
+@IBAction func loginAction() {
     let username = usernameTF.text
     let password = passwordTF.text
     
@@ -119,5 +124,5 @@ class LoginViewController: UIViewController {
   // Pass the selected object to the new view controller.
   }
   */
-  
+ */
 }

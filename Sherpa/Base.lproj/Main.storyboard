@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="hBj-7q-QnE">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Brn-2y-zUV">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -706,11 +706,11 @@
                         <viewControllerLayoutGuide type="bottom" id="6YD-pl-4AO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ohS-Ut-S2f">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Bellagio Resort Timeline Copy" translatesAutoresizingMaskIntoConstraints="NO" id="xkm-XU-O4i">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -773,7 +773,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yxv-uh-Bs2">
             <objects>
-                <tabBarController storyboardIdentifier="yoyo" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Brn-2y-zUV" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Brn-2y-zUV" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lVT-TB-UBf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
@@ -955,11 +955,11 @@
                         <viewControllerLayoutGuide type="bottom" id="By8-Rc-5Wx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="jvA-0w-KXx">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Dashboard Background" translatesAutoresizingMaskIntoConstraints="NO" id="qbX-br-l8u">
-                                <rect key="frame" x="0.0" y="64" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="600"/>
                                 <color key="backgroundColor" red="0.95292511224622589" green="0.53113066488749094" blue="0.16122300426637887" alpha="1" colorSpace="calibratedRGB"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DisplayPicture" translatesAutoresizingMaskIntoConstraints="NO" id="VxP-JE-rXH">
@@ -976,7 +976,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="hgr-R7-HaI">
-                                <rect key="frame" x="0.0" y="241.5" width="375" height="4"/>
+                                <rect key="frame" x="0.0" y="241.5" width="600" height="4"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Your Scheduled Tours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UGY-Ml-DIH">
                                 <rect key="frame" x="16" y="252" width="169" height="24"/>
@@ -991,7 +991,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X2b-RC-0L0">
-                                <rect key="frame" x="0.0" y="290" width="375" height="260"/>
+                                <rect key="frame" x="0.0" y="290" width="600" height="260"/>
                                 <prototypes>
                                     <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="121" id="Cf7-bl-Nnn" customClass="DashboardTableCell" customModule="Sherpa" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
@@ -1163,7 +1163,7 @@
         <image name="twitter" width="41" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZA5-iq-25z"/>
+        <segue reference="0Fh-3C-F0g"/>
         <segue reference="3o0-s1-T3o"/>
     </inferredMetricsTieBreakers>
 </document>

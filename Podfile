@@ -9,3 +9,5 @@ pod 'FBSDKCoreKit'
 pod 'ParseFacebookUtilsV4'
 pod 'Bond'
 pod 'SinchRTC'
+pod 'FBSDKLoginKit'
+
