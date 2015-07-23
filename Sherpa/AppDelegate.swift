@@ -28,10 +28,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     override init(){
         super.init()
         
-        parseLoginHelper = ParseLoginHelper {[unowned self] user, error in
+
+            parseLoginHelper = ParseLoginHelper {[unowned self] user, error in
             //Initializethe ParseLoginHelper with a callback
             if let error = error{
-                //Returns an error if not successful by using the metho din ErrorHandling.swift
+                //Returns an error if not successful by using the method in ErrorHandling.swift
                 ErrorHandling.defaultErrorHandler(error)
             }
             else if let user = user {
@@ -41,7 +42,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
                 //As soon as login is successful, replace login screen witht tab bar
                 self.window?.rootViewController!.presentViewController(tabBarController, animated:true, completion:nil)
             }
-        }
+        } 
     }
 
     //MARK: Facebook Integration
@@ -64,16 +65,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     Parse.setApplicationId("KFEJJHbSO3nmrKCkslgz9e60ZfqfNukVlocMC2Gg",
             clientKey: "HFn6jQvQ8rGeJVE5Puwx36o0qYveOnSnEkLKT2gd")
         
-        
+   /*
     //Initialize Facebook (boilerplate code)
     PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
     
     //check if we have logged in user
-        let user = PFUser.currentUser()
+      let user = PFUser.currentUser()
         let startViewController: UIViewController
         
         if (user != nil){
-            //if we have a user, show tab bar controller to b ethe initial view controller
+            //if we have a user, show tab bar controller to be the initial view controller
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             startViewController = storyboard.instantiateViewControllerWithIdentifier("TabBarViewController") as! UITabBarController
             }
@@ -103,7 +104,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = startViewController
         self.window?.makeKeyAndVisible()
-    
+    */
     
    /* ADDED AT HACKATHON
     application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:
@@ -118,7 +119,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     }
     */
     
-        
+    //MARK: Changing the colour of the naviagtion bar
     UINavigationBar.appearance().barTintColor = UIColor(red: 229/255.0, green: 147/255.0, blue: 52/255.0, alpha: 100.0)
     UINavigationBar.appearance().tintColor = UIColor.whiteColor()
     UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
@@ -126,8 +127,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     UIApplication.sharedApplication().setStatusBarStyle(UIStatusBarStyle.LightContent, animated: true)
     
 
-
-    return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
+    return true
+    //return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
     //MARK: Sinch Integration

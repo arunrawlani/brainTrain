@@ -31,6 +31,7 @@
 		E2A344561B5B8861004CAF3A /* TourOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */; };
 		E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */; };
 		E2A3445C1B5C25F8004CAF3A /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A3445B1B5C25F8004CAF3A /* incoming.wav */; };
+		F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */; };
 		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
 		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
 		F1EEC45B1B5FFA8E008A04CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */; };
@@ -88,6 +89,7 @@
 		E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourOverviewViewController.swift; sourceTree = "<group>"; };
 		E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E2A3445B1B5C25F8004CAF3A /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
+		F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
@@ -182,6 +184,7 @@
 				F1EEC4571B5F3386008A04CF /* Helper */,
 				659895AC1B5B248500607B5E /* Data Models */,
 				659F00441B5ADECE00E4267B /* AppDelegate.swift */,
+				F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */,
 				A49B61321B5B9E0D00F81B3D /* CallViewController.swift */,
 				659F00481B5ADECE00E4267B /* Main.storyboard */,
 				F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */,
@@ -432,6 +435,7 @@
 				E2A3444A1B5B22E8004CAF3A /* DashboardTableCell.swift in Sources */,
 				659F00451B5ADECE00E4267B /* AppDelegate.swift in Sources */,
 				E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */,
+				F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

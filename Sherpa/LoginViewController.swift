@@ -17,6 +17,8 @@ class LoginViewController: UIViewController {
   
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
+    var window: UIWindow?
+    
   
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
     
@@ -42,6 +44,7 @@ class LoginViewController: UIViewController {
         var username = self.usernameTF.text
         var password = self.passwordTF.text
         
+        
         if (count(username.utf16) < 3 || count(password.utf16) < 3){
             
             var alert = UIAlertController(title: "Invalid", message: "Username and Password are too short.", preferredStyle: .Alert)
@@ -50,9 +53,8 @@ class LoginViewController: UIViewController {
             }
             alert.addAction(OKAction)
             
-            self.presentViewController(alert, animated: true){
-                
-            }
+            self.presentViewController(alert, animated: true, completion: nil)
+
           }
         
         else
@@ -66,12 +68,13 @@ class LoginViewController: UIViewController {
                 if ((user) != nil){
                     
                     
-                    var alert = UIAlertController(title: "Success", message: "Logged In.", preferredStyle: .Alert)
+                   var alert = UIAlertController(title: "Success", message: "Logged In.", preferredStyle: .Alert)
                     let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
                         //...
                     }
                     alert.addAction(OKAction)
                     self.presentViewController(alert, animated: true, completion: nil)
+ 
             }
 
             else
