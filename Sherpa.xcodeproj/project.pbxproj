@@ -33,6 +33,18 @@
 		E2A3445C1B5C25F8004CAF3A /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A3445B1B5C25F8004CAF3A /* incoming.wav */; };
 		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
 		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
+		F1EEC45B1B5FFA8E008A04CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */; };
+		F1EEC45D1B600718008A04CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC45C1B600718008A04CF /* CFNetwork.framework */; };
+		F1EEC45F1B600731008A04CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC45E1B600731008A04CF /* CoreGraphics.framework */; };
+		F1EEC4611B60073E008A04CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4601B60073E008A04CF /* CoreLocation.framework */; };
+		F1EEC4631B600771008A04CF /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4621B600771008A04CF /* MobileCoreServices.framework */; };
+		F1EEC4651B600777008A04CF /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4641B600777008A04CF /* QuartzCore.framework */; };
+		F1EEC4671B600785008A04CF /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4661B600785008A04CF /* StoreKit.framework */; };
+		F1EEC4691B600792008A04CF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4681B600792008A04CF /* SystemConfiguration.framework */; };
+		F1EEC46B1B6007A1008A04CF /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC46A1B6007A1008A04CF /* libz.dylib */; };
+		F1EEC46D1B6007B1008A04CF /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC46C1B6007B1008A04CF /* libsqlite3.dylib */; };
+		F1EEC46F1B6007BC008A04CF /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC46E1B6007BC008A04CF /* Accounts.framework */; };
+		F1EEC4711B6007C2008A04CF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4701B6007C2008A04CF /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +91,18 @@
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
+		F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		F1EEC45C1B600718008A04CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
+		F1EEC45E1B600731008A04CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F1EEC4601B60073E008A04CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		F1EEC4621B600771008A04CF /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		F1EEC4641B600777008A04CF /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		F1EEC4661B600785008A04CF /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		F1EEC4681B600792008A04CF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		F1EEC46A1B6007A1008A04CF /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		F1EEC46C1B6007B1008A04CF /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
+		F1EEC46E1B6007BC008A04CF /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		F1EEC4701B6007C2008A04CF /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +110,17 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F1EEC4711B6007C2008A04CF /* Social.framework in Frameworks */,
+				F1EEC46F1B6007BC008A04CF /* Accounts.framework in Frameworks */,
+				F1EEC46D1B6007B1008A04CF /* libsqlite3.dylib in Frameworks */,
+				F1EEC46B1B6007A1008A04CF /* libz.dylib in Frameworks */,
+				F1EEC4691B600792008A04CF /* SystemConfiguration.framework in Frameworks */,
+				F1EEC4671B600785008A04CF /* StoreKit.framework in Frameworks */,
+				F1EEC4651B600777008A04CF /* QuartzCore.framework in Frameworks */,
+				F1EEC4631B600771008A04CF /* MobileCoreServices.framework in Frameworks */,
+				F1EEC4611B60073E008A04CF /* CoreLocation.framework in Frameworks */,
+				F1EEC45F1B600731008A04CF /* CoreGraphics.framework in Frameworks */,
+				F1EEC45D1B600718008A04CF /* CFNetwork.framework in Frameworks */,
 				A4E6BEEB1B5B80F900F1D0A1 /* AudioToolbox.framework in Frameworks */,
 				A4E6BEE91B5B7E4F00F1D0A1 /* AVFoundation.framework in Frameworks */,
 				A4E6BEE71B5B7E2600F1D0A1 /* Security.framework in Frameworks */,
@@ -151,6 +186,7 @@
 				659F00481B5ADECE00E4267B /* Main.storyboard */,
 				F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */,
 				659895B31B5B989F00607B5E /* LoginViewController.swift */,
+				F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */,
 				E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */,
 				E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */,
 				E2A3445B1B5C25F8004CAF3A /* incoming.wav */,
@@ -206,6 +242,17 @@
 		F3F325134F7855C435F574E4 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F1EEC4701B6007C2008A04CF /* Social.framework */,
+				F1EEC46E1B6007BC008A04CF /* Accounts.framework */,
+				F1EEC46C1B6007B1008A04CF /* libsqlite3.dylib */,
+				F1EEC46A1B6007A1008A04CF /* libz.dylib */,
+				F1EEC4681B600792008A04CF /* SystemConfiguration.framework */,
+				F1EEC4661B600785008A04CF /* StoreKit.framework */,
+				F1EEC4641B600777008A04CF /* QuartzCore.framework */,
+				F1EEC4621B600771008A04CF /* MobileCoreServices.framework */,
+				F1EEC4601B60073E008A04CF /* CoreLocation.framework */,
+				F1EEC45E1B600731008A04CF /* CoreGraphics.framework */,
+				F1EEC45C1B600718008A04CF /* CFNetwork.framework */,
 				A4E6BEEA1B5B80F900F1D0A1 /* AudioToolbox.framework */,
 				A4E6BEE81B5B7E4F00F1D0A1 /* AVFoundation.framework */,
 				A4E6BEE61B5B7E2600F1D0A1 /* Security.framework */,
@@ -373,6 +420,7 @@
 				F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */,
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
+				F1EEC45B1B5FFA8E008A04CF /* SignUpViewController.swift in Sources */,
 				F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */,
 				E2A344441B5B0550004CAF3A /* ExploreTableCell.swift in Sources */,
 				E2A344421B5B053C004CAF3A /* TableViewForExplore.swift in Sources */,

@@ -16,12 +16,14 @@ import ParseFacebookUtilsV4
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
 
     var window: UIWindow?
     var client: SINClient?
     var splash: UIImageView?
     var parseLoginHelper: ParseLoginHelper!
+    var logInViewController : PFLogInViewController! = PFLogInViewController()
+    var signUpViewController: PFSignUpViewController! = PFSignUpViewController()
     
     override init(){
         super.init()
@@ -77,12 +79,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate {
             }
         //If no user, then create a login screen. Allows for some customization, parseLoginHelper as delegate
         else {
-            let loginViewController = PFLogInViewController()
-            loginViewController.fields = .UsernameAndPassword | .LogInButton | .SignUpButton | .PasswordForgotten | .Facebook
-            loginViewController.delegate = parseLoginHelper
-            loginViewController.signUpController?.delegate = parseLoginHelper
             
-            startViewController = loginViewController
+            logInViewController.fields = .UsernameAndPassword | .LogInButton | .SignUpButton | .PasswordForgotten | .Facebook | .DismissButton
+            
+            startViewController = logInViewController
+            
+            var logInLogoTitle = UILabel()
+            logInLogoTitle.text = "Sherpa"
+            
+            logInViewController.logInView!.logo = logInLogoTitle
+            logInViewController.delegate = parseLoginHelper
+            
+            
+            var signUpLogoTitle = UILabel()
+            signUpLogoTitle.text = "Sherpa"
+            signUpViewController.signUpView!.logo = signUpLogoTitle
+            
+            self.signUpViewController.delegate = parseLoginHelper
             
             }
         

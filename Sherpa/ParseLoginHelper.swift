@@ -32,6 +32,17 @@ class ParseLoginHelper : NSObject, NSObjectProtocol {
 extension ParseLoginHelper : PFLogInViewControllerDelegate {
     
     
+    func logInViewController(logInController: PFLogInViewController, shouldBeginLogInWithUsername username: String, password: String) -> Bool {
+        
+        if (!username.isEmpty || !password.isEmpty){
+            return true
+        }
+        else{
+            return false
+        }
+    }
+    
+    
     func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
         // Determine if this is a Facebook login
         let isFacebookLogin = FBSDKAccessToken.currentAccessToken() != nil
@@ -75,12 +86,25 @@ extension ParseLoginHelper : PFLogInViewControllerDelegate {
         }
     }
     
+    //This will override the dialog box coming on the screen when a not legit login is done
+    func logInViewController(logInController: PFLogInViewController, didFailToLogInWithError error: NSError?) {
+        println("Did fail to login")
+    }
+    
 }
 
 extension ParseLoginHelper : PFSignUpViewControllerDelegate {
     
     func signUpViewController(signUpController: PFSignUpViewController, didSignUpUser user: PFUser) {
         self.callback(user, nil)
+    }
+    
+    func signUpViewController(signUpController: PFSignUpViewController, didFailToSignUpWithError error: NSError?) {
+        println("User failed to sign up. Bad, weak Sparta.")
+    }
+    
+    func signUpViewControllerDidCancelSignUp(signUpController: PFSignUpViewController) {
+        println("Did dismiss Sign Up. User says Spartaaaaa.")
     }
     
 }
