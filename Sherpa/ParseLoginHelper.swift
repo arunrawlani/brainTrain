@@ -44,6 +44,10 @@ extension ParseLoginHelper : PFLogInViewControllerDelegate {
     
     
     func logInViewController(logInController: PFLogInViewController, didLogInUser user: PFUser) {
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.createSinchClient(user.objectId!)
+        
         // Determine if this is a Facebook login
         let isFacebookLogin = FBSDKAccessToken.currentAccessToken() != nil
         

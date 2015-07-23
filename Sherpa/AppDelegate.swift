@@ -2,8 +2,8 @@
 //  AppDelegate.swift
 //  Sherpa
 //
-//  Created by Akhil Nadendla on 7/18/15.
-//  Copyright (c) 2015 Akhil Nadendla. All rights reserved.
+//  Created by Arun Rawlani on 7/18/15.
+//  Copyright (c) 2015 Arun Rawlani. All rights reserved.
 //
 
 import UIKit
@@ -28,7 +28,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     override init(){
         super.init()
         
-
             parseLoginHelper = ParseLoginHelper {[unowned self] user, error in
             //Initializethe ParseLoginHelper with a callback
             if let error = error{
@@ -36,9 +35,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
                 ErrorHandling.defaultErrorHandler(error)
             }
             else if let user = user {
+                
                 //if login was successful, returns a user. Display the TabController
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
                 let tabBarController = storyboard.instantiateViewControllerWithIdentifier("TabBarViewController") as! UIViewController
+                
                 //As soon as login is successful, replace login screen witht tab bar
                 self.window?.rootViewController!.presentViewController(tabBarController, animated:true, completion:nil)
             }
@@ -65,7 +66,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     Parse.setApplicationId("KFEJJHbSO3nmrKCkslgz9e60ZfqfNukVlocMC2Gg",
             clientKey: "HFn6jQvQ8rGeJVE5Puwx36o0qYveOnSnEkLKT2gd")
         
-   /*
+   
     //Initialize Facebook (boilerplate code)
     PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
     
@@ -81,7 +82,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
         //If no user, then create a login screen. Allows for some customization, parseLoginHelper as delegate
         else {
             
-            logInViewController.fields = .UsernameAndPassword | .LogInButton | .SignUpButton | .PasswordForgotten | .Facebook | .DismissButton
+            logInViewController.fields = .UsernameAndPassword | .LogInButton | .SignUpButton | .PasswordForgotten | .Facebook 
             
             startViewController = logInViewController
             
@@ -104,7 +105,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = startViewController
         self.window?.makeKeyAndVisible()
-    */
+    
     
    /* ADDED AT HACKATHON
     application.registerUserNotificationSettings(UIUserNotificationSettings(forTypes:
@@ -131,7 +132,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     //return FBSDKApplicationDelegate.sharedInstance().application(application, didFinishLaunchingWithOptions: launchOptions)
     }
     
-    //MARK: Sinch Integration
+    
+    //MARK: SINCH Integration
     
     func createSinchClient(userId: String) {
         if client == nil {

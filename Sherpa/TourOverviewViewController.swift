@@ -163,8 +163,11 @@ class TourOverviewViewController: UIViewController, SINCallClientDelegate {
         //Commented out is the one we used at the hackathon 
         //myNSString = myNSString.substringWithRange(NSRange(location: 0, length: myNSString.length-1))
         myNSString = myNSString.substringWithRange(NSRange(location: 0, length: myNSString.length))
+        
         tourPriceamt = String(myNSString)
+        
         TourPrice.text = tourPriceamt
+       
         let diceRoll = Int(arc4random_uniform(3))
         if diceRoll == 0 {
             starRatingImageView.image = UIImage(named: "3stars")
