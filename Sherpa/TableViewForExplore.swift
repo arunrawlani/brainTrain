@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Akhil Nadendla. All rights reserved.
 //
 import UIKit
+import Parse
 
 class TableViewForExplore: UITableViewController, explore {
     
@@ -16,6 +17,10 @@ class TableViewForExplore: UITableViewController, explore {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        appDelegate.createSinchClient(PFUser.currentUser()!.objectId!)
+
         
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false

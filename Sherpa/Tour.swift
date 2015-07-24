@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import Parse
 
 class Tour: NSObject {
   
-  var guid: String?
+  var guide : String?
   var title: String
   var languages: [String]
   var desc: String

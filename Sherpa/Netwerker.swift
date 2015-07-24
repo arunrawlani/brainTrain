@@ -89,7 +89,7 @@ class Netwerker: NSObject {
           if let list: NSArray = doc as NSArray! {
             if let item: NSDictionary = list[0] as? NSDictionary {
               let id: String = item.objectForKey("id") as! String
-              tour.guid = id
+              tour.guide = id
             }
           }
         }
