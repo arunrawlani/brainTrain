@@ -10,7 +10,8 @@ import UIKit
 
 class Netwerker: NSObject {
   
-  //
+  /*
+    //
   // pulls all tours from the server in a list of Tour objects
   //
   static func getAllTours() -> [Tour] {
@@ -89,7 +90,7 @@ class Netwerker: NSObject {
           if let list: NSArray = doc as NSArray! {
             if let item: NSDictionary = list[0] as? NSDictionary {
               let id: String = item.objectForKey("id") as! String
-              tour.guide = id
+              tour.createdBy = id
             }
           }
         }
@@ -138,5 +139,6 @@ class Netwerker: NSObject {
     }
     return false
   }
+    */
   
 }

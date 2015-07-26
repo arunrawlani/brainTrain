@@ -9,17 +9,45 @@
 import UIKit
 import Parse
 
-class Tour: NSObject {
-  
-  var guide : String?
-  var title: String
-  var languages: [String]
-  var desc: String
-  var reviews: [Review]
-  
-  init(title: String, languages: [String], description: String) {
+class Tour: PFObject, PFSubclassing {
     
-    self.title = title
+  @NSManaged var createdBy : PFUser?
+  @NSManaged var tourName: String?
+  @NSManaged var langOffered: [String]?
+  @NSManaged var tourDetail: String?
+  //@NSManaged var reviews: [Review]
+  @NSManaged var cost: String
+  @NSManaged var city : String?
+  @NSManaged var guideImage: PFFile?
+  @NSManaged var prefTimes: [String]?
+  @NSManaged var prefDates: [String]?
+  @NSManaged var tourImage: PFFile?
+
+
+    //MARK : PFSubclassing Protocol
+
+    static func parseClassName() -> String {
+        return "Tour"
+    }
+
+    override init(){
+        super.init()
+    }
+    
+    override class func initialize() {
+        var onceToken : dispatch_once_t = 0;
+        dispatch_once(&onceToken) {
+            // inform Parse about this subclass
+            self.registerSubclass()
+        }
+    }
+}
+  
+ /*
+
+    init(title: String, languages: [String], description: String) {
+    
+    self.tourName = title
     self.languages = languages
     self.desc = description
     self.reviews = []
@@ -45,5 +73,4 @@ class Tour: NSObject {
       "description": desc,
       "languages": self.languages
     ]
-  }
-}
+  } */
