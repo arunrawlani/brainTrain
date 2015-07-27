@@ -29,8 +29,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
         tableview.allowsSelection = false
     }
     
-    override func viewDidAppear(animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(animated: Bool) {
+        super.viewWillAppear(animated)
         
         let NYquery = PFQuery(className: "Tour")
         NYquery.whereKey("city", equalTo: "New York")
@@ -71,6 +71,19 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             cell.TourName.text = data.toursNY[indexPath.row].tourName */
             
           cell.costLabel.text = tours[indexPath.row].cost
+          cell.TourName.text = tours[indexPath.row].tourName
+          let languages = tours[indexPath.row].langOffered!
+            .reduce("") {(total, language)in
+                if (total == ""){
+                return total + "\(language)"
+                }
+                else{
+                   return  total + ", \(language)"
+                }
+            }
+            cell.languagesName.text = languages
+        
+            
             
         }
         else if citySelected == 1 {
