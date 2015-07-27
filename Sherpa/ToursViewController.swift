@@ -18,7 +18,9 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     var mainGraphicImageFileName: String = ""
     var citySelected: Int = 0
     
-    var tours: [Tour] = []
+    var toursNY: [Tour] = []
+    var toursLV: [Tour] = []
+    var toursLA: [Tour] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +34,39 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     override func viewWillAppear(animated: Bool) {
         super.viewWillAppear(animated)
         
+        
+        //NEW YORK
         let NYquery = PFQuery(className: "Tour")
         NYquery.whereKey("city", equalTo: "New York")
         
         NYquery.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
             
             //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible store empty array
-            self.tours = result as? [Tour] ?? []
+            self.toursNY = result as? [Tour] ?? []
+            self.tableview.reloadData()
+            
+        }
+        
+        //LAS VEGAS
+        let LVquery = PFQuery(className: "Tour")
+        LVquery.whereKey("city", equalTo: "Las Vegas")
+        
+        LVquery.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
+            
+            //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible store empty array
+            self.toursLV = result as? [Tour] ?? []
+            self.tableview.reloadData()
+            
+        }
+        
+        //LOS ANGELES
+        let LAquery = PFQuery(className: "Tour")
+        LAquery.whereKey("city", equalTo: "Los Angeles")
+        
+        LAquery.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
+            
+            //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible store empty array
+            self.toursLA = result as? [Tour] ?? []
             self.tableview.reloadData()
             
         }
@@ -50,20 +78,27 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     }
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if citySelected == 0 {
-            return tours.count
+            return toursNY.count
         }
         else if citySelected == 1 {
-            return data.toursVegas.count
+            return toursLV.count
         }
         else {
-            return data.toursLA.count
+            return toursLA.count
         }
     }
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ToursTableCell
         cell.backgroundColor = UIColor.clearColor()
         cell.delegate = self
-        if citySelected == 0 {
+        
+        //Changing the display to circular and adding a border
+        cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width / 2
+        cell.userImageView.clipsToBounds = true
+        cell.userImageView.layer.borderWidth = 1.0
+        cell.userImageView.layer.borderColor = UIColor.whiteColor().CGColor
+       
+        if citySelected == 0 { //NEW YORK
         /* cell.imageFilename = data.toursNY[indexPath.row].cityImage
             cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
             cell.costLabel.text = data.toursNY[indexPath.row].cost
@@ -73,17 +108,11 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
           //From the in-built library
           cell.imageFilename = data.toursNY[indexPath.row].cityImage
           cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
-          
-          //Changes the image into a circle
-          cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width / 2
-          cell.userImageView.clipsToBounds = true
-          cell.userImageView.layer.borderWidth = 1.0
-          cell.userImageView.layer.borderColor = UIColor.whiteColor().CGColor
             
          //From PARSE
-          cell.costLabel.text = tours[indexPath.row].cost
-          cell.TourName.text = tours[indexPath.row].tourName
-          let languages = tours[indexPath.row].langOffered!
+          cell.costLabel.text = toursNY[indexPath.row].cost
+          cell.TourName.text = toursNY[indexPath.row].tourName
+          let languages = toursNY[indexPath.row].langOffered!
             .reduce("") {(total, language)in
                 if (total == ""){
                 return total + "\(language)"
@@ -95,23 +124,57 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             cell.languagesName.text = languages
            
             
-        
-            
-            
         }
-        else if citySelected == 1 {
-            cell.imageFilename = data.toursVegas[indexPath.row].cityImage
+        else if citySelected == 1 { //LAS VEGAS
+           /* cell.imageFilename = data.toursVegas[indexPath.row].cityImage
             cell.userImageView.image = UIImage(named: data.toursVegas[indexPath.row].circularImage)
             cell.costLabel.text = data.toursVegas[indexPath.row].cost
             cell.languagesName.text = data.toursVegas[indexPath.row].languages
-            cell.TourName.text = data.toursVegas[indexPath.row].tourName
+            cell.TourName.text = data.toursVegas[indexPath.row].tourName*/
+            
+            //From built-in library
+            cell.imageFilename = data.toursVegas[indexPath.row].cityImage
+            cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
+            
+            //From PARSE
+            cell.costLabel.text = toursLV[indexPath.row].cost
+            cell.TourName.text = toursLV[indexPath.row].tourName
+            let languages = toursLV[indexPath.row].langOffered!
+                .reduce("") {(total, language)in
+                    if (total == ""){
+                        return total + "\(language)"
+                    }
+                    else{
+                        return  total + ", \(language)"
+                    }
+            }
+            cell.languagesName.text = languages
         }
-        else {
-            cell.imageFilename = data.toursLA[indexPath.row].cityImage
+            
+        else { //LOS ANGELES
+            /*cell.imageFilename = data.toursLA[indexPath.row].cityImage
             cell.userImageView.image = UIImage(named: data.toursLA[indexPath.row].circularImage)
             cell.costLabel.text = data.toursLA[indexPath.row].cost
             cell.languagesName.text = data.toursLA[indexPath.row].languages
-            cell.TourName.text = data.toursLA[indexPath.row].tourName
+            cell.TourName.text = data.toursLA[indexPath.row].tourName*/
+            
+           //From built-in library
+            cell.imageFilename = data.toursLA[indexPath.row].cityImage
+            cell.userImageView.image = UIImage(named: data.toursLA[indexPath.row].circularImage)
+            
+            //From PARSE
+            cell.costLabel.text = toursLA[indexPath.row].cost
+            cell.TourName.text = toursLA[indexPath.row].tourName
+            let languages = toursLA[indexPath.row].langOffered!
+                .reduce("") {(total, language)in
+                    if (total == ""){
+                        return total + "\(language)"
+                    }
+                    else{
+                        return  total + ", \(language)"
+                    }
+            }
+            cell.languagesName.text = languages
         }
         return cell
     }
