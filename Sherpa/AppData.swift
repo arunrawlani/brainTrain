@@ -43,10 +43,10 @@ class DataTours {
     }
     
     let toursNY = [
-        TourEntry(bgImage: "tourEntryBG", tourName: "Central Park", languages: "English, French", cost: "$24", circularImage: "DisplayPicture", cityImage: "NewYork"),
-        TourEntry(bgImage: "tourEntryBG", tourName: "Statue of Liberty", languages: "German, French", cost: "$42", circularImage: "DisplayPicture", cityImage: "NewYork"),
-        TourEntry(bgImage: "tourEntryBG", tourName: "Upper East Side", languages: "Mandarin, Hindi", cost: "$99", circularImage: "DisplayPicture", cityImage: "NewYork"),
-        TourEntry(bgImage: "tourEntryBG", tourName: "Manhattan", languages: "Spanish, Russian", cost: "$12", circularImage: "DisplayPicture", cityImage: "NewYork")
+        TourEntry(bgImage: "tourEntryBG", tourName: "Central Park", languages: "English, French", cost: "$24", circularImage: "User", cityImage: "NewYork"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Statue of Liberty", languages: "German, French", cost: "$42", circularImage: "User", cityImage: "NewYork"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Upper East Side", languages: "Mandarin, Hindi", cost: "$99", circularImage: "User", cityImage: "NewYork"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Manhattan", languages: "Spanish, Russian", cost: "$12", circularImage: "User", cityImage: "NewYork")
     ]
     let toursVegas = [
         TourEntry(bgImage: "tourEntryBG", tourName: "Bellagio Resort", languages: "Mandarin, Hindi", cost: "$15", circularImage: "DisplayPicture", cityImage: "LasVegas"),

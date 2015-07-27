@@ -70,6 +70,15 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             cell.languagesName.text = data.toursNY[indexPath.row].languages
             cell.TourName.text = data.toursNY[indexPath.row].tourName */
             
+          //From the in-built library
+          cell.imageFilename = data.toursNY[indexPath.row].cityImage
+          cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
+          
+          //Changes the image into a circle
+          cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width / 2
+          cell.userImageView.clipsToBounds = true
+            
+         //From PARSE
           cell.costLabel.text = tours[indexPath.row].cost
           cell.TourName.text = tours[indexPath.row].tourName
           let languages = tours[indexPath.row].langOffered!
@@ -82,6 +91,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
                 }
             }
             cell.languagesName.text = languages
+           
+            
         
             
             

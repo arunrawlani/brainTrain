@@ -137,7 +137,7 @@
                                                     <rect key="frame" x="-92" y="-92" width="784" height="293.5"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 </view>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="StarGrey" translatesAutoresizingMaskIntoConstraints="NO" id="g1b-gx-4QQ" userLabel="User Image">
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="User" translatesAutoresizingMaskIntoConstraints="NO" id="g1b-gx-4QQ" userLabel="User Image">
                                                     <rect key="frame" x="10" y="80" width="50" height="50"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="50" id="2sW-Pc-bns"/>
@@ -1482,8 +1482,8 @@
         <image name="Rectangle" width="375" height="2"/>
         <image name="SHERPA-black@1x" width="251" height="66"/>
         <image name="Signup Button" width="236" height="48"/>
-        <image name="StarGrey" width="21" height="19"/>
         <image name="TourOverviewButtonBG" width="55" height="24"/>
+        <image name="User" width="34" height="38"/>
         <image name="ViewTimeline" width="158" height="44"/>
         <image name="endcall" width="311" height="48"/>
         <image name="facebook" width="40" height="41"/>
