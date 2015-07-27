@@ -77,6 +77,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
           //Changes the image into a circle
           cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width / 2
           cell.userImageView.clipsToBounds = true
+          cell.userImageView.layer.borderWidth = 1.0
+          cell.userImageView.layer.borderColor = UIColor.whiteColor().CGColor
             
          //From PARSE
           cell.costLabel.text = tours[indexPath.row].cost
