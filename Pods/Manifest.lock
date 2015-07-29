@@ -1,4 +1,5 @@
 PODS:
+  - AKPickerView-Swift (0.2.1)
   - Bolts (1.2.0):
     - Bolts/AppLinks (= 1.2.0)
     - Bolts/Tasks (= 1.2.0)
@@ -29,14 +30,17 @@ PODS:
   - SinchRTC (3.5.2)
 
 DEPENDENCIES:
+  - AKPickerView-Swift
   - Bond
   - FBSDKCoreKit
+  - FBSDKLoginKit
   - Parse
   - ParseFacebookUtilsV4
   - ParseUI
   - SinchRTC
 
 SPEC CHECKSUMS:
+  AKPickerView-Swift: 7989ebd544dc2adcbb56ffd48bbb8d3c3ea2d71d
   Bolts: d176cb1e0012175589e389a9db49b85e27787576
   Bond: 994ccc56aebfe2707d7b5e76f6d665a5beefa45b
   FBSDKCoreKit: 75bdd75c980e811db218488d99dd93b7740f4474

@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "63161B129952B0C1C753B333"
+               BlueprintIdentifier = "395639492581F136C3F8040F"
                BuildableName = "Bond.framework"
                BlueprintName = "Bond"
                ReferencedContainer = "container:Pods.xcodeproj">

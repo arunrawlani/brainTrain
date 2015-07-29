@@ -10,4 +10,5 @@ pod 'ParseFacebookUtilsV4'
 pod 'Bond'
 pod 'SinchRTC'
 pod 'FBSDKLoginKit'
+pod 'AKPickerView-Swift'
 

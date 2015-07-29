@@ -7,9 +7,17 @@
 
 import UIKit
 import Darwin
+import AKPickerView_Swift
 
-class TourOverviewViewController: UIViewController, SINCallClientDelegate {
+class TourOverviewViewController: UIViewController, SINCallClientDelegate, AKPickerViewDataSource, AKPickerViewDelegate {
     
+    
+    
+    
+
+    @IBOutlet weak var pickerView: AKPickerView!
+
+ 
     @IBOutlet var TourNameLabel: UILabel!
     @IBOutlet var tourCityImageview: UIImageView!
     
@@ -152,9 +160,24 @@ class TourOverviewViewController: UIViewController, SINCallClientDelegate {
             tvc.whichTimeline = ImageName
         }
     }
+    
+    let titles = ["Tokyo", "Kanagawa", "Osaka", "Aichi", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.pickerView.delegate = self
+        self.pickerView.dataSource = self
+        
+        
+        self.pickerView.font = UIFont(name: "Avenir", size: 20)!
+        self.pickerView.highlightedFont = UIFont(name: "AvenirNext-Bold", size: 20)!
+        self.pickerView.highlightedTextColor = UIColor(red: 229, green: 147, blue: 52, alpha: 1)
+        self.pickerView.interitemSpacing = 20.0
+        self.pickerView.viewDepth = 1000.0
+        self.pickerView.pickerViewStyle = .Wheel
+        self.pickerView.maskDisabled = false
+        self.pickerView.reloadData()
+    
         client().callClient().delegate = self
         
         TourNameLabel.text = tourname
@@ -180,6 +203,20 @@ class TourOverviewViewController: UIViewController, SINCallClientDelegate {
         }
         reservePressedCounter = 1
         // Do any additional setup after loading the view.
+    }
+    
+    // MARK: - AKPickerViewDataSource
+    
+    func numberOfItemsInPickerView(pickerView: AKPickerView) -> Int {
+        return self.titles.count
+    }
+    
+    func pickerView(pickerView: AKPickerView, titleForItem item: Int) -> String {
+        return self.titles[item]
+    }
+    
+    func pickerView(pickerView: AKPickerView, imageForItem item: Int) -> UIImage {
+        return UIImage(named: self.titles[item])!
     }
     
     func client() -> SINClient {

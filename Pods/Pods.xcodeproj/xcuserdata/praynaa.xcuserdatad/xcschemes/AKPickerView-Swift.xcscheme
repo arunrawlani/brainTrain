@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A655A74F87794B17BC17C74"
-               BuildableName = "FBSDKLoginKit.framework"
-               BlueprintName = "FBSDKLoginKit"
+               BlueprintIdentifier = "490AF8020E65678F3D709C7D"
+               BuildableName = "AKPickerView_Swift.framework"
+               BlueprintName = "AKPickerView-Swift"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>

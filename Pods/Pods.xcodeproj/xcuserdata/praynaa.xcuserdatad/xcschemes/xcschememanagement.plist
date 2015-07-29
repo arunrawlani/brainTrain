@@ -4,6 +4,11 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
+		<key>AKPickerView-Swift.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 		<key>Bolts.xcscheme</key>
 		<dict>
 			<key>isShown</key>
@@ -47,42 +52,47 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>0F42237F3CBDF6FC95169CC04EE06056</key>
+		<key>008214DE25F364DA741278199A527C09</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1874FD419324E7CD260567E062E82711</key>
+		<key>084B496361FFE2D69BBC627F4BF91D1B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>4CE006AC19D70EBE0C4DE2FA3E43EA85</key>
+		<key>395CA6688FA4E07B01CA3040B45A0510</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>528795E10747F301647ED400D18D6331</key>
+		<key>4041C185E23D2F249F4E1E3EB3076252</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5C392012B215F44C4B3FEED6580B91C9</key>
+		<key>42ACB4D48227C4F17B3FF00B97143B4B</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>5E88604D6B54B4175A0730DEB1766484</key>
+		<key>5DCED93DC3E9F75CBB4A14607C67764A</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>C7F03823B7724DA3C87796A091FA65B3</key>
+		<key>B27196B5DA79CB4F62DE9CF263E9C3E5</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>F4C24AD7822C36BDDB6BF6950BA4AFA5</key>
+		<key>C312FB1AD5CB1C8D351B7DE2C449E878</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>D3FD8B173F34C73AD01D6DFE90E6618E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
