@@ -11,4 +11,5 @@ pod 'Bond'
 pod 'SinchRTC'
 pod 'FBSDKLoginKit'
 pod 'AKPickerView-Swift'
+pod 'DatePickerCell'
 
