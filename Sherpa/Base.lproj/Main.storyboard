@@ -261,7 +261,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DJN-vl-hSw">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="893"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="892"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uSN-71-umb" userLabel="Content View">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="1341"/>
@@ -366,12 +366,6 @@
                                                 <color key="textColor" red="0.99837527650000002" green="0.99837527650000002" blue="0.99837527650000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select your preferred time for the tour." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmB-IU-qWm">
-                                                <rect key="frame" x="22" y="679" width="259" height="19"/>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
-                                                <color key="textColor" red="0.86666666670000003" green="0.50196078430000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
-                                                <nil key="highlightedColor"/>
-                                            </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LDf-UG-eaf">
                                                 <rect key="frame" x="24" y="696.5" width="553" height="45"/>
                                                 <color key="backgroundColor" red="0.52158699321591151" green="0.53733391601422409" blue="0.58457468440916172" alpha="1" colorSpace="calibratedRGB"/>
@@ -384,6 +378,24 @@
                                                     <outlet property="delegate" destination="G8P-6K-jD2" id="JgG-mj-2cu"/>
                                                 </connections>
                                             </tableView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Select your preferred date for the tour." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmB-IU-qWm">
+                                                <rect key="frame" x="22" y="679" width="259" height="19"/>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                <color key="textColor" red="0.86666666670000003" green="0.50196078430000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-Wu-qLi">
+                                                <rect key="frame" x="33" y="781" width="533" height="47"/>
+                                                <color key="backgroundColor" red="0.19807749039648986" green="0.6401060827085725" blue="0.89143742950720106" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="47" id="Gu8-2c-Thu"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
+                                                <state key="normal" title="RESERVE TOUR">
+                                                    <color key="titleColor" red="0.9793779762512661" green="0.99607843137254903" blue="0.93553532873483025" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                </state>
+                                            </button>
                                         </subviews>
                                         <constraints>
                                             <constraint firstAttribute="trailing" secondItem="YUc-4b-snl" secondAttribute="trailing" id="0b3-Aj-QJW"/>
@@ -398,6 +410,7 @@
                                             <constraint firstAttribute="bottom" secondItem="pGL-Kq-fTz" secondAttribute="bottom" constant="286" id="7kQ-wo-Tm9"/>
                                             <constraint firstAttribute="trailing" secondItem="pGL-Kq-fTz" secondAttribute="trailing" constant="40" id="7zq-Jb-Gbn"/>
                                             <constraint firstAttribute="trailing" secondItem="YUc-4b-snl" secondAttribute="trailing" id="8Vv-bG-5Wx"/>
+                                            <constraint firstAttribute="trailing" secondItem="ua4-Wu-qLi" secondAttribute="trailing" constant="34" id="8Zf-3f-63s"/>
                                             <constraint firstItem="sNf-7T-FcJ" firstAttribute="top" secondItem="YUc-4b-snl" secondAttribute="bottom" constant="15" id="8cg-gF-oFU"/>
                                             <constraint firstItem="VVT-hf-I1A" firstAttribute="top" secondItem="pGL-Kq-fTz" secondAttribute="bottom" constant="13" id="96a-p3-fLv"/>
                                             <constraint firstAttribute="trailing" secondItem="pGL-Kq-fTz" secondAttribute="trailing" constant="40" id="AAG-OS-UBp"/>
@@ -406,11 +419,13 @@
                                             <constraint firstItem="YUc-4b-snl" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" id="CaY-BO-kdb"/>
                                             <constraint firstItem="drG-Gv-pfW" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="22" id="Dj3-g1-6wT"/>
                                             <constraint firstItem="YUc-4b-snl" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" id="GgO-qo-dPF"/>
+                                            <constraint firstItem="ua4-Wu-qLi" firstAttribute="top" secondItem="LDf-UG-eaf" secondAttribute="bottom" constant="39.5" id="ICx-CH-3sN"/>
                                             <constraint firstItem="rmz-R7-ySz" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="24" id="IcF-Ue-MwE"/>
                                             <constraint firstItem="FDq-ZH-c3v" firstAttribute="top" secondItem="VMl-M3-qeE" secondAttribute="bottom" constant="1" id="JwD-ps-3nM"/>
                                             <constraint firstItem="FDq-ZH-c3v" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="24" id="MDS-rp-KPU"/>
                                             <constraint firstItem="pGL-Kq-fTz" firstAttribute="top" secondItem="VMl-M3-qeE" secondAttribute="bottom" constant="8" symbolic="YES" id="NEH-hf-gCe"/>
                                             <constraint firstItem="sNf-7T-FcJ" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="23" id="THU-oj-lls"/>
+                                            <constraint firstItem="ua4-Wu-qLi" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="34" id="UDD-f0-NtR"/>
                                             <constraint firstItem="LDf-UG-eaf" firstAttribute="top" secondItem="SmB-IU-qWm" secondAttribute="bottom" constant="13" id="Vw4-do-KTe"/>
                                             <constraint firstItem="pGL-Kq-fTz" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="24" id="Yt5-Dh-efg"/>
                                             <constraint firstItem="LDf-UG-eaf" firstAttribute="top" secondItem="SmB-IU-qWm" secondAttribute="bottom" constant="13" id="a0M-Rp-6jq"/>
@@ -479,6 +494,7 @@
                             <constraint firstAttribute="bottom" secondItem="JXE-mw-fki" secondAttribute="bottom" id="BUd-cW-7Vt"/>
                             <constraint firstItem="JXE-mw-fki" firstAttribute="bottom" secondItem="fVU-Td-8O0" secondAttribute="bottom" id="Ces-1H-pvX"/>
                             <constraint firstItem="fVU-Td-8O0" firstAttribute="leading" secondItem="73u-I2-nhG" secondAttribute="leading" id="FLs-f9-gaW"/>
+                            <constraint firstItem="tMC-Ga-5ii" firstAttribute="top" secondItem="DJN-vl-hSw" secondAttribute="bottom" id="Fd9-v5-uoh"/>
                             <constraint firstItem="JXE-mw-fki" firstAttribute="leading" secondItem="73u-I2-nhG" secondAttribute="leading" id="Giw-GV-LVP"/>
                             <constraint firstAttribute="trailing" secondItem="JXE-mw-fki" secondAttribute="trailing" id="JxE-gZ-Dzf"/>
                             <constraint firstAttribute="bottom" secondItem="fVU-Td-8O0" secondAttribute="bottom" id="LwG-6O-vEM"/>
@@ -499,6 +515,7 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="8Y0-xx-Enu"/>
                                 <exclude reference="9zI-df-BDT"/>
                                 <exclude reference="FLs-f9-gaW"/>
                                 <exclude reference="jBp-Fx-fzm"/>
