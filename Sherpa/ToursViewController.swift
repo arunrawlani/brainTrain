@@ -189,15 +189,28 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             secondVC.tourname = tourName
             secondVC.ImageName = imageName
             secondVC.tourPriceamt = costLabel
+            
+        }
+        else if segue.identifier == "goToReserveTour"{
+            let reserveVC: ReserveViewController = segue.destinationViewController as! ReserveViewController
+            reserveVC.tourName = tourName
+            reserveVC.tourCost = costLabel
         }
 
         
     }
-    func goToOverview(tourName: String, imageName: String, costLabel: String){
+   /* func goToOverview(tourName: String, imageName: String, costLabel: String){
         self.tourName = tourName
         self.imageName = imageName
         self.costLabel = costLabel
         performSegueWithIdentifier("goToTourOverview", sender: self)
+    }*/
+    
+    func goToOverview(tourName: String, imageName: String, costLabel: String) {
+        self.tourName = tourName
+        self.imageName = imageName
+        self.costLabel = costLabel
+        performSegueWithIdentifier("goToReserveTour", sender: self)
     }
 
 }

@@ -13,15 +13,19 @@ import DatePickerCell
 class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDelegate {
     
     @IBOutlet weak var tableView: UITableView!
-    let languages = ["Madarin", "Chinese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
-    let time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
-    
-
-   
+    @IBOutlet weak var sumLabel: UILabel!
+    @IBOutlet weak var reviewImage: UIImageView!
+    @IBOutlet weak var costLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pickerView: AKPickerView!
     @IBOutlet weak var timePicker: AKPickerView!
     
-    var cells:NSArray = []
+    var languages = ["Madarin", "Chinese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
+    var time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
+    var tourName: String = ""
+    var tourCost: String = ""
+    var tourSum: String = ""
+    var cells: NSArray = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -68,6 +72,10 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.timePicker.pickerViewStyle = .Wheel
         self.timePicker.maskDisabled = false
         self.timePicker.reloadData()
+        
+        nameLabel.text = tourName
+        costLabel.text = tourCost
+        
     }
     
     // MARK: - AKPickerViewDataSource
@@ -149,7 +157,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         // Deselect automatically if the cell is a DatePickerCell.
         var cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
         if (cell.isKindOfClass(DatePickerCell)) {
-            println("Expand TableView")
+            println("")
             var datePickerTableViewCell = cell as! DatePickerCell
             datePickerTableViewCell.selectedInTableView(tableView)
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
