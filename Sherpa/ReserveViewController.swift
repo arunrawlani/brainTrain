@@ -21,7 +21,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var timePicker: AKPickerView!
     
     var cells: NSArray = []
-    var languages = ["Mandarin", "Chinese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
+    var languages = ["Mandarin", "Japanese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
     var time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
     
      var tourCost: String = "" //costLabel

@@ -18,6 +18,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     var mainGraphicImageFileName: String = ""
     var citySelected: Int = 0
     var dataArray = [TourData]()
+    var laArray = [TourData]()
     
     var toursNY: [Tour] = []
     var toursLV: [Tour] = []
@@ -42,19 +43,21 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
         
         NYquery.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
             
-            //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible store empty array
+            //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible, store empty array
             self.toursNY = result as? [Tour] ?? []
-            for tour in self.toursNY {
+           //AMBIGUOUS: Ask Amit
+            /* for tour in self.toursNY {
                 if let string = tour.tourName {
                     let tourSumm = TourData()
                     tourSumm.construcTour(tour.tourName!, tour: tour)
                     self.dataArray.append(tourSumm)
                 }
-            }
+            } */
             self.tableview.reloadData()
             
         }
         
+        //AMBIGUOUS: Ask Amit
         //LAS VEGAS
         let LVquery = PFQuery(className: "Tour")
         LVquery.whereKey("city", equalTo: "Las Vegas")
@@ -63,10 +66,18 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible store empty array
             self.toursLV = result as? [Tour] ?? []
+            /* for tour in self.toursLA {
+                if let string = tour.tourName {
+                    let tourSumm2 = TourData()
+                    tourSumm2.construcTour(tour.tourName!, tour: tour)
+                    self.dataArray.append(tourSumm2)
+                }
+            }*/
             self.tableview.reloadData()
             
         }
         
+        //AMBIGUOUS: Ask Amit
         //LOS ANGELES
         let LAquery = PFQuery(className: "Tour")
         LAquery.whereKey("city", equalTo: "Los Angeles")
@@ -140,6 +151,16 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
                 }
             }
             cell.languagesName.text = languages
+            
+            
+            //AMBIGUOUS: Ask Ami
+            for tour in self.toursNY {
+                if let string = tour.tourName {
+                    let tourSumm = TourData()
+                    tourSumm.construcTour(tour.tourName!, tour: tour)
+                    self.dataArray.append(tourSumm)
+                }
+            }
            
            
             
@@ -169,6 +190,16 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             }
             cell.languagesName.text = languages
             
+            //AMBIGUOUS: Ask Amit
+            for tour in self.toursLV {
+                if let string = tour.tourName {
+                    let tourSumm = TourData()
+                    tourSumm.construcTour(tour.tourName!, tour: tour)
+                    self.dataArray.append(tourSumm)
+                }
+            }
+
+            
         }
             
         else { //LOS ANGELES
@@ -195,6 +226,15 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
                     }
             }
             cell.languagesName.text = languages
+            
+            //AMBIGUOUS: Ask Amit
+            for tour in self.toursLA {
+                if let string = tour.tourName {
+                    let tourSumm = TourData()
+                    tourSumm.construcTour(tour.tourName!, tour: tour)
+                    self.dataArray.append(tourSumm)
+                }
+            }
            
         }
         return cell
