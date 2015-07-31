@@ -20,11 +20,16 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var pickerView: AKPickerView!
     @IBOutlet weak var timePicker: AKPickerView!
     
-    var languages = ["Madarin", "Chinese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
-    var time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
-    var tourName: String = ""
-    var tourCost: String = ""
     var cells: NSArray = []
+    var languages = ["Mandarin", "Chinese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
+    var time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
+    
+     var tourCost: String = "" //costLabel
+     var tourName: String = "" //nameLabel
+     var tourSum: String = "" //sumLabel
+   
+   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -74,6 +79,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         
         nameLabel.text = tourName
         costLabel.text = tourCost
+        sumLabel.text = tourSum
        
         
     }

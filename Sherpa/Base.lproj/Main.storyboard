@@ -169,7 +169,6 @@
                                                     </state>
                                                     <connections>
                                                         <action selector="goToOverview:" destination="7Su-TK-lsv" eventType="touchUpInside" id="Uk7-Ll-iOq"/>
-                                                        <segue destination="G8P-6K-jD2" kind="show" identifier="goToReserveTour" id="XW2-dN-Dni"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -234,11 +233,12 @@
                         <outlet property="MainCityImageview" destination="gVc-v6-6nt" id="GC4-WS-cK0"/>
                         <outlet property="MainCityLabel" destination="KOU-C8-IXd" id="l4X-tv-WvF"/>
                         <outlet property="tableview" destination="vsc-Nq-d1h" id="hgB-lD-dcC"/>
+                        <segue destination="G8P-6K-jD2" kind="show" identifier="goToReserveTour" id="gMF-nf-2o3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xWt-7C-4GL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2001" y="-296"/>
+            <point key="canvasLocation" x="1984" y="-202"/>
         </scene>
         <!--Reserve View Controller-->
         <scene sceneID="74g-8A-NFl">
@@ -284,16 +284,16 @@
                                                 <color key="textColor" red="0.99923949115044253" green="0.99923949115044253" blue="0.99923949115044253" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="$39" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNf-7T-FcJ">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="$39" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sNf-7T-FcJ">
                                                 <rect key="frame" x="23" y="176" width="39.5" height="31"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="22"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="3stars" translatesAutoresizingMaskIntoConstraints="NO" id="CE4-ih-rFC">
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3stars" translatesAutoresizingMaskIntoConstraints="NO" id="CE4-ih-rFC">
                                                 <rect key="frame" x="22" y="204" width="105" height="19"/>
                                             </imageView>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Give Review?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaZ-53-gGM">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Give Review?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LaZ-53-gGM">
                                                 <rect key="frame" x="23" y="233" width="82" height="16"/>
                                                 <accessibility key="accessibilityConfiguration">
                                                     <accessibilityTraits key="traits" none="YES" button="YES"/>
@@ -302,7 +302,7 @@
                                                 <color key="textColor" red="0.38823529411764707" green="0.85882352941176465" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <view contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2N-Ck-dwH">
+                                            <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="a2N-Ck-dwH">
                                                 <rect key="frame" x="0.0" y="253" width="600" height="2"/>
                                                 <color key="backgroundColor" red="0.80392156862745101" green="0.78823529411764703" blue="0.78823529411764703" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
@@ -367,7 +367,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="LDf-UG-eaf">
-                                                <rect key="frame" x="24" y="696" width="553" height="45"/>
+                                                <rect key="frame" x="24" y="696.5" width="553" height="45"/>
                                                 <color key="backgroundColor" red="0.52158699321591151" green="0.53733391601422409" blue="0.58457468440916172" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="g65-uS-E9j"/>
@@ -428,9 +428,10 @@
                                             <constraint firstItem="ua4-Wu-qLi" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="34" id="UDD-f0-NtR"/>
                                             <constraint firstItem="LDf-UG-eaf" firstAttribute="top" secondItem="SmB-IU-qWm" secondAttribute="bottom" constant="13" id="Vw4-do-KTe"/>
                                             <constraint firstItem="pGL-Kq-fTz" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="24" id="Yt5-Dh-efg"/>
+                                            <constraint firstItem="LaZ-53-gGM" firstAttribute="top" secondItem="YUc-4b-snl" secondAttribute="bottom" constant="72" id="a0E-Q2-wEx"/>
                                             <constraint firstItem="LDf-UG-eaf" firstAttribute="top" secondItem="SmB-IU-qWm" secondAttribute="bottom" constant="13" id="a0M-Rp-6jq"/>
                                             <constraint firstItem="pGL-Kq-fTz" firstAttribute="leading" secondItem="uSN-71-umb" secondAttribute="leading" constant="40" id="aiS-zs-9I8"/>
-                                            <constraint firstItem="VMl-M3-qeE" firstAttribute="top" secondItem="3OQ-bv-DQN" secondAttribute="bottom" constant="10" id="cTI-8h-9vB"/>
+                                            <constraint firstItem="VMl-M3-qeE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="3OQ-bv-DQN" secondAttribute="bottom" constant="10" id="cTI-8h-9vB"/>
                                             <constraint firstAttribute="trailing" secondItem="pGL-Kq-fTz" secondAttribute="trailing" constant="34" id="eKU-Vf-4I9"/>
                                             <constraint firstItem="rmz-R7-ySz" firstAttribute="top" secondItem="drG-Gv-pfW" secondAttribute="bottom" constant="13" id="f7C-VR-xKv"/>
                                             <constraint firstItem="phz-CD-4m7" firstAttribute="top" secondItem="rmz-R7-ySz" secondAttribute="bottom" constant="13" id="fMj-27-cWN"/>
@@ -445,6 +446,7 @@
                                             <constraint firstAttribute="trailing" secondItem="LDf-UG-eaf" secondAttribute="trailing" constant="23" id="lNi-tG-mBE"/>
                                             <constraint firstItem="CE4-ih-rFC" firstAttribute="top" secondItem="sNf-7T-FcJ" secondAttribute="bottom" constant="-1.5" id="lRv-7x-orC"/>
                                             <constraint firstAttribute="trailing" secondItem="3OQ-bv-DQN" secondAttribute="trailing" constant="34.5" id="mMR-2a-uJ9"/>
+                                            <constraint firstItem="CE4-ih-rFC" firstAttribute="top" secondItem="YUc-4b-snl" secondAttribute="bottom" constant="43" id="mpc-V5-Dq9"/>
                                             <constraint firstItem="YUc-4b-snl" firstAttribute="top" secondItem="uSN-71-umb" secondAttribute="top" id="nBF-fn-S6V"/>
                                             <constraint firstItem="YUc-4b-snl" firstAttribute="top" secondItem="uSN-71-umb" secondAttribute="top" id="sux-db-cMb"/>
                                             <constraint firstItem="zd3-yz-yas" firstAttribute="top" secondItem="a2N-Ck-dwH" secondAttribute="bottom" constant="15" id="tfc-h3-HUl"/>
