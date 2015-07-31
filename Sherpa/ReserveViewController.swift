@@ -24,7 +24,6 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     var time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
     var tourName: String = ""
     var tourCost: String = ""
-    var tourSum: String = ""
     var cells: NSArray = []
     
     override func viewDidLoad() {
@@ -75,6 +74,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         
         nameLabel.text = tourName
         costLabel.text = tourCost
+       
         
     }
     

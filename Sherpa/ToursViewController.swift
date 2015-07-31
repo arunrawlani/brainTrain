@@ -123,6 +123,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             }
             cell.languagesName.text = languages
            
+           
             
         }
         else if citySelected == 1 { //LAS VEGAS
@@ -149,6 +150,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
                     }
             }
             cell.languagesName.text = languages
+            
         }
             
         else { //LOS ANGELES
@@ -175,6 +177,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
                     }
             }
             cell.languagesName.text = languages
+           
         }
         return cell
     }
@@ -182,6 +185,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     var tourName: String = ""
     var imageName: String = ""
     var costLabel: String = ""
+    var tourDesc: String = ""
     
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goToTourOverview" {
@@ -195,6 +199,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             let reserveVC: ReserveViewController = segue.destinationViewController as! ReserveViewController
             reserveVC.tourName = tourName
             reserveVC.tourCost = costLabel
+            
         }
 
         
