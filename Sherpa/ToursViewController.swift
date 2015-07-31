@@ -17,7 +17,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     var mainCityLabelText: String = ""
     var mainGraphicImageFileName: String = ""
     var citySelected: Int = 0
-    var tourSummArray = [TourSummary]()
+    var dataArray = [TourData]()
     
     var toursNY: [Tour] = []
     var toursLV: [Tour] = []
@@ -46,9 +46,9 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             self.toursNY = result as? [Tour] ?? []
             for tour in self.toursNY {
                 if let string = tour.tourName {
-                    let tourSumm = TourSummary()
+                    let tourSumm = TourData()
                     tourSumm.construcTour(tour.tourName!, tour: tour)
-                    self.tourSummArray.append(tourSumm)
+                    self.dataArray.append(tourSumm)
                 }
             }
             self.tableview.reloadData()
@@ -95,14 +95,16 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             return toursLA.count
         }
     }
+    
     func findTour(tourName: String) -> Tour{
-        for tourSum in self.tourSummArray {
+        for tourSum in self.dataArray {
             if tourSum.tourName == tourName {
                 return tourSum.tour
             }
         }
         return Tour()
     }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! ToursTableCell
         cell.backgroundColor = UIColor.clearColor()
@@ -155,7 +157,6 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //From PARSE
             cell.costLabel.text = toursLV[indexPath.row].cost
-            self.tourSum = toursLV[indexPath.row].tourDetail
             cell.TourName.text = toursLV[indexPath.row].tourName
             let languages = toursLV[indexPath.row].langOffered!
                 .reduce("") {(total, language)in
@@ -202,7 +203,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     var tourName: String = ""
     var imageName: String = ""
     var costLabel: String = ""
-    var tourSum: String? = ""
+    //var tourSum: String? = ""
     
      override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         if segue.identifier == "goToReserveTour"{
@@ -210,6 +211,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             reserveVC.tourName = tourName
             reserveVC.tourCost = costLabel
             reserveVC.tourSum = self.findTour(reserveVC.tourName).tourDetail!
+            reserveVC.tourLang = self.findTour(reserveVC.tourName).langOffered!
+            reserveVC.tourTimes = self.findTour(reserveVC.tourName).prefTimes!
         }
 
         
@@ -230,7 +233,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
 
 }
 
-class TourSummary {
+class TourData {
     var tourName: String = ""
     var tour: Tour = Tour()
     func construcTour(name: String, tour: Tour) {
