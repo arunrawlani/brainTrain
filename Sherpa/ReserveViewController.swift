@@ -174,6 +174,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 println("Stop baby")
             }
             else{ //User has selected time, date and language
+                sender.backgroundColor = UIColor.grayColor()
                 var request = PFObject(className: "RequestTour")
                 request["requestedTime"] = self.selectedTime
                 request["requestedLang"] = self.selectedLanguage

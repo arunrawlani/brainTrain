@@ -384,7 +384,7 @@
                                                 <color key="textColor" red="0.86666666670000003" green="0.50196078430000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-Wu-qLi">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-Wu-qLi">
                                                 <rect key="frame" x="33" y="781" width="533" height="47"/>
                                                 <color key="backgroundColor" red="0.19807749039648986" green="0.6401060827085725" blue="0.89143742950720106" alpha="1" colorSpace="calibratedRGB"/>
                                                 <constraints>

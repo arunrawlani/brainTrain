@@ -29,17 +29,17 @@ class TourOverviewViewController: UIViewController, SINCallClientDelegate, AKPic
     var tourPriceamt: String = ""
     
     @IBOutlet var reserveButton: UIButton!
-    var reservePressedCounter: Int = 1
+    var thisIsFucked: Int = 1
     
     @IBAction func reserveButtonPressed(sender: AnyObject) {
-        println(reservePressedCounter)
-        if reservePressedCounter == 1 {
+        println(thisIsFucked)
+        if thisIsFucked == 1 {
             reserveButton.setImage(UIImage(named: "PaymentMethod"), forState: .Normal)
         }
         else {
             performSegueWithIdentifier("purchased", sender: self)
         }
-        reservePressedCounter++
+        thisIsFucked++
     }
     @IBAction func viewTimeline(sender: AnyObject) {
         performSegueWithIdentifier("goToTimeline", sender: self)
@@ -201,7 +201,7 @@ class TourOverviewViewController: UIViewController, SINCallClientDelegate, AKPic
         else{
             starRatingImageView.image = UIImage(named: "5stars")
         }
-        reservePressedCounter = 1
+        thisIsFucked = 1
         // Do any additional setup after loading the view.
     }
     
