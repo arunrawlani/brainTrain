@@ -391,10 +391,13 @@
                                                     <constraint firstAttribute="height" constant="47" id="Gu8-2c-Thu"/>
                                                 </constraints>
                                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
-                                                <state key="normal" title="RESERVE TOUR">
+                                                <state key="normal" title="REQUEST TOUR">
                                                     <color key="titleColor" red="0.9793779762512661" green="0.99607843137254903" blue="0.93553532873483025" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
+                                                <connections>
+                                                    <action selector="requestButtonPressed:" destination="G8P-6K-jD2" eventType="touchUpInside" id="yah-AS-XTQ"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                         <constraints>
@@ -539,6 +542,7 @@
                         <outlet property="costLabel" destination="sNf-7T-FcJ" id="uSw-1L-Q8j"/>
                         <outlet property="nameLabel" destination="x1h-5q-org" id="RxQ-uo-4SL"/>
                         <outlet property="pickerView" destination="pGL-Kq-fTz" id="XJ1-fQ-ylE"/>
+                        <outlet property="requestButton" destination="ua4-Wu-qLi" id="cJJ-EQ-Idi"/>
                         <outlet property="reviewImage" destination="CE4-ih-rFC" id="P6r-uG-glt"/>
                         <outlet property="sumLabel" destination="3OQ-bv-DQN" id="pkh-EC-Hm6"/>
                         <outlet property="tableView" destination="LDf-UG-eaf" id="awX-0n-UfW"/>
@@ -571,7 +575,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sod-yi-CBM" customClass="AKPickerView" customModule="AKPickerView_Swift">
                                         <rect key="frame" x="0.0" y="344" width="600" height="113"/>
                                     </view>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2p-5o-mFy" userLabel="reserve">
+                                    <button opaque="NO" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S2p-5o-mFy" userLabel="reserve">
                                         <rect key="frame" x="129" y="438" width="311" height="44"/>
                                         <state key="normal" image="reserve">
                                             <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -1684,7 +1688,7 @@
         <image name="twitter" width="41" height="41"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="0Fh-3C-F0g"/>
         <segue reference="4tB-fC-EnJ"/>
+        <segue reference="ZA5-iq-25z"/>
     </inferredMetricsTieBreakers>
 </document>

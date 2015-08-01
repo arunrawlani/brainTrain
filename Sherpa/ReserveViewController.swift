@@ -9,6 +9,7 @@
 import Foundation
 import AKPickerView_Swift
 import DatePickerCell
+import Parse
 
 class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDelegate {
     
@@ -20,6 +21,11 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var pickerView: AKPickerView!
     @IBOutlet weak var timePicker: AKPickerView!
     
+    @IBOutlet weak var requestButton: UIButton!
+    var requestPressedCounter: Int = 1
+    
+   
+    
     var cells: NSArray = []
     var languages = ["Mandarin", "Japanese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
     var time = ["9:30", "10:30", "11:30", "12:30", "1:30", "2:30", "3:30"]
@@ -29,6 +35,8 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
      var tourSum: String = "" //sumLabel
      var tourLang: [String] = [] //pickerView
      var tourTimes: [String] = [] //timePicker
+     var selectedLanguage: String = ""
+     var selectedTime: String = ""
    
    
     
@@ -84,6 +92,9 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         sumLabel.text = tourSum
         self.languages = tourLang
         self.time = tourTimes
+        
+        self.selectedLanguage = "None"
+        self.selectedTime = "None"
        
         
     }
@@ -146,12 +157,45 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     
     func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
         if(pickerView.tag == 1){
-        println("Your favorite city is \(self.languages[item])")
+        self.selectedLanguage = self.languages[item]
+        println("You selected \(selectedLanguage)")
         }
         else{
-            println("Your favorite city is \(self.time[item])")
+            self.selectedTime = self.time[item]
+            println("You selected \(selectedTime)")
         }
     }
+    
+    
+    @IBAction func requestButtonPressed(sender: UIButton) {
+        if requestPressedCounter == 1 {
+            if (self.selectedLanguage == "None" || self.selectedTime == "None"){
+                //GIVES AN ERROR MESSAGE
+                println("Stop baby")
+            }
+            else{ //User has selected time, date and language
+                var request = PFObject(className: "RequestTour")
+                request["requestedTime"] = self.selectedTime
+                request["requestedLang"] = self.selectedLanguage
+                request["fromUser"] = PFUser.currentUser()
+                request["isApproved"] = false
+                request.saveInBackgroundWithBlock{(success: Bool, error: NSError?) -> Void in
+                    if (success){
+                        //do good shit
+                    }
+                    else{
+                        //cry bitch
+                    }
+                }
+            }
+        }
+        else {
+            //gogo
+        }
+        requestPressedCounter++
+        
+    }
+    
 }
 
  
@@ -172,7 +216,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         // Deselect automatically if the cell is a DatePickerCell.
         var cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
         if (cell.isKindOfClass(DatePickerCell)) {
-            println("")
+            println("gogogo")
             var datePickerTableViewCell = cell as! DatePickerCell
             datePickerTableViewCell.selectedInTableView(tableView)
             self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
