@@ -46,18 +46,24 @@ class DataTours {
         TourEntry(bgImage: "tourEntryBG", tourName: "Central Park", languages: "English, French", cost: "$24", circularImage: "User", cityImage: "NewYork"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Statue of Liberty", languages: "German, French", cost: "$42", circularImage: "User", cityImage: "NewYork"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Upper East Side", languages: "Mandarin, Hindi", cost: "$99", circularImage: "User", cityImage: "NewYork"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Manhattan", languages: "Spanish, Russian", cost: "$12", circularImage: "User", cityImage: "NewYork"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Manhattan", languages: "Spanish, Russian", cost: "$12", circularImage: "User", cityImage: "NewYork"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Manhattan", languages: "Spanish, Russian", cost: "$12", circularImage: "User", cityImage: "NewYork")
     ]
     let toursVegas = [
         TourEntry(bgImage: "tourEntryBG", tourName: "Bellagio Resort", languages: "Mandarin, Hindi", cost: "$15", circularImage: "DisplayPicture", cityImage: "LasVegas"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Vegas Night Club", languages: "Japanese, Korean", cost: "$78", circularImage: "DisplayPicture", cityImage: "LasVegas"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Mandalay Bay", languages: "Greek, English", cost: "$32", circularImage: "DisplayPicture", cityImage: "LasVegas"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Stratosphere Tower", languages: "Hebrew, Dutch", cost: "$98", circularImage: "DisplayPicture", cityImage: "LasVegas"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Stratosphere Tower", languages: "Hebrew, Dutch", cost: "$98", circularImage: "DisplayPicture", cityImage: "LasVegas"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Stratosphere Tower", languages: "Hebrew, Dutch", cost: "$98", circularImage: "DisplayPicture", cityImage: "LasVegas")
     ]
     let toursLA = [
         TourEntry(bgImage: "tourEntryBG", tourName: "Venice Beach", languages: "Mandarin, Hindi", cost: "$10", circularImage: "DisplayPicture", cityImage: "LosAngeles"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Downtown", languages: "English, German", cost: "$24", circularImage: "DisplayPicture", cityImage: "LosAngeles"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Hollywood", languages: "Spanish, Hindi", cost: "$95", circularImage: "DisplayPicture", cityImage: "LosAngeles"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Santa Monica", languages: "Spanish, Italian", cost: "$40", circularImage: "DisplayPicture", cityImage: "LosAngeles"),
+        TourEntry(bgImage: "tourEntryBG", tourName: "Santa Monica", languages: "Spanish, Italian", cost: "$40", circularImage: "DisplayPicture", cityImage: "LosAngeles"),
         TourEntry(bgImage: "tourEntryBG", tourName: "Santa Monica", languages: "Spanish, Italian", cost: "$40", circularImage: "DisplayPicture", cityImage: "LosAngeles")
     ]
 }

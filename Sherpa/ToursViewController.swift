@@ -155,11 +155,11 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //AMBIGUOUS: Ask Ami
             for tour in self.toursNY {
-                if let string = tour.tourName {
+                //if let string = tour.tourName {
                     let tourSumm = TourData()
-                    tourSumm.construcTour(tour.tourName!, tour: tour)
+                    tourSumm.construcTour(tour.tourName, tour: tour)
                     self.dataArray.append(tourSumm)
-                }
+                //}
             }
            
            
@@ -192,11 +192,11 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //AMBIGUOUS: Ask Amit
             for tour in self.toursLV {
-                if let string = tour.tourName {
+                //if let string = tour.tourName {
                     let tourSumm = TourData()
-                    tourSumm.construcTour(tour.tourName!, tour: tour)
+                    tourSumm.construcTour(tour.tourName, tour: tour)
                     self.dataArray.append(tourSumm)
-                }
+                //}
             }
 
             
@@ -229,11 +229,11 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //AMBIGUOUS: Ask Amit
             for tour in self.toursLA {
-                if let string = tour.tourName {
+               // if let string = tour.tourName {
                     let tourSumm = TourData()
-                    tourSumm.construcTour(tour.tourName!, tour: tour)
+                    tourSumm.construcTour(tour.tourName, tour: tour)
                     self.dataArray.append(tourSumm)
-                }
+                //}
             }
            
         }

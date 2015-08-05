@@ -24,7 +24,7 @@
 		E2A344401B5B0516004CAF3A /* AppData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3443F1B5B0516004CAF3A /* AppData.swift */; };
 		E2A344421B5B053C004CAF3A /* TableViewForExplore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344411B5B053C004CAF3A /* TableViewForExplore.swift */; };
 		E2A344441B5B0550004CAF3A /* ExploreTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344431B5B0550004CAF3A /* ExploreTableCell.swift */; };
-		E2A3444A1B5B22E8004CAF3A /* DashboardTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344491B5B22E8004CAF3A /* DashboardTableCell.swift */; };
+		E2A3444A1B5B22E8004CAF3A /* DashboardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344491B5B22E8004CAF3A /* DashboardTableViewCell.swift */; };
 		E2A3444C1B5B3140004CAF3A /* ToursViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3444B1B5B3140004CAF3A /* ToursViewController.swift */; };
 		E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A3444D1B5B370F004CAF3A /* ToursTableCell.swift */; };
 		E2A344541B5B6648004CAF3A /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344531B5B6648004CAF3A /* DashboardViewController.swift */; };
@@ -32,6 +32,7 @@
 		E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */; };
 		E2A3445C1B5C25F8004CAF3A /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A3445B1B5C25F8004CAF3A /* incoming.wav */; };
 		F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E8D821B693A790037E340 /* ReserveViewController.swift */; };
+		F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2A1B713FC60036DEFE /* Request.swift */; };
 		F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */; };
 		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
 		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
@@ -83,7 +84,7 @@
 		E2A3443F1B5B0516004CAF3A /* AppData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppData.swift; sourceTree = "<group>"; };
 		E2A344411B5B053C004CAF3A /* TableViewForExplore.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewForExplore.swift; sourceTree = "<group>"; };
 		E2A344431B5B0550004CAF3A /* ExploreTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExploreTableCell.swift; sourceTree = "<group>"; };
-		E2A344491B5B22E8004CAF3A /* DashboardTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableCell.swift; sourceTree = "<group>"; };
+		E2A344491B5B22E8004CAF3A /* DashboardTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardTableViewCell.swift; sourceTree = "<group>"; };
 		E2A3444B1B5B3140004CAF3A /* ToursViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursViewController.swift; sourceTree = "<group>"; };
 		E2A3444D1B5B370F004CAF3A /* ToursTableCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ToursTableCell.swift; sourceTree = "<group>"; };
 		E2A344531B5B6648004CAF3A /* DashboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +92,7 @@
 		E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E2A3445B1B5C25F8004CAF3A /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
 		F10E8D821B693A790037E340 /* ReserveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
+		F1B7AB2A1B713FC60036DEFE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
@@ -154,6 +156,7 @@
 		659895AC1B5B248500607B5E /* Data Models */ = {
 			isa = PBXGroup;
 			children = (
+				F1B7AB2A1B713FC60036DEFE /* Request.swift */,
 				659895AD1B5B249400607B5E /* Tour.swift */,
 				659895AF1B5B253600607B5E /* Review.swift */,
 			);
@@ -198,10 +201,10 @@
 				E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */,
 				E2A3445B1B5C25F8004CAF3A /* incoming.wav */,
 				E2A344531B5B6648004CAF3A /* DashboardViewController.swift */,
-				E2A3444D1B5B370F004CAF3A /* ToursTableCell.swift */,
 				659F004B1B5ADECE00E4267B /* Images.xcassets */,
 				E2A344411B5B053C004CAF3A /* TableViewForExplore.swift */,
-				E2A344491B5B22E8004CAF3A /* DashboardTableCell.swift */,
+				E2A3444D1B5B370F004CAF3A /* ToursTableCell.swift */,
+				E2A344491B5B22E8004CAF3A /* DashboardTableViewCell.swift */,
 				E2A3443F1B5B0516004CAF3A /* AppData.swift */,
 				E2A344431B5B0550004CAF3A /* ExploreTableCell.swift */,
 				659F004D1B5ADECE00E4267B /* LaunchScreen.xib */,
@@ -315,7 +318,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0640;
-				ORGANIZATIONNAME = "Derek Argueta";
+				ORGANIZATIONNAME = "Arun Rawlani";
 				TargetAttributes = {
 					659F003E1B5ADECE00E4267B = {
 						CreatedOnToolsVersion = 6.4;
@@ -424,6 +427,7 @@
 				659895AE1B5B249400607B5E /* Tour.swift in Sources */,
 				659895B01B5B253600607B5E /* Review.swift in Sources */,
 				F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */,
+				F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */,
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
 				F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
@@ -436,7 +440,7 @@
 				E2A3444C1B5B3140004CAF3A /* ToursViewController.swift in Sources */,
 				E2A344401B5B0516004CAF3A /* AppData.swift in Sources */,
 				A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */,
-				E2A3444A1B5B22E8004CAF3A /* DashboardTableCell.swift in Sources */,
+				E2A3444A1B5B22E8004CAF3A /* DashboardTableViewCell.swift in Sources */,
 				659F00451B5ADECE00E4267B /* AppDelegate.swift in Sources */,
 				E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */,
 				F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */,

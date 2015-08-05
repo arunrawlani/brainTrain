@@ -8,12 +8,13 @@
 
 import UIKit
 import FBSDKLoginKit
+import Parse
 
 protocol dashboard {
     func itemPressed()
 }
 
-class DashboardTableCell: UITableViewCell {
+class DashboardTableViewCell: UITableViewCell {
     
     var delegate: dashboard? = nil
     
@@ -21,5 +22,5 @@ class DashboardTableCell: UITableViewCell {
     @IBOutlet var tourGuideLabel: UILabel!
     @IBOutlet var tourDateLabel: UILabel!
     @IBOutlet var tourNameLabel: UILabel!
-    @IBOutlet var timeAMPMLabel: UILabel!    
+    @IBOutlet var timeAMPMLabel: UILabel!
 }

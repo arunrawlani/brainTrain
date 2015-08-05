@@ -12,7 +12,7 @@ import Parse
 class Tour: PFObject, PFSubclassing {
     
   @NSManaged var createdBy : PFUser?
-  @NSManaged var tourName: String?
+  @NSManaged var tourName: String
   @NSManaged var langOffered: [String]?
   @NSManaged var tourDetail: String?
   //@NSManaged var reviews: [Review]
