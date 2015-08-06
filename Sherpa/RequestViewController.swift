@@ -17,6 +17,7 @@ class RequestViewController: UIViewController{
    
    override func viewDidLoad() {
     
+        super.viewDidLoad()
         //Calling query from Parse
         let requestQuery = Request.query()
         requestQuery!.whereKey("toUser", equalTo: PFUser.currentUser()!)
@@ -44,19 +45,19 @@ extension RequestViewController: UITableViewDataSource{
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleCell") as! DashboardTableViewCell
+        let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleCell") as! RequestTableViewCell
         //Cell parameters:
-        // if scheduledTours[indexPath.row].toTour!.tourName != nil {
+        
         let test = requestedTour[indexPath.row].toTour
         println(test?.description)
         requestedTour[indexPath.row].toTour!.fetchIfNeeded()
         cell.tourNameLabel.text = requestedTour[indexPath.row].toTour!["tourName"] as? String
-        //}
         cell.tourDateLabel.text = requestedTour[indexPath.row].requestedDate
-        cell.tourGuideLabel.text = requestedTour[indexPath.row].toUser!.username
+        cell.touristLabel.text = requestedTour[indexPath.row].fromUser!.username
         cell.timeLabel.text = requestedTour[indexPath.row].requestedTime
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
+        //cell.selectionStyle = UITableViewCellSelectionStyle.None
         //TODO implement price range cell.rating = allBusinesses[indexPath.row].reviews
+         println("kya scene")
         return cell
     }
     
