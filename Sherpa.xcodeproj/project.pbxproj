@@ -33,6 +33,8 @@
 		E2A3445C1B5C25F8004CAF3A /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A3445B1B5C25F8004CAF3A /* incoming.wav */; };
 		F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E8D821B693A790037E340 /* ReserveViewController.swift */; };
 		F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2A1B713FC60036DEFE /* Request.swift */; };
+		F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */; };
+		F1B7AB2F1B72D9C30036DEFE /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */; };
 		F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */; };
 		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
 		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
@@ -93,6 +95,8 @@
 		E2A3445B1B5C25F8004CAF3A /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
 		F10E8D821B693A790037E340 /* ReserveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		F1B7AB2A1B713FC60036DEFE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
+		F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
@@ -188,6 +192,7 @@
 			children = (
 				F1EEC4571B5F3386008A04CF /* Helper */,
 				659895AC1B5B248500607B5E /* Data Models */,
+				F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */,
 				659F00441B5ADECE00E4267B /* AppDelegate.swift */,
 				F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */,
 				A49B61321B5B9E0D00F81B3D /* CallViewController.swift */,
@@ -201,6 +206,7 @@
 				E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */,
 				E2A3445B1B5C25F8004CAF3A /* incoming.wav */,
 				E2A344531B5B6648004CAF3A /* DashboardViewController.swift */,
+				F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */,
 				659F004B1B5ADECE00E4267B /* Images.xcassets */,
 				E2A344411B5B053C004CAF3A /* TableViewForExplore.swift */,
 				E2A3444D1B5B370F004CAF3A /* ToursTableCell.swift */,
@@ -433,8 +439,10 @@
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
 				F1EEC45B1B5FFA8E008A04CF /* SignUpViewController.swift in Sources */,
 				F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */,
+				F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */,
 				E2A344441B5B0550004CAF3A /* ExploreTableCell.swift in Sources */,
 				E2A344421B5B053C004CAF3A /* TableViewForExplore.swift in Sources */,
+				F1B7AB2F1B72D9C30036DEFE /* RequestViewController.swift in Sources */,
 				E2A344561B5B8861004CAF3A /* TourOverviewViewController.swift in Sources */,
 				E2A344541B5B6648004CAF3A /* DashboardViewController.swift in Sources */,
 				E2A3444C1B5B3140004CAF3A /* ToursViewController.swift in Sources */,
