@@ -54,10 +54,11 @@ extension RequestViewController: UITableViewDataSource{
         cell.tourNameLabel.text = requestedTour[indexPath.row].toTour!["tourName"] as? String
         cell.tourDateLabel.text = requestedTour[indexPath.row].requestedDate
         cell.touristLabel.text = requestedTour[indexPath.row].fromUser!.username
+        cell.approveMessage.hidden = true
+        cell.rejectMessage.hidden = true
         cell.timeLabel.text = requestedTour[indexPath.row].requestedTime
         //cell.selectionStyle = UITableViewCellSelectionStyle.None
         //TODO implement price range cell.rating = allBusinesses[indexPath.row].reviews
-         println("kya scene")
         return cell
     }
     

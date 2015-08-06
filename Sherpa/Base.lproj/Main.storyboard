@@ -1732,6 +1732,12 @@
                                                     <color key="textColor" red="0.99998271569999997" green="0.99998271569999997" blue="0.99998271569999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="The tour request has been approved." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ueo-23-i64">
+                                                    <rect key="frame" x="101" y="77" width="228" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2wq-pI-ibL">
                                                     <rect key="frame" x="101" y="73" width="100" height="29"/>
                                                     <color key="backgroundColor" red="0.94649583010000005" green="0.57975885400000005" blue="0.24321864479999999" alpha="1" colorSpace="calibratedRGB"/>
@@ -1743,26 +1749,40 @@
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                         <color key="titleShadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="approvedPressed:" destination="6qe-yt-k5O" eventType="touchUpInside" id="Qxo-Eg-4Tk"/>
+                                                    </connections>
                                                 </button>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ZG-RX-7Wc">
                                                     <rect key="frame" x="218" y="73" width="100" height="29"/>
-                                                    <color key="backgroundColor" red="0.77414935149999997" green="0.77051484749999999" blue="0.77778385549999995" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="backgroundColor" red="0.7353037935976966" green="0.73185166311132244" blue="0.73875592408407076" alpha="1" colorSpace="calibratedRGB"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="100" id="Lfv-Xd-Ieu"/>
                                                     </constraints>
                                                     <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="12"/>
                                                     <state key="normal" title="Reject">
                                                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                        <color key="titleShadowColor" red="0.451171875" green="0.451171875" blue="0.451171875" alpha="1" colorSpace="calibratedRGB"/>
                                                     </state>
+                                                    <connections>
+                                                        <action selector="rejectedPressed:" destination="6qe-yt-k5O" eventType="touchUpInside" id="Bpf-in-iui"/>
+                                                    </connections>
                                                 </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The tour request has been declined." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MeW-vT-QJU">
+                                                    <rect key="frame" x="101" y="79" width="215" height="18"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="2f3-1l-90j" firstAttribute="leading" secondItem="twt-OY-6H3" secondAttribute="leading" id="0Jk-s9-gxm"/>
+                                                <constraint firstItem="MeW-vT-QJU" firstAttribute="top" secondItem="1za-K4-BeO" secondAttribute="bottom" constant="33" id="82b-KJ-cL1"/>
                                                 <constraint firstItem="2wq-pI-ibL" firstAttribute="top" secondItem="dMY-tN-4vW" secondAttribute="bottom" constant="-6.5" id="8BW-pe-yxy"/>
                                                 <constraint firstItem="Dh8-bm-mfL" firstAttribute="top" secondItem="twt-OY-6H3" secondAttribute="top" constant="22" id="BYs-rg-EHi"/>
                                                 <constraint firstItem="dMY-tN-4vW" firstAttribute="leading" secondItem="2f3-1l-90j" secondAttribute="trailing" constant="-96" id="Lzr-7p-HlC"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="MeW-vT-QJU" secondAttribute="bottom" constant="15.5" id="PBU-BI-Ee5"/>
                                                 <constraint firstItem="Dh8-bm-mfL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1za-K4-BeO" secondAttribute="trailing" priority="750" constant="31" id="POv-5m-ufy"/>
                                                 <constraint firstItem="1za-K4-BeO" firstAttribute="top" secondItem="twt-OY-6H3" secondAttribute="top" constant="19" id="QoV-cT-67W"/>
                                                 <constraint firstItem="2wq-pI-ibL" firstAttribute="leading" secondItem="twt-OY-6H3" secondAttribute="leadingMargin" constant="93" id="RHB-BR-8S3"/>
@@ -1770,14 +1790,29 @@
                                                 <constraint firstItem="5ZG-RX-7Wc" firstAttribute="leading" secondItem="2wq-pI-ibL" secondAttribute="trailing" constant="17" id="UUg-Yy-hIy"/>
                                                 <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Dh8-bm-mfL" secondAttribute="trailing" constant="10" id="Y57-HM-ZMv"/>
                                                 <constraint firstItem="5ZG-RX-7Wc" firstAttribute="top" secondItem="twt-OY-6H3" secondAttribute="topMargin" constant="65" id="eSr-lq-y3c"/>
+                                                <constraint firstItem="MeW-vT-QJU" firstAttribute="leading" secondItem="twt-OY-6H3" secondAttribute="leadingMargin" constant="93" id="fZp-rd-jEo"/>
+                                                <constraint firstItem="MeW-vT-QJU" firstAttribute="leading" secondItem="twt-OY-6H3" secondAttribute="leadingMargin" constant="93" id="hLn-3a-J9s"/>
                                                 <constraint firstItem="1za-K4-BeO" firstAttribute="leading" secondItem="2f3-1l-90j" secondAttribute="trailing" constant="8" id="hMl-E7-u9C"/>
                                                 <constraint firstItem="1za-K4-BeO" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="2f3-1l-90j" secondAttribute="trailing" constant="8" id="hiB-Od-ZgV"/>
+                                                <constraint firstItem="MeW-vT-QJU" firstAttribute="top" secondItem="2f3-1l-90j" secondAttribute="bottom" constant="23.5" id="nac-Is-L5p"/>
                                                 <constraint firstItem="dMY-tN-4vW" firstAttribute="top" secondItem="1za-K4-BeO" secondAttribute="bottom" constant="16" id="u7o-sV-GGe"/>
                                                 <constraint firstItem="2f3-1l-90j" firstAttribute="top" secondItem="twt-OY-6H3" secondAttribute="top" constant="13" id="vcd-Y0-W1R"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="MeW-vT-QJU" secondAttribute="trailing" constant="233" id="xMa-Bs-ig2"/>
                                             </constraints>
+                                            <variation key="default">
+                                                <mask key="constraints">
+                                                    <exclude reference="82b-KJ-cL1"/>
+                                                    <exclude reference="fZp-rd-jEo"/>
+                                                    <exclude reference="xMa-Bs-ig2"/>
+                                                </mask>
+                                            </variation>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         <connections>
+                                            <outlet property="approveButton" destination="2wq-pI-ibL" id="SHD-NB-Khf"/>
+                                            <outlet property="approveMessage" destination="ueo-23-i64" id="cgW-hz-sjD"/>
+                                            <outlet property="rejectButton" destination="5ZG-RX-7Wc" id="oTr-uo-Ul3"/>
+                                            <outlet property="rejectMessage" destination="MeW-vT-QJU" id="zzb-wz-hMm"/>
                                             <outlet property="timeLabel" destination="2f3-1l-90j" id="sMb-Di-OaB"/>
                                             <outlet property="tourDateLabel" destination="dMY-tN-4vW" id="BYm-qd-1uI"/>
                                             <outlet property="tourNameLabel" destination="1za-K4-BeO" id="QCj-Wa-rGj"/>

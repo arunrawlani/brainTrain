@@ -15,9 +15,29 @@ import Parse
 class RequestTableViewCell: UITableViewCell {
     
     
+    @IBOutlet weak var rejectButton: UIButton!
+    @IBOutlet weak var approveButton: UIButton!
+    @IBOutlet weak var approveMessage: UILabel!
+    @IBOutlet weak var rejectMessage: UILabel!
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var touristLabel: UILabel!
     @IBOutlet var tourDateLabel: UILabel!
     @IBOutlet var tourNameLabel: UILabel!
-    @IBOutlet var timeAMPMLabel: UILabel!
+    
+    @IBAction func approvedPressed(sender: AnyObject) {
+        
+        self.rejectButton.hidden = true
+        self.approveButton.hidden = true
+        self.approveMessage.hidden = false
+        self.rejectMessage.hidden = true
+    }
+    
+    @IBAction func rejectedPressed(sender: AnyObject) {
+        
+        self.rejectButton.hidden = true
+        self.approveButton.hidden = true
+        self.approveMessage.hidden = true
+        self.rejectMessage.hidden = false
+    }
+    
 }
