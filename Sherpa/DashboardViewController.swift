@@ -18,8 +18,9 @@ class DashboardViewController: UIViewController {
     
     var scheduledTours: [Request] = []
     
-    @IBAction func unwindToViewController (sender: UIStoryboardSegue){
-        
+    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
+        // bug? exit segue doesn't dismiss so we do it manually...
+        self.dismissViewControllerAnimated(true, completion: nil)
     }
     
     
@@ -91,7 +92,7 @@ class DashboardViewController: UIViewController {
         
         // instead of using the default transition animation, we'll ask
         // the segue to use our custom TransitionManager object to manage the transition animation
-        toViewController.transitioningDelegate = self.transitionManager
+       // toViewController.transitioningDelegate = self.transitionManager
         
     }
 
