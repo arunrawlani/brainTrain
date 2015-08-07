@@ -14,10 +14,11 @@ class Request:PFObject, PFSubclassing{
     @NSManaged var isApproved: Boolean
     @NSManaged var fromUser: PFUser?
     @NSManaged var toTour: Tour?
-    @NSManaged var requestedTime: String
-    @NSManaged var requestedLang: String
+    @NSManaged var requestedTime: String?
+    @NSManaged var requestedLang: String?
     @NSManaged var toUser: PFUser?
-    @NSManaged var requestedDate: String
+    @NSManaged var requestedDate: String?
+
     
     //MARK : PFSubclassing Protocol
     

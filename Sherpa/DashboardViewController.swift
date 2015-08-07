@@ -111,7 +111,6 @@ extension DashboardViewController: UITableViewDataSource{
         //Cell parameters:
        // if scheduledTours[indexPath.row].toTour!.tourName != nil {
         let test = scheduledTours[indexPath.row].toTour
-        println(test?.description)
         scheduledTours[indexPath.row].toTour!.fetchIfNeeded()
         cell.tourNameLabel.text = scheduledTours[indexPath.row].toTour!["tourName"] as? String
         //}

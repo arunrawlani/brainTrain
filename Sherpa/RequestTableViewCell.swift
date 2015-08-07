@@ -18,19 +18,36 @@ class RequestTableViewCell: UITableViewCell {
     @IBOutlet weak var rejectButton: UIButton!
     @IBOutlet weak var approveButton: UIButton!
     @IBOutlet weak var approveMessage: UILabel!
+    @IBOutlet weak var processingMessage: UILabel!
     @IBOutlet weak var rejectMessage: UILabel!
     @IBOutlet var timeLabel: UILabel!
     @IBOutlet var touristLabel: UILabel!
     @IBOutlet var tourDateLabel: UILabel!
     @IBOutlet var tourNameLabel: UILabel!
     
+    var request: Request? = nil
+    
     @IBAction func approvedPressed(sender: AnyObject) {
         
         self.rejectButton.hidden = true
         self.approveButton.hidden = true
-        self.approveMessage.hidden = false
-        self.rejectMessage.hidden = true
+        self.processingMessage.hidden = false
+        self.request!["isApproved"] = true
+        request?.saveInBackgroundWithBlock{
+            (success: Bool, error: NSError?) -> Void in
+            if(success){
+                //success
+                println("Succesfully saved.")
+                self.approveMessage.hidden = false
+                self.processingMessage.hidden = true
+            }
+            else{
+                //fail
+                println("It has failed. You have failed the nation.")
+            }
+        }
     }
+        
     
     @IBAction func rejectedPressed(sender: AnyObject) {
         
@@ -39,5 +56,7 @@ class RequestTableViewCell: UITableViewCell {
         self.approveMessage.hidden = true
         self.rejectMessage.hidden = false
     }
+    
+    
     
 }
