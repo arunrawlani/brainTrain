@@ -23,6 +23,7 @@ class RequestViewController: UIViewController{
     //Queries
     var awaitingQuery: PFQuery?
     var approvedQuery: PFQuery?
+    var isRejectedQuery: PFQuery?
    
    
    override func viewDidLoad() {
@@ -32,19 +33,24 @@ class RequestViewController: UIViewController{
     self.approvedTours.hidden = true
     
     
-    //MARK: Returns requests that have NOT BEEN APROVED
+    //MARK: Returns requests that have NOT BEEN APROVED OR REJECTED
     
     let requestQuery = Request.query()
     requestQuery!.whereKey("toUser", equalTo: PFUser.currentUser()!)
+    
+   if let requestQuery = requestQuery {
+        isRejectedQuery = PFQuery.orQueryWithSubqueries([requestQuery])
+        isRejectedQuery!.whereKey("isRejected", equalTo: false)
+    }
    
-    if let requestQuery = requestQuery {
-            self.awaitingQuery = PFQuery.orQueryWithSubqueries([requestQuery])
-            self.awaitingQuery!.whereKey("isApproved", equalTo: false)
+    if let isRejectedQuery = isRejectedQuery{
+        self.awaitingQuery = PFQuery.orQueryWithSubqueries([isRejectedQuery])
+        self.awaitingQuery!.whereKey("isApproved", equalTo: false)
         
         self.awaitingQuery!.includeKey("toUser")
         self.awaitingQuery!.includeKey("fromUser")
         self.awaitingQuery!.includeKey("toTour")
-    }
+        }
     else{
         println("Optional related error?")
     }
@@ -129,27 +135,32 @@ extension RequestViewController: UITableViewDataSource{
         cell.tourNameLabel.text = requestedTour[indexPath.row].toTour!["tourName"] as? String
         cell.tourDateLabel.text = requestedTour[indexPath.row].requestedDate
         cell.touristLabel.text = requestedTour[indexPath.row].fromUser!.username
-       /* cell.approveMessage.hidden = true
-        cell.rejectMessage.hidden = true
-        cell.processingMessage.hidden = true
-        cell.approveButton.hidden = false
-        cell.rejectButton.hidden = false */
         cell.timeLabel.text = requestedTour[indexPath.row].requestedTime
         cell.request = requestedTour[indexPath.row]
-            if (!requestedTour[indexPath.row].isApproved){
-        cell.approveMessage.hidden = true
-        cell.rejectMessage.hidden = true
-        cell.processingMessage.hidden = true
-        cell.approveButton.hidden = false
-        cell.rejectButton.hidden = false
+         
+            
+        //Setting different configurations if the request is approved or rejected
+            if (!requestedTour[indexPath.row].isApproved && !requestedTour[indexPath.row].isRejected){
+                cell.approveMessage.hidden = true
+                cell.rejectMessage.hidden = true
+                cell.processingMessage.hidden = true
+                cell.approveButton.hidden = false
+                cell.rejectButton.hidden = false
             }
-            else{
+            else if (requestedTour[indexPath.row].isApproved && !requestedTour[indexPath.row].isRejected) {
                 cell.approveMessage.hidden = false
                 cell.rejectMessage.hidden = true
                 cell.processingMessage.hidden = true
                 cell.approveButton.hidden = true
                 cell.rejectButton.hidden = true
                 
+            }
+            else if (!requestedTour[indexPath.row].isApproved && requestedTour[indexPath.row].isRejected){
+                cell.approveMessage.hidden = true
+                cell.rejectMessage.hidden = false
+                cell.processingMessage.hidden = true
+                cell.approveButton.hidden = true
+                cell.rejectButton.hidden = true
             }
             
         cell.selectionStyle = UITableViewCellSelectionStyle.None

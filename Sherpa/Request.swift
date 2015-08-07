@@ -38,6 +38,7 @@ class Request:PFObject, PFSubclassing{
     @NSManaged var requestedLang: String?
     @NSManaged var toUser: PFUser?
     @NSManaged var requestedDate: String?
+    @NSManaged var isRejected: Bool
 
     
     //MARK : PFSubclassing Protocol

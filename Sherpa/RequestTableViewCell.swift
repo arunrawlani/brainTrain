@@ -43,7 +43,7 @@ class RequestTableViewCell: UITableViewCell {
             }
             else{
                 //fail
-                println("It has failed. You have failed the nation.")
+                println("Failed to update isApproved.")
             }
         }
     }
@@ -53,8 +53,21 @@ class RequestTableViewCell: UITableViewCell {
         
         self.rejectButton.hidden = true
         self.approveButton.hidden = true
-        self.approveMessage.hidden = true
-        self.rejectMessage.hidden = false
+        self.processingMessage.hidden = false
+        self.request!["isRejected"] = true
+        request?.saveInBackgroundWithBlock{
+            (success: Bool, error: NSError?) -> Void in
+            if(success){
+                //success
+                println("Succesfully saved.")
+                self.rejectMessage.hidden = false
+                self.processingMessage.hidden = true
+            }
+            else{
+                //fail
+                println("Failed to update isRejected.")
+            }
+        }
     }
     
     
