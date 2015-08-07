@@ -129,13 +129,29 @@ extension RequestViewController: UITableViewDataSource{
         cell.tourNameLabel.text = requestedTour[indexPath.row].toTour!["tourName"] as? String
         cell.tourDateLabel.text = requestedTour[indexPath.row].requestedDate
         cell.touristLabel.text = requestedTour[indexPath.row].fromUser!.username
+       /* cell.approveMessage.hidden = true
+        cell.rejectMessage.hidden = true
+        cell.processingMessage.hidden = true
+        cell.approveButton.hidden = false
+        cell.rejectButton.hidden = false */
+        cell.timeLabel.text = requestedTour[indexPath.row].requestedTime
+        cell.request = requestedTour[indexPath.row]
+            if (!requestedTour[indexPath.row].isApproved){
         cell.approveMessage.hidden = true
         cell.rejectMessage.hidden = true
         cell.processingMessage.hidden = true
         cell.approveButton.hidden = false
         cell.rejectButton.hidden = false
-        cell.timeLabel.text = requestedTour[indexPath.row].requestedTime
-        cell.request = requestedTour[indexPath.row]
+            }
+            else{
+                cell.approveMessage.hidden = false
+                cell.rejectMessage.hidden = true
+                cell.processingMessage.hidden = true
+                cell.approveButton.hidden = true
+                cell.rejectButton.hidden = true
+                
+            }
+            
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         }
             

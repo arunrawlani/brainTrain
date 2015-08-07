@@ -45,14 +45,6 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible, store empty array
             self.toursNY = result as? [Tour] ?? []
-           //AMBIGUOUS: Ask Amit
-            /* for tour in self.toursNY {
-                if let string = tour.tourName {
-                    let tourSumm = TourData()
-                    tourSumm.construcTour(tour.tourName!, tour: tour)
-                    self.dataArray.append(tourSumm)
-                }
-            } */
             self.tableview.reloadData()
             
         }
@@ -66,13 +58,6 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible store empty array
             self.toursLV = result as? [Tour] ?? []
-            /* for tour in self.toursLA {
-                if let string = tour.tourName {
-                    let tourSumm2 = TourData()
-                    tourSumm2.construcTour(tour.tourName!, tour: tour)
-                    self.dataArray.append(tourSumm2)
-                }
-            }*/
             self.tableview.reloadData()
             
         }

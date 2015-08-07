@@ -11,7 +11,27 @@ import Parse
 
 class Request:PFObject, PFSubclassing{
     
-    @NSManaged var isApproved: Boolean
+    @NSManaged var isApproved: Bool
+    
+//    var isApprovedBool: Bool {
+//        
+//        get {
+//            
+//            if (isApproved as UInt8) == 1{
+//                return true
+//            }
+//            
+//            return false
+//        }
+//        set {
+//            if newValue {
+//                isApproved = 1
+//            } else{
+//                isApproved = 0
+//            }
+//            
+//        }
+//    }
     @NSManaged var fromUser: PFUser?
     @NSManaged var toTour: Tour?
     @NSManaged var requestedTime: String?
@@ -28,6 +48,7 @@ class Request:PFObject, PFSubclassing{
     
     override init(){
         super.init()
+        //isApprovedBool = false
     }
     
     override class func initialize() {
