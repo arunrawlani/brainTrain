@@ -560,7 +560,7 @@
         <!--Write Review-->
         <scene sceneID="zVx-G2-uZu">
             <objects>
-                <viewController id="nNO-qS-U6N" sceneMemberID="viewController">
+                <viewController id="nNO-qS-U6N" customClass="ReviewViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wyo-1l-C0k"/>
                         <viewControllerLayoutGuide type="bottom" id="N20-CL-3Wb"/>
@@ -619,7 +619,6 @@
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="REc-x2-9si"/>
                                                 <constraint firstAttribute="height" constant="196" id="hgD-eb-jQD"/>
                                             </constraints>
-                                            <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -640,6 +639,9 @@
                                                 <color key="titleColor" red="0.99094303097345138" green="0.99094303097345138" blue="0.99094303097345138" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
+                                            <connections>
+                                                <action selector="reviewSubmitted:" destination="nNO-qS-U6N" eventType="touchUpInside" id="2yB-NM-3Xz"/>
+                                            </connections>
                                         </button>
                                     </subviews>
                                     <color key="backgroundColor" white="1" alpha="0.0" colorSpace="calibratedWhite"/>
@@ -750,6 +752,11 @@
                     </navigationItem>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <size key="freeformSize" width="600" height="600"/>
+                    <connections>
+                        <outlet property="floatRatingView" destination="fPL-76-GDX" id="LHq-rZ-QzS"/>
+                        <outlet property="postButton" destination="q5U-r5-Vof" id="bcW-K2-EvI"/>
+                        <outlet property="reviewContent" destination="X4Z-uR-n4F" id="dkg-H9-ld1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Fx1-1V-jUn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="edI-we-7S3" userLabel="Exit" sceneMemberID="exit"/>
