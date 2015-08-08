@@ -611,9 +611,10 @@
                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Rectangle" translatesAutoresizingMaskIntoConstraints="NO" id="7QV-Mg-oLn">
                                             <rect key="frame" x="383" y="147" width="202" height="1"/>
                                         </imageView>
-                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="X4Z-uR-n4F">
+                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" indicatorStyle="white" keyboardDismissMode="interactive" translatesAutoresizingMaskIntoConstraints="NO" id="X4Z-uR-n4F">
                                             <rect key="frame" x="22" y="177" width="556" height="245"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.089999999999999997" colorSpace="calibratedRGB"/>
+                                            <accessibility key="accessibilityConfiguration" hint="What is going on"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="245" id="JuQ-bi-0Jq"/>
                                                 <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="REc-x2-9si"/>
@@ -621,7 +622,7 @@
                                             </constraints>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
-                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences" autocorrectionType="yes" spellCheckingType="yes" keyboardAppearance="alert" returnKeyType="done"/>
                                             <variation key="default">
                                                 <mask key="constraints">
                                                     <exclude reference="hgD-eb-jQD"/>

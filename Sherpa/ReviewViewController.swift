@@ -61,6 +61,13 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
         if (!self.enteredText){
             //wrong
             println("Enter something")
+            var alert = UIAlertController(title: "Incomplete", message: "Oops. Please leave a comment about your experience.", preferredStyle: .Alert)
+            let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
+                //...
+            }
+            alert.addAction(OKAction)
+            
+            self.presentViewController(alert, animated: true, completion: nil)
         }
         else{
         var newReview = Review()
@@ -135,6 +142,8 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
     
     func textView(textView: UITextView, shouldChangeTextInRange range: NSRange, replacementText text: String) -> Bool {
         
+        
+        
         // remove the placeholder text when they start typing
         // first, see if the field is empty
         // if it's not empty, then the text should be black and not italic
@@ -142,6 +151,12 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
         // if it is empty, then the text should be the placeholder
         let newLength = count("textView.text".utf16) + count(text.utf16) - range.length
         self.enteredText = true
+        
+        if(text == "\n") {
+            textView.resignFirstResponder()
+            return false
+        }
+        
         if newLength > 0 // have text, so don't show the placeholder
         {
             // check if the only text is the placeholder and remove it if needed
@@ -164,6 +179,7 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
             self.enteredText = false
             return false
         }
+        
     }
     
     
