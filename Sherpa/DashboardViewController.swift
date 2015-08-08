@@ -11,8 +11,6 @@ import Parse
 
 class DashboardViewController: UIViewController {
     
-    let transitionManager = TransitionManager()
-    
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -22,6 +20,8 @@ class DashboardViewController: UIViewController {
         // bug? exit segue doesn't dismiss so we do it manually...
         self.dismissViewControllerAnimated(true, completion: nil)
     }
+    
+    let transitionManager = TransitionManager()
     
     
   /*  override func viewDidLoad(){

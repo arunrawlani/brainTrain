@@ -37,8 +37,13 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
      var tourTimes: [String] = [] //timePicker
      var selectedLanguage: String = ""
      var selectedTime: String = ""
+    
+    @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
+        // bug? exit segue doesn't dismiss so we do it manually...
+        self.dismissViewControllerAnimated(true, completion: nil)
+    }
    
-   
+   let transitionManager = TransitionManager()
     
     
     override func viewDidLoad() {
@@ -96,6 +101,17 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.selectedLanguage = "None"
         self.selectedTime = "None"
        
+        
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        
+        // this gets a reference to the screen that we're about to transition to
+        let toViewController = segue.destinationViewController as! UIViewController
+        
+        // instead of using the default transition animation, we'll ask
+        // the segue to use our custom TransitionManager object to manage the transition animation
+        // toViewController.transitioningDelegate = self.transitionManager
         
     }
     
