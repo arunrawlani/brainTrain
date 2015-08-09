@@ -34,14 +34,15 @@
 		F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E8D821B693A790037E340 /* ReserveViewController.swift */; };
 		F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */; };
 		F171EF151B757F1F001ADD9B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF141B757F1F001ADD9B /* ReviewViewController.swift */; };
+		F1A628F51B76E87700ABFB8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A628F41B76E87700ABFB8E /* MainViewController.swift */; };
 		F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2A1B713FC60036DEFE /* Request.swift */; };
 		F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */; };
 		F1B7AB2F1B72D9C30036DEFE /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */; };
 		F1B7AB311B7342120036DEFE /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB301B7342120036DEFE /* RequestTableViewCell.swift */; };
+		F1BB0B8B1B7708B50031FB6A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0B8A1B7708B50031FB6A /* SignViewController.swift */; };
 		F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */; };
 		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
 		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
-		F1EEC45B1B5FFA8E008A04CF /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */; };
 		F1EEC45D1B600718008A04CF /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC45C1B600718008A04CF /* CFNetwork.framework */; };
 		F1EEC45F1B600731008A04CF /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC45E1B600731008A04CF /* CoreGraphics.framework */; };
 		F1EEC4611B60073E008A04CF /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4601B60073E008A04CF /* CoreLocation.framework */; };
@@ -99,15 +100,16 @@
 		F10E8D821B693A790037E340 /* ReserveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingStarReview.swift; sourceTree = "<group>"; };
 		F171EF141B757F1F001ADD9B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		F1A628F41B76E87700ABFB8E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1B7AB2A1B713FC60036DEFE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
 		F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		F1B7AB301B7342120036DEFE /* RequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		F1BB0B8A1B7708B50031FB6A /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
 		F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
 		F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandling.swift; sourceTree = "<group>"; };
-		F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		F1EEC45C1B600718008A04CF /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		F1EEC45E1B600731008A04CF /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		F1EEC4601B60073E008A04CF /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
@@ -202,11 +204,12 @@
 				F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */,
 				659F00441B5ADECE00E4267B /* AppDelegate.swift */,
 				F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */,
+				F1A628F41B76E87700ABFB8E /* MainViewController.swift */,
 				A49B61321B5B9E0D00F81B3D /* CallViewController.swift */,
 				659F00481B5ADECE00E4267B /* Main.storyboard */,
 				F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */,
 				659895B31B5B989F00607B5E /* LoginViewController.swift */,
-				F1EEC45A1B5FFA8E008A04CF /* SignUpViewController.swift */,
+				F1BB0B8A1B7708B50031FB6A /* SignViewController.swift */,
 				F10E8D821B693A790037E340 /* ReserveViewController.swift */,
 				F171EF141B757F1F001ADD9B /* ReviewViewController.swift */,
 				E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */,
@@ -453,9 +456,9 @@
 				F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */,
 				F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */,
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
+				F1BB0B8B1B7708B50031FB6A /* SignViewController.swift in Sources */,
 				F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
-				F1EEC45B1B5FFA8E008A04CF /* SignUpViewController.swift in Sources */,
 				F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */,
 				F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */,
 				E2A344441B5B0550004CAF3A /* ExploreTableCell.swift in Sources */,
@@ -470,6 +473,7 @@
 				A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */,
 				E2A3444A1B5B22E8004CAF3A /* DashboardTableViewCell.swift in Sources */,
 				659F00451B5ADECE00E4267B /* AppDelegate.swift in Sources */,
+				F1A628F51B76E87700ABFB8E /* MainViewController.swift in Sources */,
 				E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */,
 				F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */,
 			);

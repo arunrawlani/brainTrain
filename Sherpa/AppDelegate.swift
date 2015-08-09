@@ -38,7 +38,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
                 
                 //if login was successful, returns a user. Display the TabController
                 let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                let tabBarController = storyboard.instantiateViewControllerWithIdentifier("TabBarViewController") as! UIViewController
+                let tabBarController = storyboard.instantiateViewControllerWithIdentifier("NavigationControllerView") as! UIViewController
                 
                 //As soon as login is successful, replace login screen witht tab bar
                 self.window?.rootViewController!.presentViewController(tabBarController, animated:true, completion:nil)
@@ -77,7 +77,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
         if (user != nil){
             //if we have a user, show tab bar controller to be the initial view controller
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            startViewController = storyboard.instantiateViewControllerWithIdentifier("TabBarViewController") as! UITabBarController
+            startViewController = storyboard.instantiateViewControllerWithIdentifier("NavigationControllerView") as! UIViewController
             }
         //If no user, then create a login screen. Allows for some customization, parseLoginHelper as delegate
         else {
