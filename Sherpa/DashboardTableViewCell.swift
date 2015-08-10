@@ -22,5 +22,6 @@ class DashboardTableViewCell: UITableViewCell {
     @IBOutlet var tourGuideLabel: UILabel!
     @IBOutlet var tourDateLabel: UILabel!
     @IBOutlet var tourNameLabel: UILabel!
-    @IBOutlet var timeAMPMLabel: UILabel!
+    @IBOutlet weak var pendingLabel: UILabel!
+    @IBOutlet weak var approvedLabel: UILabel!
 }

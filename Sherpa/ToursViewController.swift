@@ -238,6 +238,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             reserveVC.tourSum = self.findTour(reserveVC.tourName).tourDetail!
             reserveVC.tourLang = self.findTour(reserveVC.tourName).langOffered!
             reserveVC.tourTimes = self.findTour(reserveVC.tourName).prefTimes!
+            reserveVC.selectedTour = self.findTour(reserveVC.tourName)
+            reserveVC.createdBy = self.findTour(reserveVC.tourName).createdBy
         }
 
         

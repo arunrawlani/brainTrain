@@ -13,6 +13,7 @@ class DashboardViewController: UIViewController {
     
 
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     var scheduledTours: [Request] = []
     
@@ -54,6 +55,10 @@ class DashboardViewController: UIViewController {
             self.tableView.reloadData()
             
             }
+        var firstName: String = PFUser.currentUser()!["firstName"] as! String
+        var lastName: String = PFUser.currentUser()!["lastName"] as! String
+        var fullName: String = "\(firstName) \(lastName)"
+        self.nameLabel.text = fullName
         
         /*   //MADE THIS CHANGE AFTER THE HACKTHON
         //self.navigationItem.setHidesBackButton(true, animated: false)
@@ -117,6 +122,14 @@ extension DashboardViewController: UITableViewDataSource{
         cell.tourDateLabel.text = scheduledTours[indexPath.row].requestedDate
         cell.tourGuideLabel.text = scheduledTours[indexPath.row].toUser!.username
         cell.timeLabel.text = scheduledTours[indexPath.row].requestedTime
+        if (scheduledTours[indexPath.row].isApproved){
+            cell.pendingLabel.hidden = false
+            cell.approvedLabel.hidden = true
+        }
+        else{
+            cell.pendingLabel.hidden = true
+            cell.approvedLabel.hidden = false
+        }
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         //TODO implement price range cell.rating = allBusinesses[indexPath.row].reviews
         return cell

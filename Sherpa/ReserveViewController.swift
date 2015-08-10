@@ -37,6 +37,8 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
      var tourTimes: [String] = [] //timePicker
      var selectedLanguage: String = ""
      var selectedTime: String = ""
+     var selectedTour : Tour?
+     var createdBy: PFUser?
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
         // bug? exit segue doesn't dismiss so we do it manually...
@@ -196,6 +198,9 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 request["requestedLang"] = self.selectedLanguage
                 request["fromUser"] = PFUser.currentUser()
                 request["isApproved"] = false
+                request["toTour"] = self.selectedTour
+                request["toUser"] = self.createdBy
+                request["isRejected"] = false
                 request.saveInBackgroundWithBlock{(success: Bool, error: NSError?) -> Void in
                     if (success){
                         //do good shit
