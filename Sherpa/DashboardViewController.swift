@@ -68,27 +68,9 @@ class DashboardViewController: UIViewController {
     }
     
     
- /*   let data = DataDashBoard()
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1
-    }
-  
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return data.scheduledTours.count
-    }
-  
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("Cell", forIndexPath: indexPath) as! DashboardTableCell
-        // Configure the cell...
-        cell.backgroundColor = UIColor.clearColor()
-        cell.timeLabel.text = data.scheduledTours[indexPath.row].tourTime
-        cell.timeAMPMLabel.text = data.scheduledTours[indexPath.row].tourTimeAmorPM
-        cell.tourNameLabel.text = data.scheduledTours[indexPath.row].tourName
-        cell.tourGuideLabel.text = data.scheduledTours[indexPath.row].tourGuide
-        cell.tourDateLabel.text = data.scheduledTours[indexPath.row].tourDate
-        return cell
-    }
-*/
+    
+
+
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -122,7 +104,7 @@ extension DashboardViewController: UITableViewDataSource{
         cell.tourDateLabel.text = scheduledTours[indexPath.row].requestedDate
         cell.tourGuideLabel.text = scheduledTours[indexPath.row].toUser!.username
         cell.timeLabel.text = scheduledTours[indexPath.row].requestedTime
-        if (scheduledTours[indexPath.row].isApproved){
+        if (!scheduledTours[indexPath.row].isApproved){
             cell.pendingLabel.hidden = false
             cell.approvedLabel.hidden = true
         }
@@ -130,6 +112,8 @@ extension DashboardViewController: UITableViewDataSource{
             cell.pendingLabel.hidden = true
             cell.approvedLabel.hidden = false
         }
+        cell.tourRequest = scheduledTours[indexPath.row]
+        cell.confirmationLabel.hidden = true
         cell.selectionStyle = UITableViewCellSelectionStyle.None
         //TODO implement price range cell.rating = allBusinesses[indexPath.row].reviews
         return cell

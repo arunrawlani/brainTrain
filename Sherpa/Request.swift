@@ -32,6 +32,7 @@ class Request:PFObject, PFSubclassing{
 //            
 //        }
 //    }
+    @NSManaged var isCancelled: Bool
     @NSManaged var fromUser: PFUser?
     @NSManaged var toTour: Tour?
     @NSManaged var requestedTime: String?

@@ -107,6 +107,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
         cell.delegate = self
         
         //Changing the display to circular and adding a border
+        cell.userImageView.image = UIImage(named:"newUser")
         cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width / 2
         cell.userImageView.clipsToBounds = true
         cell.userImageView.layer.borderWidth = 1.0
@@ -120,8 +121,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             cell.TourName.text = data.toursNY[indexPath.row].tourName */
             
           //From the in-built library
-          cell.imageFilename = data.toursNY[indexPath.row].cityImage
-          cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
+         cell.imageFilename = data.toursNY[indexPath.row].cityImage
+         // cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
             
          //From PARSE
           cell.costLabel.text = toursNY[indexPath.row].cost
@@ -159,7 +160,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //From built-in library
             cell.imageFilename = data.toursVegas[indexPath.row].cityImage
-            cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
+            //cell.userImageView.image = UIImage(named: data.toursNY[indexPath.row].circularImage)
             
             //From PARSE
             cell.costLabel.text = toursLV[indexPath.row].cost
@@ -196,7 +197,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
            //From built-in library
             cell.imageFilename = data.toursLA[indexPath.row].cityImage
-            cell.userImageView.image = UIImage(named: data.toursLA[indexPath.row].circularImage)
+            //cell.userImageView.image = UIImage(named: data.toursLA[indexPath.row].circularImage)
             
             //From PARSE
             cell.costLabel.text = toursLA[indexPath.row].cost

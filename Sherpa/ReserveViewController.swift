@@ -201,6 +201,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 request["toTour"] = self.selectedTour
                 request["toUser"] = self.createdBy
                 request["isRejected"] = false
+                request["isCancelled"] = false
                 request.saveInBackgroundWithBlock{(success: Bool, error: NSError?) -> Void in
                     if (success){
                         //do good shit
