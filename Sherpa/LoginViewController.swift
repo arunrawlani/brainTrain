@@ -19,6 +19,9 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var passwordTF: UITextField!
     var window: UIWindow?
     
+    var currentUser: PFUser?
+    var startViewController: UIViewController?
+    
   
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
     
@@ -30,11 +33,20 @@ class LoginViewController: UIViewController {
     
     self.actInd.hidesWhenStopped = true
     
-    self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.Gray
+    self.actInd.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.White
     
     view.addSubview(self.actInd)
     
-    //this causes our activity indicator to be in the center of the view with colour Gray
+    //this causes our activity indicator to be in the center of the view with colour White
+    
+    if currentUser != nil {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        startViewController = storyboard.instantiateViewControllerWithIdentifier("TabBarController") as? UIViewController
+    } else {
+        println("No user is logged in. \n Login or signup")
+    }
+    
+    
   }
     
     //MARK:Actions
@@ -73,13 +85,15 @@ class LoginViewController: UIViewController {
                         //...
                     }
                     alert.addAction(OKAction)
-                    self.presentViewController(alert, animated: true, completion: nil)
+                   // self.presentViewController(alert, animated: true, completion: nil)
+                    self.performSegueWithIdentifier("testSegue", sender: nil)
+                   // AppDelegate().showMainScreen()
  
             }
 
             else
             {
-                var alert = UIAlertController(title: "Error", message: "\(error)", preferredStyle: .Alert)
+                var alert = UIAlertController(title: "Error", message: "Please enter valid login parameters.", preferredStyle: .Alert)
                 let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
                         //...
                 }
@@ -90,11 +104,6 @@ class LoginViewController: UIViewController {
         }
 }
     
-    @IBAction func signUpAction(sender: AnyObject) {
-        
-        self.performSegueWithIdentifier("signUp", sender: self)
-        
-    }
 }
   /*
 // func loginAction() {

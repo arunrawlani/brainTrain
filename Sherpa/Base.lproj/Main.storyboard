@@ -12,7 +12,7 @@
             <objects>
                 <tableViewController id="CtT-q8-Sdx" customClass="TableViewForExplore" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="286" sectionHeaderHeight="22" sectionFooterHeight="22" id="2vX-Zw-3RZ">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -102,7 +102,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cSQ-ca-iiD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hps-8b-poX">
-                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Background" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-hN-nKu">
@@ -1073,6 +1073,7 @@
         <!--Explore-->
         <scene sceneID="d2Q-dV-Iid">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwM-2L-wXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="A40-0j-2if" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" image="ExploreIcon" id="RHQ-dC-QUp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="hPv-6s-mgP">
@@ -1084,7 +1085,6 @@
                         <segue destination="CtT-q8-Sdx" kind="relationship" relationship="rootViewController" id="HQV-3K-OpI"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jwM-2L-wXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508" y="-72"/>
         </scene>
@@ -1113,6 +1113,7 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yxv-uh-Bs2">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pft-h7-h35" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Brn-2y-zUV" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lVT-TB-UBf">
@@ -1128,7 +1129,6 @@
                         <segue destination="1fV-Xa-jrg" kind="relationship" relationship="viewControllers" id="0Fh-3C-F0g"/>
                     </connections>
                 </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pft-h7-h35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-270" y="472"/>
         </scene>
@@ -1276,6 +1276,48 @@
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="kK3-Yn-3Yd">
                                     <rect key="frame" x="0.0" y="0.0" width="578" height="506"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="K2D-zY-hbZ">
+                                            <rect key="frame" x="40" y="68" width="498" height="30"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88439960469807388" green="0.54584439821725672" blue="0.27039727955762188" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next"/>
+                                        </textField>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fr3-gV-ACv">
+                                            <rect key="frame" x="40" y="128" width="498" height="30"/>
+                                            <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88439960469807388" green="0.54584439821725672" blue="0.27039727955762188" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
+                                        </textField>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ3-ZO-gJR">
+                                            <rect key="frame" x="191" y="207" width="196" height="48"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="196" id="ytk-FC-hzj"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
+                                            <state key="normal" title="LOG IN" backgroundImage="Login Button">
+                                                <color key="titleColor" red="0.83529411764705885" green="0.54117647058823526" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            </state>
+                                            <connections>
+                                                <action selector="loginAction:" destination="hBj-7q-QnE" eventType="touchUpInside" id="pQz-YZ-kFw"/>
+                                            </connections>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="fr3-gV-ACv" firstAttribute="leading" secondItem="kK3-Yn-3Yd" secondAttribute="leading" constant="40" id="DoM-RX-QWs"/>
+                                        <constraint firstAttribute="trailing" secondItem="K2D-zY-hbZ" secondAttribute="trailing" constant="40" id="FB6-al-ftD"/>
+                                        <constraint firstItem="K2D-zY-hbZ" firstAttribute="top" secondItem="kK3-Yn-3Yd" secondAttribute="top" constant="68" id="MMI-vk-q9o"/>
+                                        <constraint firstItem="K2D-zY-hbZ" firstAttribute="leading" secondItem="kK3-Yn-3Yd" secondAttribute="leading" constant="40" id="N0I-gy-tWt"/>
+                                        <constraint firstAttribute="trailing" secondItem="fr3-gV-ACv" secondAttribute="trailing" constant="40" id="jf2-Zp-T3q"/>
+                                        <constraint firstItem="rQ3-ZO-gJR" firstAttribute="top" secondItem="fr3-gV-ACv" secondAttribute="bottom" constant="49" id="qUZ-E2-CeH"/>
+                                        <constraint firstAttribute="centerX" secondItem="rQ3-ZO-gJR" secondAttribute="centerX" id="rse-4h-nOh"/>
+                                        <constraint firstItem="fr3-gV-ACv" firstAttribute="top" secondItem="K2D-zY-hbZ" secondAttribute="bottom" constant="30" id="vrJ-W2-f2y"/>
+                                    </constraints>
                                 </view>
                                 <blurEffect style="light"/>
                             </visualEffectView>
@@ -1325,6 +1367,11 @@
                         </barButtonItem>
                     </navigationItem>
                     <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="lightContent"/>
+                    <connections>
+                        <outlet property="passwordTF" destination="fr3-gV-ACv" id="Xzg-LX-9k4"/>
+                        <outlet property="usernameTF" destination="K2D-zY-hbZ" id="qpg-pw-QeI"/>
+                        <segue destination="Brn-2y-zUV" kind="showDetail" identifier="testSegue" id="A8k-Dd-JBU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="B4L-2L-Cbh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rOF-c3-M4u" userLabel="Exit" sceneMemberID="exit"/>
@@ -1352,36 +1399,39 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="aeE-B2-LdB">
                                             <rect key="frame" x="40" y="159" width="498" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next" secureTextEntry="YES"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Etn-0r-as4">
                                             <rect key="frame" x="40" y="217" width="498" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
-                                            <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
+                                            <textInputTraits key="textInputTraits" keyboardType="emailAddress" keyboardAppearance="alert" returnKeyType="done"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-PU-Y0C">
                                             <rect key="frame" x="40" y="45" width="244.5" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="500-P7-oym"/>
                                             </constraints>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
                                         </textField>
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Last Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Od-Ow-coQ">
                                             <rect key="frame" x="293" y="45" width="244.5" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
-                                            <color key="tintColor" red="1" green="0.67676369974968664" blue="0.27472141364709635" alpha="0.96999999999999997" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="YYr-bI-DqO"/>
                                             </constraints>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="12"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
                                             <variation key="default">
                                                 <mask key="constraints">
@@ -1406,8 +1456,9 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Username" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QiS-dr-y3N">
                                             <rect key="frame" x="40" y="102" width="498" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
                                             <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                            <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
+                                            <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next"/>
                                         </textField>
                                     </subviews>
@@ -2015,6 +2066,7 @@
         <image name="DisplayPicture" width="79" height="77"/>
         <image name="ExploreIcon" width="22" height="22"/>
         <image name="HumanIcon" width="14" height="20"/>
+        <image name="Login Button" width="236" height="48"/>
         <image name="NewYork" width="375" height="257"/>
         <image name="Or" width="287" height="26"/>
         <image name="Rectangle" width="375" height="2"/>
@@ -2028,6 +2080,6 @@
         <image name="reserve" width="311" height="44"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="ZA5-iq-25z"/>
+        <segue reference="0Fh-3C-F0g"/>
     </inferredMetricsTieBreakers>
 </document>

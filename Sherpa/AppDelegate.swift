@@ -201,6 +201,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
         
         self.window!.addSubview(splash!)
     }
+    
+    func showMainScreen(){
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let tabBarController = storyboard.instantiateViewControllerWithIdentifier("TabBarController") as! UIViewController
+        
+        //As soon as login is successful, replace login screen witht tab bar
+        self.window?.rootViewController!.presentViewController(tabBarController, animated:true, completion:nil)
+    }
 
 }
 
