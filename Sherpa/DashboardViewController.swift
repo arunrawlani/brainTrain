@@ -87,7 +87,7 @@ class DashboardViewController: UIViewController {
             println("received a callback")
             let imageData = UIImageJPEGRepresentation(image, 0.8)
             let imageFile = PFFile(data: imageData)
-            imageFile.save()
+            imageFile.saveInBackground()
             
         //allows image to be sstored in the background even if app is closed
             self.photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
@@ -103,6 +103,7 @@ class DashboardViewController: UIViewController {
             let user = PFUser.currentUser()
             user!["userImage"] = imageFile
             user!.saveInBackgroundWithBlock(nil)
+            self.userImage.image = image
         }
     }
     

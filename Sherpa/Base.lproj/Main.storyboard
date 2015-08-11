@@ -1077,7 +1077,6 @@
         <!--Explore-->
         <scene sceneID="d2Q-dV-Iid">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="jwM-2L-wXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="A40-0j-2if" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Explore" image="ExploreIcon" id="RHQ-dC-QUp"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="hPv-6s-mgP">
@@ -1089,6 +1088,7 @@
                         <segue destination="CtT-q8-Sdx" kind="relationship" relationship="rootViewController" id="HQV-3K-OpI"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jwM-2L-wXe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="508" y="-72"/>
         </scene>
@@ -1117,7 +1117,6 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yxv-uh-Bs2">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="pft-h7-h35" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Brn-2y-zUV" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="lVT-TB-UBf">
@@ -1133,6 +1132,7 @@
                         <segue destination="1fV-Xa-jrg" kind="relationship" relationship="viewControllers" id="0Fh-3C-F0g"/>
                     </connections>
                 </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pft-h7-h35" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-270" y="472"/>
         </scene>
@@ -1563,12 +1563,12 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ckk-1b-yYY">
                                 <rect key="frame" x="20" y="86" width="80" height="78"/>
-                                <color key="backgroundColor" red="1" green="0.71352507652591957" blue="0.70919077040742451" alpha="0.63" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="80" id="9O7-Lo-LXS"/>
                                     <constraint firstAttribute="height" constant="78" id="g73-dR-9S4"/>
                                 </constraints>
-                                <state key="normal" title="button">
+                                <state key="normal">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -1711,10 +1711,10 @@
                                             </constraints>
                                             <variation key="default">
                                                 <mask key="constraints">
-                                                    <exclude reference="EOP-aY-cu3"/>
                                                     <exclude reference="6hO-Ah-bU0"/>
                                                     <exclude reference="eWZ-YX-SLV"/>
                                                     <exclude reference="kE1-gx-oTR"/>
+                                                    <exclude reference="EOP-aY-cu3"/>
                                                 </mask>
                                             </variation>
                                         </tableViewCellContentView>
