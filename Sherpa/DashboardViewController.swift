@@ -14,7 +14,11 @@ class DashboardViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var changePicture: UIButton!
+    var photoTakingHelper: PhotoTakingHelper?
+    var photoUploadTask: UIBackgroundTaskIdentifier?
     
+    @IBOutlet weak var userImage: UIImageView!
     var scheduledTours: [Request] = []
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
@@ -22,6 +26,10 @@ class DashboardViewController: UIViewController {
         self.dismissViewControllerAnimated(true, completion: nil)
     }
     
+    @IBAction func photoMenu(sender: AnyObject) {
+        println("Take photo")
+        takePhoto()
+    }
     let transitionManager = TransitionManager()
     
     
@@ -59,7 +67,13 @@ class DashboardViewController: UIViewController {
         var lastName: String = PFUser.currentUser()!["lastName"] as! String
         var fullName: String = "\(firstName) \(lastName)"
         self.nameLabel.text = fullName
-        
+        var userImageFile: AnyObject? = PFUser.currentUser()!["userImage"]
+        let data = userImageFile?.getData()
+        self.userImage.image = UIImage(data: data!, scale: 1.0)
+        self.userImage.layer.cornerRadius = self.userImage.frame.size.width / 2
+        self.userImage.clipsToBounds = true
+        self.userImage.layer.borderWidth = 1.0
+        self.userImage.layer.borderColor = UIColor.whiteColor().CGColor
         /*   //MADE THIS CHANGE AFTER THE HACKTHON
         //self.navigationItem.setHidesBackButton(true, animated: false)
         tableview.allowsSelection = false
@@ -67,10 +81,30 @@ class DashboardViewController: UIViewController {
     
     }
     
-    
-    
-
-
+    func takePhoto() {
+        // instantiate photo taking class, provide callback for when photo  is selected
+        photoTakingHelper = PhotoTakingHelper(viewController: self) { (image: UIImage?) in
+            println("received a callback")
+            let imageData = UIImageJPEGRepresentation(image, 0.8)
+            let imageFile = PFFile(data: imageData)
+            imageFile.save()
+            
+        //allows image to be sstored in the background even if app is closed
+            self.photoUploadTask = UIApplication.sharedApplication().beginBackgroundTaskWithExpirationHandler { () -> Void in
+                UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
+            }
+            
+            
+            imageFile.saveInBackgroundWithBlock { (success: Bool, error: NSError?) -> Void in
+                // 3
+                UIApplication.sharedApplication().endBackgroundTask(self.photoUploadTask!)
+            }
+            
+            let user = PFUser.currentUser()
+            user!["userImage"] = imageFile
+            user!.saveInBackgroundWithBlock(nil)
+        }
+    }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         

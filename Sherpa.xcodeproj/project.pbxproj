@@ -40,6 +40,7 @@
 		F1B7AB2F1B72D9C30036DEFE /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */; };
 		F1B7AB311B7342120036DEFE /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB301B7342120036DEFE /* RequestTableViewCell.swift */; };
 		F1BB0B8B1B7708B50031FB6A /* SignViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0B8A1B7708B50031FB6A /* SignViewController.swift */; };
+		F1BB0B921B7A98E30031FB6A /* PhotoTakingHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1BB0B911B7A98E30031FB6A /* PhotoTakingHelper.swift */; };
 		F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */; };
 		F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */; };
 		F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1EEC4581B5F339F008A04CF /* ErrorHandling.swift */; };
@@ -106,6 +107,7 @@
 		F1B7AB2E1B72D9C30036DEFE /* RequestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		F1B7AB301B7342120036DEFE /* RequestTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
 		F1BB0B8A1B7708B50031FB6A /* SignViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignViewController.swift; sourceTree = "<group>"; };
+		F1BB0B911B7A98E30031FB6A /* PhotoTakingHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoTakingHelper.swift; sourceTree = "<group>"; };
 		F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionViewController.swift; sourceTree = "<group>"; };
 		F1EEC44C1B5EF4FF008A04CF /* BridgeHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BridgeHeader.h; sourceTree = "<group>"; };
 		F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParseLoginHelper.swift; sourceTree = "<group>"; };
@@ -198,6 +200,7 @@
 		659F00411B5ADECE00E4267B /* Sherpa */ = {
 			isa = PBXGroup;
 			children = (
+				F1BB0B8E1B7A98B90031FB6A /* Photo Taking */,
 				F1EEC4571B5F3386008A04CF /* Helper */,
 				659895AC1B5B248500607B5E /* Data Models */,
 				F171EF111B757E95001ADD9B /* FloatingStar */,
@@ -264,6 +267,14 @@
 				F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */,
 			);
 			path = FloatingStar;
+			sourceTree = "<group>";
+		};
+		F1BB0B8E1B7A98B90031FB6A /* Photo Taking */ = {
+			isa = PBXGroup;
+			children = (
+				F1BB0B911B7A98E30031FB6A /* PhotoTakingHelper.swift */,
+			);
+			path = "Photo Taking";
 			sourceTree = "<group>";
 		};
 		F1EEC4571B5F3386008A04CF /* Helper */ = {
@@ -467,6 +478,7 @@
 				E2A344561B5B8861004CAF3A /* TourOverviewViewController.swift in Sources */,
 				F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */,
 				E2A344541B5B6648004CAF3A /* DashboardViewController.swift in Sources */,
+				F1BB0B921B7A98E30031FB6A /* PhotoTakingHelper.swift in Sources */,
 				E2A3444C1B5B3140004CAF3A /* ToursViewController.swift in Sources */,
 				F1B7AB311B7342120036DEFE /* RequestTableViewCell.swift in Sources */,
 				E2A344401B5B0516004CAF3A /* AppData.swift in Sources */,
