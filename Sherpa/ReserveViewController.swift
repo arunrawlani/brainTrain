@@ -41,6 +41,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
      var selectedTime: String = ""
      var selectedTour : Tour?
      var createdBy: PFUser?
+     var avgRating: Int?
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
         // bug? exit segue doesn't dismiss so we do it manually...

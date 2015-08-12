@@ -23,6 +23,8 @@ class Tour: PFObject, PFSubclassing {
   @NSManaged var prefDates: [String]?
   @NSManaged var tourImage: PFFile?
   @NSManaged var reviewsNum: Int
+  @NSManaged var avgRating: Int
+  @NSManaged var cumulativeRating: Int
 
 
     //MARK : PFSubclassing Protocol

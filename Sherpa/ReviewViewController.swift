@@ -2,8 +2,8 @@
 //  ReviewViewController.swift
 //  Rating Demo
 //
-//  Created by Glen Yi on 2014-09-05.
-//  Copyright (c) 2014 On The Pursuit. All rights reserved.
+//  Created by Arun Rawlani
+//  Copyright (c) Arun Rawlani. All rights reserved.
 //
 
 import UIKit
@@ -16,7 +16,7 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
     @IBOutlet weak var postButton: UIButton!
     var enteredText: Bool = false
     var reviewedTour : Tour?
-    
+
     let PLACEHOLDER_TEXT = "Example: The tour has been life defining. There was expectional hardwork put into it and I would torally recommend this to a friend. Awesome job!"
     
     var finalRating: Int = 0
@@ -81,14 +81,22 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
         //get the tour thing from last class
         newReview.ratingGiven = self.finalRating
         newReview.reviewContent = self.reviewContent.text
+        newReview.toTour = self.reviewedTour
         newReview.saveInBackgroundWithBlock {
             (success: Bool, error: NSError?) -> Void in
             if (success) {
                 println("The object has been saved.")
-                self.reviewedTour?.reviewsNum++
                 
+                //logic to calculate the review average
+                var newNumber = self.reviewedTour!.reviewsNum + 1
+                var total = self.reviewedTour!.cumulativeRating + self.finalRating
+                var avg: Double = Double(total) / Double(newNumber)
+                self.reviewedTour?.avgRating = Int(avg)
+                self.reviewedTour?.reviewsNum = newNumber
+                self.reviewedTour?.cumulativeRating = total
+               
             } else {
-                println("There was a problem, check error.description")
+                println("There was a problem, check error.description for this")
             }
             self.reviewedTour?.saveInBackgroundWithBlock(nil)
         }
