@@ -67,9 +67,14 @@ class DashboardViewController: UIViewController {
         var lastName: String = PFUser.currentUser()!["lastName"] as! String
         var fullName: String = "\(firstName) \(lastName)"
         self.nameLabel.text = fullName
+        if (PFUser.currentUser()!["userImage"] == nil){
+            self.userImage.image = UIImage(named:"newUser")
+        }
+        else {
         var userImageFile: AnyObject? = PFUser.currentUser()!["userImage"]
         let data = userImageFile?.getData()
-        self.userImage.image = UIImage(data: data!, scale: 1.0)
+            self.userImage.image = UIImage(data: data!, scale: 1.0)
+        }
         self.userImage.layer.cornerRadius = self.userImage.frame.size.width / 2
         self.userImage.clipsToBounds = true
         self.userImage.layer.borderWidth = 1.0
