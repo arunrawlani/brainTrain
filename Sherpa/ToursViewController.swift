@@ -241,6 +241,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             reserveVC.tourTimes = self.findTour(reserveVC.tourName).prefTimes!
             reserveVC.selectedTour = self.findTour(reserveVC.tourName)
             reserveVC.createdBy = self.findTour(reserveVC.tourName).createdBy
+            reserveVC.reviewsNum = self.findTour(reserveVC.tourName).reviewsNum
         }
 
         

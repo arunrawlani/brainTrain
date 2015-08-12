@@ -15,6 +15,7 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
     @IBOutlet weak var reviewContent: UITextView!
     @IBOutlet weak var postButton: UIButton!
     var enteredText: Bool = false
+    var reviewedTour : Tour?
     
     let PLACEHOLDER_TEXT = "Example: The tour has been life defining. There was expectional hardwork put into it and I would torally recommend this to a friend. Awesome job!"
     
@@ -79,9 +80,12 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
             (success: Bool, error: NSError?) -> Void in
             if (success) {
                 println("The object has been saved.")
+                self.reviewedTour?.reviewsNum++
+                
             } else {
                 println("There was a problem, check error.description")
             }
+            self.reviewedTour?.saveInBackgroundWithBlock(nil)
         }
       }
     }

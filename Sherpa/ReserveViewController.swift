@@ -20,6 +20,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var pickerView: AKPickerView!
     @IBOutlet weak var timePicker: AKPickerView!
+    @IBOutlet weak var reviewNumLabel: UILabel!
     
     @IBOutlet weak var requestButton: UIButton!
     var requestPressedCounter: Int = 1
@@ -35,6 +36,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
      var tourSum: String = "" //sumLabel
      var tourLang: [String] = [] //pickerView
      var tourTimes: [String] = [] //timePicker
+     var reviewsNum: Int = 0 //reviewNumLabel
      var selectedLanguage: String = ""
      var selectedTime: String = ""
      var selectedTour : Tour?
@@ -97,6 +99,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         nameLabel.text = tourName
         costLabel.text = tourCost
         sumLabel.text = tourSum
+        reviewNumLabel.text = "(\(reviewsNum))"
         self.languages = tourLang
         self.time = tourTimes
         
@@ -109,7 +112,8 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         // this gets a reference to the screen that we're about to transition to
-        let toViewController = segue.destinationViewController as! ReviewViewController
+        var toViewController = segue.destinationViewController.topViewController as! ReviewViewController
+        toViewController.reviewedTour = self.selectedTour
         
         // instead of using the default transition animation, we'll ask
         // the segue to use our custom TransitionManager object to manage the transition animation
