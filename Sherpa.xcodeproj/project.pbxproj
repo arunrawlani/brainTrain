@@ -34,6 +34,10 @@
 		F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E8D821B693A790037E340 /* ReserveViewController.swift */; };
 		F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */; };
 		F171EF151B757F1F001ADD9B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF141B757F1F001ADD9B /* ReviewViewController.swift */; };
+		F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178CEF31B7BC70900B5642D /* PopDatePicker.swift */; };
+		F178CEF61B7BC72000B5642D /* PopDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178CEF51B7BC72000B5642D /* PopDateViewController.swift */; };
+		F178CEF81B7BC77D00B5642D /* PopDateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = F178CEF71B7BC77D00B5642D /* PopDateViewController.xib */; };
+		F178CEFA1B7BCAF000B5642D /* DateUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178CEF91B7BCAF000B5642D /* DateUtils.swift */; };
 		F1A628F51B76E87700ABFB8E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1A628F41B76E87700ABFB8E /* MainViewController.swift */; };
 		F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2A1B713FC60036DEFE /* Request.swift */; };
 		F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */; };
@@ -101,6 +105,10 @@
 		F10E8D821B693A790037E340 /* ReserveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingStarReview.swift; sourceTree = "<group>"; };
 		F171EF141B757F1F001ADD9B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		F178CEF31B7BC70900B5642D /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
+		F178CEF51B7BC72000B5642D /* PopDateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDateViewController.swift; sourceTree = "<group>"; };
+		F178CEF71B7BC77D00B5642D /* PopDateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PopDateViewController.xib; sourceTree = "<group>"; };
+		F178CEF91B7BCAF000B5642D /* DateUtils.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtils.swift; sourceTree = "<group>"; };
 		F1A628F41B76E87700ABFB8E /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		F1B7AB2A1B713FC60036DEFE /* Request.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 		F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionManager.swift; sourceTree = "<group>"; };
@@ -200,6 +208,7 @@
 		659F00411B5ADECE00E4267B /* Sherpa */ = {
 			isa = PBXGroup;
 			children = (
+				F178CEF21B7BC6EA00B5642D /* PopDatePicker */,
 				F1BB0B8E1B7A98B90031FB6A /* Photo Taking */,
 				F1EEC4571B5F3386008A04CF /* Helper */,
 				659895AC1B5B248500607B5E /* Data Models */,
@@ -228,6 +237,7 @@
 				E2A344491B5B22E8004CAF3A /* DashboardTableViewCell.swift */,
 				E2A3443F1B5B0516004CAF3A /* AppData.swift */,
 				E2A344431B5B0550004CAF3A /* ExploreTableCell.swift */,
+				F178CEF91B7BCAF000B5642D /* DateUtils.swift */,
 				659F004D1B5ADECE00E4267B /* LaunchScreen.xib */,
 				659F00421B5ADECE00E4267B /* Supporting Files */,
 				659895B11B5B270E00607B5E /* Netwerker.swift */,
@@ -267,6 +277,16 @@
 				F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */,
 			);
 			path = FloatingStar;
+			sourceTree = "<group>";
+		};
+		F178CEF21B7BC6EA00B5642D /* PopDatePicker */ = {
+			isa = PBXGroup;
+			children = (
+				F178CEF31B7BC70900B5642D /* PopDatePicker.swift */,
+				F178CEF51B7BC72000B5642D /* PopDateViewController.swift */,
+				F178CEF71B7BC77D00B5642D /* PopDateViewController.xib */,
+			);
+			path = PopDatePicker;
 			sourceTree = "<group>";
 		};
 		F1BB0B8E1B7A98B90031FB6A /* Photo Taking */ = {
@@ -395,6 +415,7 @@
 				659F004A1B5ADECE00E4267B /* Main.storyboard in Resources */,
 				659F004F1B5ADECE00E4267B /* LaunchScreen.xib in Resources */,
 				659F004C1B5ADECE00E4267B /* Images.xcassets in Resources */,
+				F178CEF81B7BC77D00B5642D /* PopDateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -469,6 +490,7 @@
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
 				F1BB0B8B1B7708B50031FB6A /* SignViewController.swift in Sources */,
 				F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */,
+				F178CEFA1B7BCAF000B5642D /* DateUtils.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
 				F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */,
 				F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */,
@@ -484,7 +506,9 @@
 				E2A344401B5B0516004CAF3A /* AppData.swift in Sources */,
 				A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */,
 				E2A3444A1B5B22E8004CAF3A /* DashboardTableViewCell.swift in Sources */,
+				F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */,
 				659F00451B5ADECE00E4267B /* AppDelegate.swift in Sources */,
+				F178CEF61B7BC72000B5642D /* PopDateViewController.swift in Sources */,
 				F1A628F51B76E87700ABFB8E /* MainViewController.swift in Sources */,
 				E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */,
 				F1D2835D1B615D1D000E1BD4 /* OptionViewController.swift in Sources */,

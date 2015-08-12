@@ -8,12 +8,10 @@
 
 import Foundation
 import AKPickerView_Swift
-import DatePickerCell
 import Parse
 
-class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDelegate {
+class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDelegate, UITextFieldDelegate {
     
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var sumLabel: UILabel!
     @IBOutlet weak var reviewImage: UIImageView!
     @IBOutlet weak var costLabel: UILabel!
@@ -21,11 +19,12 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var pickerView: AKPickerView!
     @IBOutlet weak var timePicker: AKPickerView!
     @IBOutlet weak var reviewNumLabel: UILabel!
+    @IBOutlet weak var dateLabel: UITextField!
     
     @IBOutlet weak var requestButton: UIButton!
     var requestPressedCounter: Int = 1
     
-   
+    var popDatePicker : PopDatePicker?
     
     var cells: NSArray = []
     var languages = ["Mandarin", "Japanese", "Hindi", "Urdu", "Saitama", "Chiba", "Hyogo", "Hokkaido", "Fukuoka", "Shizuoka"]
@@ -54,9 +53,12 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.tableView.rowHeight = UITableViewAutomaticDimension
-        self.tableView.estimatedRowHeight = 44
-      
+        popDatePicker = PopDatePicker(forTextField: dateLabel)
+        dateLabel.delegate = self
+        dateLabel.textColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
+        dateLabel.attributedPlaceholder = NSAttributedString(string:"Tap here to Select",
+        attributes:[NSForegroundColorAttributeName: UIColor.lightGrayColor()])
+        dateLabel.borderStyle = .None
         
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
@@ -67,18 +69,13 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.pickerView.tag = 1
         self.timePicker.tag = 2
         
-        // The DatePickerCell.
-        let datePickerCell = DatePickerCell(style: UITableViewCellStyle.Default, reuseIdentifier: nil)
-        // Cells is a 2D array containing sections and rows.
-        datePickerCell.contentView.backgroundColor = UIColor.clearColor()
         
-        cells = [[datePickerCell]]
 
         
-        self.pickerView.font = UIFont(name: "AvenirNext-Medium", size: 17)!
+        self.pickerView.font = UIFont(name: "AvenirNext-Regular", size: 17)!
         self.pickerView.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.pickerView.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
-        self.pickerView.highlightedTextColor = UIColor(red: 229.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
+        self.pickerView.highlightedTextColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
         self.pickerView.textColor = UIColor.whiteColor()
         self.pickerView.interitemSpacing = 17.0
         self.pickerView.viewDepth = 1000.0
@@ -88,8 +85,8 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         
         self.timePicker.font = UIFont(name: "AvenirNext-Regular", size: 17)!
         self.timePicker.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
-        self.timePicker.highlightedFont = UIFont(name: "AvenirNext-Regular", size: 17)!
-        self.timePicker.highlightedTextColor = UIColor(red: 229.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
+        self.timePicker.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
+        self.timePicker.highlightedTextColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
         self.timePicker.textColor = UIColor.whiteColor()
         self.timePicker.interitemSpacing = 17.0
         self.timePicker.viewDepth = 1000.0
@@ -108,6 +105,35 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.selectedTime = "None"
        
         
+    }
+    
+    //MARK: all about the pop up date picker and the TextField Delegate
+    func resign() {
+        
+        dateLabel.resignFirstResponder()
+    }
+    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+        
+        if (textField === dateLabel) {
+            resign()
+            let formatter = NSDateFormatter()
+            formatter.dateStyle = .MediumStyle
+            formatter.timeStyle = .NoStyle
+            let initDate : NSDate? = formatter.dateFromString(dateLabel.text)
+            
+            let dataChangedCallback : PopDatePicker.PopDatePickerCallback = { (newDate : NSDate, forTextField : UITextField) -> () in
+                
+                // here we don't use self (no retain cycle)
+                forTextField.text = (newDate.ToDateMediumString() ?? "?") as String
+                
+            }
+            
+            popDatePicker!.pick(self, initDate: initDate, dataChanged: dataChangedCallback)
+            return false
+        }
+        else {
+            return true
+        }
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
@@ -228,40 +254,4 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
 
  
 
- extension ReserveViewController: UITableViewDataSource{
-    
-     func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
-        // Get the correct height if the cell is a DatePickerCell.
-        var cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
-        if (cell.isKindOfClass(DatePickerCell)) {
-            return (cell as! DatePickerCell).datePickerHeight()
-        }
-        
-        return 44//tableView(tableView, heightForRowAtIndexPath: indexPath)
-    }
-    
-     func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
-        // Deselect automatically if the cell is a DatePickerCell.
-        var cell = self.tableView(tableView, cellForRowAtIndexPath: indexPath)
-        if (cell.isKindOfClass(DatePickerCell)) {
-            println("gogogo")
-            var datePickerTableViewCell = cell as! DatePickerCell
-            datePickerTableViewCell.selectedInTableView(tableView)
-            self.tableView.deselectRowAtIndexPath(indexPath, animated: true)
-        }
-    }
-    
-     func numberOfSectionsInTableView(tableView: UITableView) -> Int {
-        return 1//cells.count
-    }
-    
-     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1//cells[section].count
-    }
-    
-    
-     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        return cells[indexPath.section][indexPath.row] as! UITableViewCell
-    }
-}
 
