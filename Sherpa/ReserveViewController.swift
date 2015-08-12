@@ -84,7 +84,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.pickerView.reloadData()
         
         self.timePicker.font = UIFont(name: "AvenirNext-Regular", size: 17)!
-        self.pickerView.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
+        self.timePicker.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.timePicker.highlightedFont = UIFont(name: "AvenirNext-Regular", size: 17)!
         self.timePicker.highlightedTextColor = UIColor(red: 229.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
         self.timePicker.textColor = UIColor.whiteColor()
@@ -109,7 +109,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         // this gets a reference to the screen that we're about to transition to
-        let toViewController = segue.destinationViewController as! UIViewController
+        let toViewController = segue.destinationViewController as! ReviewViewController
         
         // instead of using the default transition animation, we'll ask
         // the segue to use our custom TransitionManager object to manage the transition animation
