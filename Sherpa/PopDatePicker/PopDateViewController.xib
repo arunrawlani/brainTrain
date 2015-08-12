@@ -19,8 +19,9 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eMS-Yj-oBe">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="200"/>
                     <subviews>
-                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Ir-UG-rP1">
+                        <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="date" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="7Ir-UG-rP1">
                             <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+                            <color key="backgroundColor" red="0.94901960784313721" green="0.60172954312915716" blue="0.11381465831502842" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="162" id="gvp-x3-wol"/>
                             </constraints>
@@ -31,7 +32,7 @@
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BGE-0p-ntj">
                             <rect key="frame" x="145" y="170" width="30" height="30"/>
                             <state key="normal" title="OK">
-                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="titleColor" red="0.94901960784313721" green="0.60172954312915716" blue="0.11381465831502842" alpha="1" colorSpace="calibratedRGB"/>
                             </state>
                             <connections>
                                 <action selector="okAction:" destination="-2" eventType="touchUpInside" id="7Ms-Sm-FJu"/>

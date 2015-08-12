@@ -72,7 +72,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         
 
         
-        self.pickerView.font = UIFont(name: "AvenirNext-Regular", size: 17)!
+        self.pickerView.font = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.pickerView.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.pickerView.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.pickerView.highlightedTextColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
@@ -83,7 +83,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.pickerView.maskDisabled = false
         self.pickerView.reloadData()
         
-        self.timePicker.font = UIFont(name: "AvenirNext-Regular", size: 17)!
+        self.timePicker.font = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.timePicker.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.timePicker.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.timePicker.highlightedTextColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
@@ -233,6 +233,11 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 request["toUser"] = self.createdBy
                 request["isRejected"] = false
                 request["isCancelled"] = false
+                
+                // setting global variable requestSubmitted to true for the query to be done.
+                let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+                appDelegate.requestSubmitted = true
+                
                 request.saveInBackgroundWithBlock{(success: Bool, error: NSError?) -> Void in
                     if (success){
                         //do good shit

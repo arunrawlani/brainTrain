@@ -86,6 +86,33 @@ class DashboardViewController: UIViewController {
     
     }
     
+    override func viewWillAppear(animated: Bool) {
+        let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+        
+        if (appDelegate.requestSubmitted == true)
+        {
+        
+            let requestQuery = Request.query()
+            requestQuery!.whereKey("fromUser", equalTo: PFUser.currentUser()!)
+            //        var user = PFUser.currentUser()
+            //
+            requestQuery!.includeKey("toUser")
+            requestQuery!.includeKey("fromUser")
+            requestQuery!.includeKey("toTour")
+            
+            requestQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
+                
+                self.scheduledTours = result as? [Request] ?? []
+                self.tableView.reloadData()
+                
+            }
+            
+        }
+        else {
+            println("Request submitted has not been changed")
+    }
+    }
+    
     func takePhoto() {
         // instantiate photo taking class, provide callback for when photo  is selected
         photoTakingHelper = PhotoTakingHelper(viewController: self) { (image: UIImage?) in

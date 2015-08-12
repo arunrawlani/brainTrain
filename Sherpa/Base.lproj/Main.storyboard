@@ -298,7 +298,7 @@
                                                 <rect key="frame" x="22" y="224" width="88" height="29"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <state key="normal" title="Give Review?">
-                                                    <color key="titleColor" red="0.38823529411764707" green="0.92156862745098034" blue="0.99607843137254903" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <color key="titleColor" red="0.96417162827520386" green="0.61258732264350679" blue="0.15683474139027079" alpha="1" colorSpace="calibratedRGB"/>
                                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                                 </state>
                                                 <connections>
@@ -336,7 +336,7 @@
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pGL-Kq-fTz" customClass="AKPickerView" customModule="AKPickerView_Swift">
                                                 <rect key="frame" x="24" y="467" width="542" height="45"/>
-                                                <color key="backgroundColor" white="1" alpha="0.14000000000000001" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="u9i-BF-4Wn"/>
                                                 </constraints>
@@ -344,7 +344,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your preferred language for the tour." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FDq-ZH-c3v">
                                                 <rect key="frame" x="24" y="436" width="259" height="18"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
-                                                <color key="textColor" red="0.8666666666666667" green="0.50196078431372548" blue="0.15686274509803921" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.90705660029498525" green="0.90705660029498525" blue="0.90705660029498525" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VVT-hf-I1A">
@@ -356,12 +356,12 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your preferred time for the tour." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="drG-Gv-pfW">
                                                 <rect key="frame" x="22" y="551" width="229" height="18"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
-                                                <color key="textColor" red="0.86666666670000003" green="0.50196078430000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.88235294117647056" green="0.88235294117647056" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rmz-R7-ySz" customClass="AKPickerView" customModule="AKPickerView_Swift">
                                                 <rect key="frame" x="24" y="582" width="542" height="45"/>
-                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.13" colorSpace="calibratedRGB"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26000000000000001" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="wLS-kN-5Ib"/>
                                                 </constraints>
@@ -375,7 +375,7 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your preferred date for the tour." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SmB-IU-qWm">
                                                 <rect key="frame" x="24" y="665" width="229.5" height="18"/>
                                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
-                                                <color key="textColor" red="0.86666666670000003" green="0.50196078430000002" blue="0.15686274510000001" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="textColor" red="0.85490196078431369" green="0.85490196078431369" blue="0.85490196078431369" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" reversesTitleShadowWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ua4-Wu-qLi">
@@ -401,7 +401,7 @@
                                             </label>
                                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Tap here to select" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7Wn-bf-asJ">
                                                 <rect key="frame" x="24" y="703" width="542" height="45"/>
-                                                <color key="backgroundColor" white="1" alpha="0.13" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.27000000000000002" colorSpace="calibratedRGB"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="45" id="4ZE-7a-c2a"/>
                                                     <constraint firstAttribute="width" constant="542" id="SVd-1W-LcP"/>
@@ -644,7 +644,7 @@
                                         </textView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q5U-r5-Vof">
                                             <rect key="frame" x="0.0" y="492" width="600" height="44"/>
-                                            <color key="backgroundColor" red="0.98463426438053092" green="0.64041426233607812" blue="0.19397401918079393" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="backgroundColor" red="0.92117976477095265" green="0.58525625599433873" blue="0.23595154406367486" alpha="1" colorSpace="calibratedRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="44" id="1KY-4C-cpD"/>
                                             </constraints>
