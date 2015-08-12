@@ -29,6 +29,12 @@ class LoginViewController: UIViewController {
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    //Changing tint color
+    var color: UIColor = UIColor(red: 229/255.0, green: 147/255.0, blue: 52/255.0, alpha: 100.0)
+    self.usernameTF.tintColor = color
+    self.passwordTF.tintColor = color
+    
+    
     self.actInd.center = self.view.center
     
     self.actInd.hidesWhenStopped = true

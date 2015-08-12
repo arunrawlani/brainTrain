@@ -24,6 +24,11 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        //Customizing the tint of the review content 
+        var color: UIColor = UIColor(red: 229/255.0, green: 147/255.0, blue: 52/255.0, alpha: 100.0)
+        self.reviewContent.tintColor = color
+        
+        
         /** Note: With the exception of contentMode, all of these
         properties can be set directly in Interface builder **/
         

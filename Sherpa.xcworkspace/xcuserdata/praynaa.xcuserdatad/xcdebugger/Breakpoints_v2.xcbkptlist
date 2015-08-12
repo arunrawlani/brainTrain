@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Sherpa/LoginViewController.swift"
-            timestampString = "460920989.173811"
+            timestampString = "461054637.240025"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "88"
-            endingLineNumber = "88"
+            startingLineNumber = "94"
+            endingLineNumber = "94"
             landmarkName = "loginAction(_:)"
             landmarkType = "5">
          </BreakpointContent>
