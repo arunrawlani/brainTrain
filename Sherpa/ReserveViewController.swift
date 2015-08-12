@@ -233,7 +233,6 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 request["toUser"] = self.createdBy
                 request["isRejected"] = false
                 request["isCancelled"] = false
-                
                 // setting global variable requestSubmitted to true for the query to be done.
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.requestSubmitted = true

@@ -25,6 +25,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     var logInViewController : PFLogInViewController! = PFLogInViewController()
     var signUpViewController: PFSignUpViewController! = PFSignUpViewController()
     var requestSubmitted: Bool = false
+    var isGloballyCancelled: Bool = false
     
     override init(){
         super.init()

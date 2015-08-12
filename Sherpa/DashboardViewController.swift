@@ -49,15 +49,21 @@ class DashboardViewController: UIViewController {
    
         super.viewDidLoad()
         //Calling query from Parse
+        var isCancelledQuery: PFQuery?
+        
         let requestQuery = Request.query()
         requestQuery!.whereKey("fromUser", equalTo: PFUser.currentUser()!)
-//        var user = PFUser.currentUser()
-//
-        requestQuery!.includeKey("toUser")
-        requestQuery!.includeKey("fromUser")
-        requestQuery!.includeKey("toTour")
         
-        requestQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
+        if let requestQuery = requestQuery{
+        isCancelledQuery = PFQuery.orQueryWithSubqueries([requestQuery])
+            isCancelledQuery!.whereKey("isCancelled", equalTo: false)
+
+        isCancelledQuery!.includeKey("toUser")
+        isCancelledQuery!.includeKey("fromUser")
+        isCancelledQuery!.includeKey("toTour")
+        }
+        
+        isCancelledQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
             
             self.scheduledTours = result as? [Request] ?? []
             self.tableView.reloadData()
@@ -89,18 +95,24 @@ class DashboardViewController: UIViewController {
     override func viewWillAppear(animated: Bool) {
         let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
         
-        if (appDelegate.requestSubmitted == true)
+        if (appDelegate.requestSubmitted == true || appDelegate.isGloballyCancelled == true)
         {
         
+            var isCancelledQuery: PFQuery?
+            
             let requestQuery = Request.query()
             requestQuery!.whereKey("fromUser", equalTo: PFUser.currentUser()!)
-            //        var user = PFUser.currentUser()
-            //
-            requestQuery!.includeKey("toUser")
-            requestQuery!.includeKey("fromUser")
-            requestQuery!.includeKey("toTour")
             
-            requestQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
+            if let requestQuery = requestQuery{
+                isCancelledQuery = PFQuery.orQueryWithSubqueries([requestQuery])
+                isCancelledQuery!.whereKey("isCancelled", equalTo: false)
+                
+                isCancelledQuery!.includeKey("toUser")
+                isCancelledQuery!.includeKey("fromUser")
+                isCancelledQuery!.includeKey("toTour")
+            }
+            
+            isCancelledQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
                 
                 self.scheduledTours = result as? [Request] ?? []
                 self.tableView.reloadData()

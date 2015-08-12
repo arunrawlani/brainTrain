@@ -19,5 +19,53 @@
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Sherpa/DashboardViewController.swift"
+            timestampString = "461116651.153483"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "121"
+            endingLineNumber = "121"
+            landmarkName = "viewWillAppear(_:)"
+            landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sherpa.DashboardViewController.viewWillAppear (Sherpa.DashboardViewController)(Swift.Bool) -&gt; ()"
+                  moduleName = "Sherpa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praynaa/Development-Sherpa/Sherpa/DashboardViewController.swift"
+                  timestampString = "461116651.157038"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "2597">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "Sherpa.DashboardViewController.viewWillAppear (Sherpa.DashboardViewController)(Swift.Bool) -&gt; ()"
+                  moduleName = "Sherpa"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/praynaa/Development-Sherpa/Sherpa/DashboardViewController.swift"
+                  timestampString = "461116651.157317"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "122"
+                  endingLineNumber = "122"
+                  offsetFromSymbolStart = "2633">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>

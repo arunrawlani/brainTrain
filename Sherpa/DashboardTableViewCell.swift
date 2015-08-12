@@ -41,6 +41,8 @@ class DashboardTableViewCell: UITableViewCell {
             //success
             println("Succesfully saved.")
             self.confirmationLabel.hidden = false
+            let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
+            appDelegate.isGloballyCancelled = true
         }
         else{
             //fail
