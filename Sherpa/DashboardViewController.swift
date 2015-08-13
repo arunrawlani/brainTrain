@@ -179,7 +179,7 @@ extension DashboardViewController: UITableViewDataSource{
         let test = scheduledTours[indexPath.row].toTour
         scheduledTours[indexPath.row].toTour!.fetchIfNeeded()
         cell.cancelButton.hidden = false
-        cell.timelineButton.hidden = false
+        cell.timelineButton.hidden = true
         cell.tourNameLabel.text = scheduledTours[indexPath.row].toTour!["tourName"] as? String
         //}
         cell.tourDateLabel.text = scheduledTours[indexPath.row].requestedDate
