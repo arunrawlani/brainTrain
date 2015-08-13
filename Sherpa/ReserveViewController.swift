@@ -217,10 +217,15 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     
     
     @IBAction func requestButtonPressed(sender: UIButton) {
-        if requestPressedCounter == 1 {
-            if (self.selectedLanguage == "None" || self.selectedTime == "None"){
+            if (self.selectedLanguage == "None" || self.selectedTime == "None" || self.dateLabel.text == ""){
                 //GIVES AN ERROR MESSAGE
-                println("Stop baby")
+                var alert = UIAlertController(title: "Incomplete Request!", message: "Please select a date, time and language", preferredStyle: .Alert)
+                let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
+                    //...
+                }
+                alert.addAction(OKAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
             }
             else{ //User has selected time, date and language
                 sender.backgroundColor = UIColor.grayColor()
@@ -240,22 +245,25 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 
                 request.saveInBackgroundWithBlock{(success: Bool, error: NSError?) -> Void in
                     if (success){
-                        //do good shit
+                        var alert = UIAlertController(title: "Request Sent!", message: "All your tour requests will be displayed on the Dashboard. ", preferredStyle: .Alert)
+                        let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
+                            //...
+                            self.navigationController?.popToRootViewControllerAnimated(true)
+                        }
+                        alert.addAction(OKAction)
+                        
+                        self.presentViewController(alert, animated: true, completion: nil)
                     }
                     else{
-                        //cry bitch
+                        println("Boy kya scene")
                     }
                 }
             }
         }
-        else {
-            //gogo
-        }
-        requestPressedCounter++
         
     }
     
-}
+
 
  
 
