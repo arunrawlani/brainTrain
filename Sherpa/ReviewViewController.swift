@@ -87,6 +87,16 @@ class ReviewViewController: UIViewController, FloatRatingViewDelegate, UITextVie
             if (success) {
                 println("The object has been saved.")
                 
+                var alert = UIAlertController(title: "Success!", message: "Your review has been submitted.", preferredStyle: .Alert)
+                let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
+                    //...
+                    self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
+                }
+                alert.addAction(OKAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+
+                
                 //logic to calculate the review average
                 var newNumber = self.reviewedTour!.reviewsNum + 1
                 var total = self.reviewedTour!.cumulativeRating + self.finalRating

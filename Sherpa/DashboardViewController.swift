@@ -81,14 +81,14 @@ class DashboardViewController: UIViewController {
         let data = userImageFile?.getData()
             self.userImage.image = UIImage(data: data!, scale: 1.0)
         }
+        
+        //manipulating the user image only
         self.userImage.layer.cornerRadius = self.userImage.frame.size.width / 2
         self.userImage.clipsToBounds = true
         self.userImage.layer.borderWidth = 1.0
         self.userImage.layer.borderColor = UIColor.whiteColor().CGColor
-        /*   //MADE THIS CHANGE AFTER THE HACKTHON
-        //self.navigationItem.setHidesBackButton(true, animated: false)
-        tableview.allowsSelection = false
-        // Do any additional setup after loading the view. */
+      
+        
     
     }
     
@@ -178,6 +178,8 @@ extension DashboardViewController: UITableViewDataSource{
        // if scheduledTours[indexPath.row].toTour!.tourName != nil {
         let test = scheduledTours[indexPath.row].toTour
         scheduledTours[indexPath.row].toTour!.fetchIfNeeded()
+        cell.cancelButton.hidden = false
+        cell.timelineButton.hidden = false
         cell.tourNameLabel.text = scheduledTours[indexPath.row].toTour!["tourName"] as? String
         //}
         cell.tourDateLabel.text = scheduledTours[indexPath.row].requestedDate
