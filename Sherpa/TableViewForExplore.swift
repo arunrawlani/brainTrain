@@ -14,6 +14,7 @@ class TableViewForExplore: UITableViewController, explore {
     var textOfCity: String = ""
     var imageOfCity: String = ""
     var city: Int = 0
+
     
     override func viewDidLoad() {
         super.viewDidLoad()

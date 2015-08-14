@@ -29,7 +29,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
         // Do any additional setup after loading the view, typically from a nib.
         println(mainCityLabelText)
         MainCityLabel.text = mainCityLabelText
-        MainCityImageview.image = UIImage(named: mainGraphicImageFileName)
+       MainCityImageview.image = UIImage(named: mainGraphicImageFileName)
         tableview.allowsSelection = false
     }
     
@@ -243,7 +243,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             reserveVC.createdBy = self.findTour(reserveVC.tourName).createdBy
             reserveVC.reviewsNum = self.findTour(reserveVC.tourName).reviewsNum
             reserveVC.avgRating = self.findTour(reserveVC.tourName).avgRating
-           // reserveVC.mainCityPicture.image = self.MainCityImageview.image
+            reserveVC.mainImage =  UIImage(named: mainGraphicImageFileName)
         }
 
         

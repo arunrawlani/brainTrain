@@ -42,6 +42,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
      var selectedTour : Tour?
      var createdBy: PFUser?
      var avgRating: Int?
+     var mainImage: UIImage?
     
     @IBAction func unwindToMainViewController (sender: UIStoryboardSegue){
         // bug? exit segue doesn't dismiss so we do it manually...
@@ -53,6 +54,9 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        mainCityPicture.image = mainImage
         
         popDatePicker = PopDatePicker(forTextField: dateLabel)
         dateLabel.delegate = self
