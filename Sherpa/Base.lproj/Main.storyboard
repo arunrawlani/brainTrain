@@ -12,7 +12,7 @@
             <objects>
                 <tableViewController id="CtT-q8-Sdx" customClass="TableViewForExplore" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="286" sectionHeaderHeight="22" sectionFooterHeight="22" id="2vX-Zw-3RZ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -102,7 +102,7 @@
                         <viewControllerLayoutGuide type="bottom" id="cSQ-ca-iiD"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Hps-8b-poX">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Background" translatesAutoresizingMaskIntoConstraints="NO" id="P9f-hN-nKu">
@@ -253,7 +253,7 @@
                         <viewControllerLayoutGuide type="bottom" id="tMC-Ga-5ii"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="73u-I2-nhG">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="941"/>
+                        <rect key="frame" x="0.0" y="64" width="600" height="941"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="App Background" translatesAutoresizingMaskIntoConstraints="NO" id="fVU-Td-8O0">
@@ -1087,7 +1087,14 @@
         <scene sceneID="d2Q-dV-Iid">
             <objects>
                 <navigationController id="A40-0j-2if" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Explore" image="ExploreIcon" id="RHQ-dC-QUp"/>
+                    <tabBarItem key="tabBarItem" title="Explore" image="ExploreIcon" id="RHQ-dC-QUp">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.92093737799323272" green="0.58810567216924248" blue="0.12066633946260308" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="hPv-6s-mgP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1105,7 +1112,13 @@
         <scene sceneID="h3M-32-FKR">
             <objects>
                 <navigationController id="1fV-Xa-jrg" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Dashboard" image="HumanIcon" id="jWc-Ik-RPE"/>
+                    <tabBarItem key="tabBarItem" title="Dashboard" image="HumanIcon" id="jWc-Ik-RPE">
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.93035731715252479" green="0.54132238141217692" blue="0.12346364196307283" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </tabBarItem>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="6vm-bg-lcY">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -1128,13 +1141,11 @@
             <objects>
                 <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Brn-2y-zUV" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" id="lVT-TB-UBf">
+                    <tabBar key="tabBar" alpha="0.90000000000000024" contentMode="scaleToFill" barStyle="black" id="lVT-TB-UBf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                        <color key="tintColor" red="0.84705882352941175" green="0.46666666666666667" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="barTintColor" red="0.92549019607843142" green="0.92549019607843142" blue="0.92549019607843142" alpha="1" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.84705882352941175" green="0.46666666666666667" blue="0.13725490196078433" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="tintColor" red="1" green="0.994922124498683" blue="0.98974637319346059" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="A40-0j-2if" kind="relationship" relationship="viewControllers" id="hA6-oJ-5pG"/>

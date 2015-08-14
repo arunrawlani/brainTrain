@@ -70,8 +70,6 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.timePicker.tag = 2
         
         
-
-        
         self.pickerView.font = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.pickerView.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.pickerView.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
@@ -105,6 +103,31 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.selectedTime = "None"
        
         
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        if let avgRating = avgRating {
+            println ("THIS IS \(avgRating)")
+            
+            if (avgRating == 0){
+                reviewImage.image = UIImage(named : "1stars")
+            }
+            else if (avgRating == 1){
+                reviewImage.image = UIImage(named : "1stars")
+            }
+            else if (avgRating == 2){
+                reviewImage.image = UIImage(named : "2stars")
+            }
+            else if (avgRating == 3){
+                reviewImage.image = UIImage(named : "3stars")
+            }
+            else if (avgRating == 4){
+                reviewImage.image = UIImage(named : "4stars")
+            }
+            else{
+                reviewImage.image = UIImage(named : "5stars")
+                }
+        }
     }
     
     //MARK: all about the pop up date picker and the TextField Delegate

@@ -52,6 +52,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     
     func applicationDidBecomeActive(application: UIApplication) {
         FBSDKAppEvents.activateApp()
+        
     }
     
     func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject?) -> Bool {
@@ -61,6 +62,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
     // Override point for customization after application launch.
+    
         
     Parse.enableLocalDatastore()
         
