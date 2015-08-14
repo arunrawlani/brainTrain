@@ -243,6 +243,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             reserveVC.createdBy = self.findTour(reserveVC.tourName).createdBy
             reserveVC.reviewsNum = self.findTour(reserveVC.tourName).reviewsNum
             reserveVC.avgRating = self.findTour(reserveVC.tourName).avgRating
+           // reserveVC.mainCityPicture.image = self.MainCityImageview.image
         }
 
         

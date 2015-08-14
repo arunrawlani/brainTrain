@@ -74,7 +74,7 @@ class DashboardViewController: UIViewController {
         var fullName: String = "\(firstName) \(lastName)"
         self.nameLabel.text = fullName
         if (PFUser.currentUser()!["userImage"] == nil){
-            self.userImage.image = UIImage(named:"newUser")
+            self.userImage.image = UIImage(named:"DisplayPicture")
         }
         else {
         var userImageFile: AnyObject? = PFUser.currentUser()!["userImage"]

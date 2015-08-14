@@ -22,8 +22,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     var client: SINClient?
     var splash: UIImageView?
     var parseLoginHelper: ParseLoginHelper!
-    var logInViewController : PFLogInViewController! = PFLogInViewController()
-    var signUpViewController: PFSignUpViewController! = PFSignUpViewController()
+   // var logInViewController : PFLogInViewController! = PFLogInViewController()
+   // var signUpViewController: PFSignUpViewController! = PFSignUpViewController()
     var requestSubmitted: Bool = false
     var isGloballyCancelled: Bool = false
     
@@ -75,7 +75,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     PFFacebookUtils.initializeFacebookWithApplicationLaunchOptions(launchOptions)
     
     //check if we have logged in user
-      let user = PFUser.currentUser()
+     /* let user = PFUser.currentUser()
         let startViewController: UIViewController
         
         if (user != nil){
@@ -104,11 +104,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
             self.signUpViewController.delegate = parseLoginHelper
             
             }
+
         
         //creating the UIWindow. Container for all the views in our app
         self.window = UIWindow(frame: UIScreen.mainScreen().bounds)
         self.window?.rootViewController = startViewController
         self.window?.makeKeyAndVisible()
+
+*/
     
     
    /* ADDED AT HACKATHON

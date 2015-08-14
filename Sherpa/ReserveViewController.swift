@@ -20,6 +20,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var timePicker: AKPickerView!
     @IBOutlet weak var reviewNumLabel: UILabel!
     @IBOutlet weak var dateLabel: UITextField!
+    @IBOutlet weak var mainCityPicture: UIImageView!
     
     @IBOutlet weak var requestButton: UIButton!
     var requestPressedCounter: Int = 1
