@@ -125,6 +125,47 @@ extension RequestViewController: UITableViewDataSource{
         return count
     }
     
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        if (requestSegment.selectedSegmentIndex == 0){
+            if (requestedTour.count == 0) {
+            var messageLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            messageLabel.text = "No pending tours"
+            messageLabel.textColor = UIColor.whiteColor()
+            messageLabel.font = UIFont(name: "Avenir Next", size: 24)
+            messageLabel.numberOfLines = 1
+            messageLabel.textAlignment = NSTextAlignment.Center
+            messageLabel.sizeToFit()
+            self.tableView.backgroundView = messageLabel
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+            return 0
+        }
+        else {
+            self.tableView.backgroundView = nil
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+            return 1
+        }
+        }
+        else{
+            if (approvedTour.count == 0) {
+                var messageLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+                messageLabel.text = "No approved tours"
+                messageLabel.textColor = UIColor.whiteColor()
+                messageLabel.font = UIFont(name: "Avenir Next", size: 24)
+                messageLabel.numberOfLines = 1
+                messageLabel.textAlignment = NSTextAlignment.Center
+                messageLabel.sizeToFit()
+                self.tableView.backgroundView = messageLabel
+                self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+                return 0
+            }
+            else {
+                self.tableView.backgroundView = nil
+                self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+                return 1
+            }
+        }
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("ScheduleCell") as! RequestTableViewCell

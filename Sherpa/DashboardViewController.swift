@@ -171,6 +171,27 @@ extension DashboardViewController: UITableViewDataSource{
         return self.scheduledTours.count ?? 0
     }
     
+    
+    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
+        if (scheduledTours.count == 0) {
+            var messageLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
+            messageLabel.text = "No scheduled tours"
+            messageLabel.textColor = UIColor.whiteColor()
+            messageLabel.font = UIFont(name: "Avenir Next", size: 27)
+            messageLabel.numberOfLines = 1
+            messageLabel.textAlignment = NSTextAlignment.Center
+            messageLabel.sizeToFit()
+            self.tableView.backgroundView = messageLabel
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
+            return 0
+        }
+        else {
+            self.tableView.backgroundView = nil
+            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
+            return 1
+        }
+    }
+    
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("RequestCell") as! DashboardTableViewCell

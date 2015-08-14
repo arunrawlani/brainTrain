@@ -13,6 +13,8 @@ import Parse
 
 class SignViewController: UIViewController{
     
+    var checkState = 0
+    
     @IBOutlet weak var firstNameTF: UITextField!
     
     @IBOutlet weak var lastNameTF: UITextField!
@@ -21,6 +23,13 @@ class SignViewController: UIViewController{
     @IBOutlet weak var passwordTF: UITextField!
     
     @IBOutlet weak var emailTF: UITextField!
+    
+    @IBOutlet weak var checkBox: UIButton!
+    
+ 
+    @IBAction func checkToggle(sender: UIButton) {
+        sender.selected = !sender.selected
+    }
     
     var actInd: UIActivityIndicatorView = UIActivityIndicatorView(frame: CGRectMake(0, 0, 150, 150)) as UIActivityIndicatorView
     
@@ -91,6 +100,17 @@ class SignViewController: UIViewController{
             self.presentViewController(alert, animated: true, completion: nil)
             
         }
+        else if (checkBox.selected == false)
+        {
+                var alert = UIAlertController(title: "Invalid", message: "Check the box in order to proceed", preferredStyle: .Alert)
+                let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
+                    //...
+                }
+                alert.addAction(OKAction)
+                
+                self.presentViewController(alert, animated: true, completion: nil)
+                
+            }
         else{
             
             self.actInd.startAnimating()
@@ -121,7 +141,7 @@ class SignViewController: UIViewController{
                 {
                     var alert = UIAlertController(title: "Success", message: "Signed Up", preferredStyle: .Alert)
                     let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
-                        //...
+                        self.presentingViewController?.dismissViewControllerAnimated(true, completion: nil)
                     }
                     alert.addAction(OKAction)
                     
