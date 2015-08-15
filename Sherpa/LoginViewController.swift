@@ -85,7 +85,6 @@ class LoginViewController: UIViewController {
                 
                 if ((user) != nil){
                     
-                    
                    var alert = UIAlertController(title: "Success", message: "Logged In.", preferredStyle: .Alert)
                     let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
                         //...

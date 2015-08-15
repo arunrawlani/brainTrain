@@ -20,7 +20,11 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
     var dataArray = [TourData]()
     var laArray = [TourData]()
     
-    var toursNY: [Tour] = []
+    var toursNY: [Tour] = []{
+        didSet{
+            tableview.reloadData()
+        }
+    }
     var toursLV: [Tour] = []
     var toursLA: [Tour] = []
     
@@ -45,6 +49,8 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
             
             //Parse hands us an [AnyObject] array which we cast to [Tour]. If casting not possible, store empty array
             self.toursNY = result as? [Tour] ?? []
+            println(result?.description)
+            //println(result.first!.)
             self.tableview.reloadData()
             
         }

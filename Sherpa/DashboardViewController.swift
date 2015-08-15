@@ -33,7 +33,7 @@ class DashboardViewController: UIViewController {
     let transitionManager = TransitionManager()
     
     
-  /*  override func viewDidLoad(){
+ /*   override func viewDidLoad(){
         super.viewDidLoad()
         
         let backButton = UIBarButtonItem(title: "", style: UIBarButtonItemStyle.Plain, target: navigationController, action: nil)
@@ -43,7 +43,7 @@ class DashboardViewController: UIViewController {
         self.tableView.allowsSelection = false
         
         
-    }*/
+    } */
 
     override func viewDidLoad() {
    
@@ -67,7 +67,7 @@ class DashboardViewController: UIViewController {
             
             self.scheduledTours = result as? [Request] ?? []
             self.tableView.reloadData()
-            
+
             }
         var firstName: String = PFUser.currentUser()!["firstName"] as! String
         var lastName: String = PFUser.currentUser()!["lastName"] as! String
@@ -151,7 +151,7 @@ class DashboardViewController: UIViewController {
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
         // this gets a reference to the screen that we're about to transition to
         let toViewController = segue.destinationViewController as! UIViewController
@@ -163,6 +163,7 @@ class DashboardViewController: UIViewController {
     }
 
 }
+
 
 extension DashboardViewController: UITableViewDataSource{
 

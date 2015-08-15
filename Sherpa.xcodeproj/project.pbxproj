@@ -379,7 +379,6 @@
 				TargetAttributes = {
 					659F003E1B5ADECE00E4267B = {
 						CreatedOnToolsVersion = 6.4;
-						DevelopmentTeam = 945CC5QZ5L;
 					};
 					659F00531B5ADECE00E4267B = {
 						CreatedOnToolsVersion = 6.4;
@@ -639,6 +638,7 @@
 			baseConfigurationReference = 446762A846708892DC51486B /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = Sherpa/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -653,6 +653,7 @@
 			baseConfigurationReference = 1502D0D9AE54FAE1581751AF /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"/Users/sstevenshang/Desktop/Sinch-im/Sinch",

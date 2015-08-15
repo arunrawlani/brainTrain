@@ -320,10 +320,10 @@
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OQ-bv-DQN">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OQ-bv-DQN">
                                                 <rect key="frame" x="23" y="298" width="543" height="105.5"/>
-                                                <string key="text">This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host.This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host.</string>
-                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                                <string key="text">This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host.This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host.This is a summary of the event and has some details about the event and the host. This is a summary of the event and has some details about the event and the host.</string>
+                                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="15"/>
                                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
@@ -498,9 +498,6 @@
                                     <constraint firstAttribute="bottom" secondItem="uSN-71-umb" secondAttribute="bottom" constant="-145" id="Tkc-ri-Zq1"/>
                                     <constraint firstItem="uSN-71-umb" firstAttribute="leading" secondItem="DJN-vl-hSw" secondAttribute="leading" id="iAN-20-JuB"/>
                                 </constraints>
-                                <variation key="widthClass=compact" ambiguous="YES">
-                                    <rect key="frame" x="0.0" y="0.0" width="0.0" height="0.0"/>
-                                </variation>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1657,9 +1654,9 @@
                                                     <color key="textColor" red="0.99998271569999997" green="0.99998271569999997" blue="0.99998271569999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lake Tahoe" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1za-K4-BeO">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Lake Tahoe" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1za-K4-BeO">
                                                     <rect key="frame" x="122" y="19" width="93" height="25"/>
-                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="18"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="15"/>
                                                     <color key="textColor" red="0.99998271569999997" green="0.99998271569999997" blue="0.99998271569999997" alpha="1" colorSpace="calibratedRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
@@ -1742,7 +1739,7 @@
                                                 <constraint firstItem="dMY-tN-4vW" firstAttribute="leading" secondItem="2f3-1l-90j" secondAttribute="trailing" constant="-96" id="Lzr-7p-HlC"/>
                                                 <constraint firstAttribute="bottomMargin" secondItem="MeW-vT-QJU" secondAttribute="bottom" constant="15.5" id="PBU-BI-Ee5"/>
                                                 <constraint firstItem="MeW-vT-QJU" firstAttribute="baseline" secondItem="GP8-xT-KZX" secondAttribute="baseline" id="PD4-ed-L2j"/>
-                                                <constraint firstItem="Dh8-bm-mfL" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="1za-K4-BeO" secondAttribute="trailing" constant="30" id="POv-5m-ufy"/>
+                                                <constraint firstItem="Dh8-bm-mfL" firstAttribute="leading" secondItem="1za-K4-BeO" secondAttribute="trailing" constant="30" id="POv-5m-ufy"/>
                                                 <constraint firstItem="1za-K4-BeO" firstAttribute="top" secondItem="twt-OY-6H3" secondAttribute="top" constant="19" id="QoV-cT-67W"/>
                                                 <constraint firstItem="2wq-pI-ibL" firstAttribute="leading" secondItem="twt-OY-6H3" secondAttribute="leadingMargin" constant="93" id="RHB-BR-8S3"/>
                                                 <constraint firstItem="1za-K4-BeO" firstAttribute="leading" secondItem="twt-OY-6H3" secondAttribute="leading" constant="122" id="S6e-aQ-vro"/>
