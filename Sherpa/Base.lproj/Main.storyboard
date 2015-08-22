@@ -807,7 +807,7 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" translucent="NO" id="hPv-6s-mgP">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="barTintColor" red="0.87450980392156863" green="0.50588235294117645" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" red="0.21568627450980393" green="0.77647058823529413" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                     </navigationBar>
                     <connections>
                         <segue destination="CtT-q8-Sdx" kind="relationship" relationship="rootViewController" id="HQV-3K-OpI"/>
