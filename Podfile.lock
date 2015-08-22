@@ -6,28 +6,29 @@ PODS:
   - Bolts/AppLinks (1.2.0):
     - Bolts/Tasks
   - Bolts/Tasks (1.2.0)
-  - Bond (3.9.0)
+  - Bond (3.10.0)
   - DatePickerCell (1.0.2)
-  - FBSDKCoreKit (4.4.0):
+  - FBSDKCoreKit (4.5.1):
     - Bolts (~> 1.1)
-    - FBSDKCoreKit/arc (= 4.4.0)
-    - FBSDKCoreKit/no-arc (= 4.4.0)
-  - FBSDKCoreKit/arc (4.4.0):
+    - FBSDKCoreKit/arc (= 4.5.1)
+    - FBSDKCoreKit/no-arc (= 4.5.1)
+  - FBSDKCoreKit/arc (4.5.1):
     - Bolts (~> 1.1)
-  - FBSDKCoreKit/no-arc (4.4.0):
+  - FBSDKCoreKit/no-arc (4.5.1):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc
-  - FBSDKLoginKit (4.4.0):
+  - FBSDKLoginKit (4.5.1):
     - FBSDKCoreKit
-  - Parse (1.7.5.3):
+  - Parse (1.8.1):
     - Bolts/Tasks (>= 1.2.0)
-  - ParseFacebookUtilsV4 (1.7.5.3):
+  - ParseFacebookUtilsV4 (1.8.1):
     - Bolts/Tasks (>= 1.2.0)
     - FBSDKCoreKit (~> 4.0)
     - FBSDKLoginKit (~> 4.0)
-    - Parse (~> 1.7.5.3)
-  - ParseUI (1.1.4):
-    - Parse (~> 1.7)
+    - Parse (~> 1.8.0)
+  - ParseUI (1.1.5):
+    - Bolts/Tasks (~> 1.2)
+    - Parse (~> 1.8)
   - SinchRTC (3.5.2)
 
 DEPENDENCIES:
@@ -44,13 +45,13 @@ DEPENDENCIES:
 SPEC CHECKSUMS:
   AKPickerView-Swift: 7989ebd544dc2adcbb56ffd48bbb8d3c3ea2d71d
   Bolts: d176cb1e0012175589e389a9db49b85e27787576
-  Bond: 994ccc56aebfe2707d7b5e76f6d665a5beefa45b
+  Bond: c873dba04a09dde9e422242420979aa8e4c9e133
   DatePickerCell: b2abd1f6ba08f01da11baee73a503d6dc33f3118
-  FBSDKCoreKit: 75bdd75c980e811db218488d99dd93b7740f4474
-  FBSDKLoginKit: 02a9254a4c132412fa03577b0d53e936d068a7fb
-  Parse: 373adbb1ad2e34d383542c3b28f678c49ebe4881
-  ParseFacebookUtilsV4: ea5db22e87b91cbf99b9d156642e2b97a4db7d51
-  ParseUI: d1228541b02a36a7354c8f47747f5f7a89cf1ff0
+  FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
+  FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b
+  Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
+  ParseFacebookUtilsV4: 2c54f1c9756f4827417984f42b64bc38571d626b
+  ParseUI: 2c53621ed028ee793f5ab92a551b099689265525
   SinchRTC: b5de8c84210666db5cbac256ff77953905364175
 
 COCOAPODS: 0.38.0

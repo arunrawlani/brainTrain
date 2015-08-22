@@ -9,36 +9,10 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="SHERPA" translatesAutoresizingMaskIntoConstraints="NO" id="lgZ-7B-Cvu">
-                    <rect key="frame" x="83" y="182" width="209" height="51"/>
-                </imageView>
-            </subviews>
-            <color key="backgroundColor" red="0.87450980392156863" green="0.50588235294117645" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
-            <constraints>
-                <constraint firstItem="lgZ-7B-Cvu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="160" id="3fc-nE-Unh"/>
-                <constraint firstItem="lgZ-7B-Cvu" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="40" id="43h-Gm-EDo"/>
-                <constraint firstAttribute="bottom" secondItem="lgZ-7B-Cvu" secondAttribute="bottom" constant="434" id="79L-xf-Pbn"/>
-                <constraint firstAttribute="trailing" secondItem="lgZ-7B-Cvu" secondAttribute="trailing" constant="40" id="JxW-aa-5uN"/>
-                <constraint firstAttribute="centerX" secondItem="lgZ-7B-Cvu" secondAttribute="centerX" id="Q4S-dv-HcI"/>
-                <constraint firstItem="lgZ-7B-Cvu" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="182" id="QTZ-j2-Njg"/>
-                <constraint firstAttribute="centerY" secondItem="lgZ-7B-Cvu" secondAttribute="centerY" id="b9x-vP-lfD"/>
-            </constraints>
+            <color key="backgroundColor" red="0.24145977681127956" green="0.87450980392156863" blue="0.46224496235696122" alpha="1" colorSpace="calibratedRGB"/>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-            <variation key="default">
-                <mask key="constraints">
-                    <exclude reference="43h-Gm-EDo"/>
-                    <exclude reference="79L-xf-Pbn"/>
-                    <exclude reference="JxW-aa-5uN"/>
-                    <exclude reference="QTZ-j2-Njg"/>
-                    <exclude reference="b9x-vP-lfD"/>
-                </mask>
-            </variation>
             <point key="canvasLocation" x="490.5" y="209.5"/>
         </view>
     </objects>
-    <resources>
-        <image name="SHERPA" width="251" height="66"/>
-    </resources>
 </document>

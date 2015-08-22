@@ -36,7 +36,7 @@ typedef void(^FBSDKBridgeAPICallbackBlock)(FBSDKBridgeAPIResponse *response);
 - (void)openBridgeAPIRequest:(FBSDKBridgeAPIRequest *)request
              completionBlock:(FBSDKBridgeAPICallbackBlock)completionBlock;
 
-- (BOOL)openURL:(NSURL *)url sender:(id<FBSDKURLOpening>)sender;
+- (void)openURL:(NSURL *)url sender:(id<FBSDKURLOpening>)sender handler:(void(^)(BOOL))handler;
 
 @property (nonatomic, readonly, getter=isActive) BOOL active;
 
