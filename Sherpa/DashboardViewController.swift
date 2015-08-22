@@ -18,6 +18,8 @@ class DashboardViewController: UIViewController {
     var photoTakingHelper: PhotoTakingHelper?
     var photoUploadTask: UIBackgroundTaskIdentifier?
     
+    @IBOutlet weak var pointsEarned: UILabel!
+    @IBOutlet weak var treesPlanted: UILabel!
     @IBOutlet weak var userImage: UIImageView!
     var scheduledTours: [Request] = []
     
@@ -72,6 +74,10 @@ class DashboardViewController: UIViewController {
         var firstName: String = PFUser.currentUser()!["firstName"] as! String
         var lastName: String = PFUser.currentUser()!["lastName"] as! String
         var fullName: String = "\(firstName) \(lastName)"
+        var points = PFUser.currentUser()!["pointsEarned"] as! Int
+        self.pointsEarned.text = "\(points)"
+        var trees = PFUser.currentUser()!["treesPlanted"] as! Int
+        self.treesPlanted.text = "\(trees)"
         self.nameLabel.text = fullName
         if (PFUser.currentUser()!["userImage"] == nil){
             self.userImage.image = UIImage(named:"DisplayPicture")

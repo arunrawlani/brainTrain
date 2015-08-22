@@ -10,7 +10,7 @@ import Foundation
 import AKPickerView_Swift
 import Parse
 
-class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDelegate, UITextFieldDelegate {
+class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerViewDelegate {
     
     @IBOutlet weak var sumLabel: UILabel!
     @IBOutlet weak var reviewImage: UIImageView!
@@ -19,8 +19,9 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     @IBOutlet weak var pickerView: AKPickerView!
     @IBOutlet weak var timePicker: AKPickerView!
     @IBOutlet weak var reviewNumLabel: UILabel!
-    @IBOutlet weak var dateLabel: UITextField!
+  //  @IBOutlet weak var dateLabel: UITextField!
     @IBOutlet weak var mainCityPicture: UIImageView!
+    @IBOutlet weak var totalLabel: UILabel!
     
     @IBOutlet weak var requestButton: UIButton!
     var requestPressedCounter: Int = 1
@@ -58,12 +59,12 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         
         mainCityPicture.image = mainImage
         
-        popDatePicker = PopDatePicker(forTextField: dateLabel)
-        dateLabel.delegate = self
-        dateLabel.textColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
-        dateLabel.attributedPlaceholder = NSAttributedString(string:"Tap here to Select",
-        attributes:[NSForegroundColorAttributeName: UIColor.lightGrayColor()])
-        dateLabel.borderStyle = .None
+     //   popDatePicker = PopDatePicker(forTextField: dateLabel)
+     //   dateLabel.delegate = self
+     //   dateLabel.textColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
+     //   dateLabel.attributedPlaceholder = NSAttributedString(string:"Tap here to Select",
+     //   attributes:[NSForegroundColorAttributeName: UIColor.lightGrayColor()])
+     //   dateLabel.borderStyle = .None
         
         self.pickerView.delegate = self
         self.pickerView.dataSource = self
@@ -78,7 +79,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.pickerView.font = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.pickerView.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.pickerView.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
-        self.pickerView.highlightedTextColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
+        self.pickerView.highlightedTextColor = UIColor(red: 55.0/256.0, green: 198.0/256.0, blue: 144.0/256.0, alpha: 1.0)
         self.pickerView.textColor = UIColor.whiteColor()
         self.pickerView.interitemSpacing = 17.0
         self.pickerView.viewDepth = 1000.0
@@ -89,7 +90,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         self.timePicker.font = UIFont(name: "AvenirNext-Medium", size: 17)!
         self.timePicker.textColor = UIColor(red: 0/256, green: 0/256, blue: 0/256, alpha: 0.5)
         self.timePicker.highlightedFont = UIFont(name: "AvenirNext-Medium", size: 17)!
-        self.timePicker.highlightedTextColor = UIColor(red: 220.0/256.0, green: 147.0/256.0, blue: 52.0/256.0, alpha: 1.0)
+        self.timePicker.highlightedTextColor = UIColor(red: 55.0/256.0, green: 198.0/256.0, blue: 144.0/256.0, alpha: 1.0)
         self.timePicker.textColor = UIColor.whiteColor()
         self.timePicker.interitemSpacing = 17.0
         self.timePicker.viewDepth = 1000.0
@@ -100,7 +101,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         nameLabel.text = tourName
         costLabel.text = tourCost
         sumLabel.text = tourSum
-        reviewNumLabel.text = "(\(reviewsNum))"
+       // reviewNumLabel.text = "(\(reviewsNum))"
         self.languages = tourLang
         self.time = tourTimes
         
@@ -133,15 +134,28 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 reviewImage.image = UIImage(named : "5stars")
                 }
         }
+        
+    }
+    
+    override func viewDidAppear(animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if (selectedTime == "1"){
+            var number = 2*40
+            var answer = String(number)
+            self.totalLabel.text = answer
+        }
+        
     }
     
     //MARK: all about the pop up date picker and the TextField Delegate
     func resign() {
         
-        dateLabel.resignFirstResponder()
+    //    dateLabel.resignFirstResponder()
     }
-    func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
+   /* func textFieldShouldBeginEditing(textField: UITextField) -> Bool {
         
+    
         if (textField === dateLabel) {
             resign()
             let formatter = NSDateFormatter()
@@ -162,7 +176,7 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
         else {
             return true
         }
-    }
+    } */
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
         
@@ -235,19 +249,39 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
     func pickerView(pickerView: AKPickerView, didSelectItem item: Int) {
         if(pickerView.tag == 1){
         self.selectedLanguage = self.languages[item]
-        println("You selected \(selectedLanguage)")
+        println("Your language \(selectedLanguage)")
         }
         else{
             self.selectedTime = self.time[item]
-            println("You selected \(selectedTime)")
+            println("Your time \(selectedTime)")
+            if (selectedTime == "1"){
+                var number = 1*1
+                var answer = "$\(number).00"
+                self.totalLabel.text = answer
+            }
+            else if (selectedTime == "12"){
+                var number = 12*1
+                var answer = "$\(number).00"
+                self.totalLabel.text = answer
+            }
+            else if (selectedTime == "40"){
+                var number = 40*1
+                var answer = "$\(number).00"
+                self.totalLabel.text = answer
+            }
+            else if (selectedTime == "100") {
+                var number = 100*1
+                var answer = "$\(number).00"
+                self.totalLabel.text = answer
+            }
         }
     }
     
     
     @IBAction func requestButtonPressed(sender: UIButton) {
-            if (self.selectedLanguage == "None" || self.selectedTime == "None" || self.dateLabel.text == ""){
+            if (self.selectedLanguage == "None" || self.selectedTime == "None"){
                 //GIVES AN ERROR MESSAGE
-                var alert = UIAlertController(title: "Incomplete Request!", message: "Please select a date, time and language", preferredStyle: .Alert)
+                var alert = UIAlertController(title: "Incomplete Request!", message: "Please select a payment type and number of trees to be planted.", preferredStyle: .Alert)
                 let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
                     //...
                 }
@@ -266,14 +300,14 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 request["toUser"] = self.createdBy
                 request["isRejected"] = false
                 request["isCancelled"] = false
-                request["requestedDate"] = dateLabel.text
+                request["requestedDate"] = "Trees Planted"
                 // setting global variable requestSubmitted to true for the query to be done.
                 let appDelegate = UIApplication.sharedApplication().delegate as! AppDelegate
                 appDelegate.requestSubmitted = true
                 
                 request.saveInBackgroundWithBlock{(success: Bool, error: NSError?) -> Void in
                     if (success){
-                        var alert = UIAlertController(title: "Request Sent!", message: "All your tour requests will be displayed on the Dashboard. ", preferredStyle: .Alert)
+                        var alert = UIAlertController(title: "Donation Sent!", message: "Check the DashBoard for your earned points.", preferredStyle: .Alert)
                         let OKAction = UIAlertAction(title: "OK", style: .Default){ (action) in
                             //...
                             self.navigationController?.popToRootViewControllerAnimated(true)

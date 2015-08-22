@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "4stars@1x.png"
+      "filename" : "4trees.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "4stars@2x.png"
+      "filename" : "4trees@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "4stars@3x.png"
+      "filename" : "4trees@3x.png"
     }
   ],
   "info" : {

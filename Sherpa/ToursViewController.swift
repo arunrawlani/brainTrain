@@ -114,6 +114,7 @@ class ToursViewController: UIViewController, UITableViewDelegate , UITableViewDa
         
         //Changing the display to circular and adding a border
         cell.userImageView.image = UIImage(named:"newUser")
+        cell.userImageView.hidden = true
         cell.userImageView.layer.cornerRadius = cell.userImageView.frame.size.width / 2
         cell.userImageView.clipsToBounds = true
         cell.userImageView.layer.borderWidth = 1.0

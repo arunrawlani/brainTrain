@@ -18,7 +18,7 @@ class DataExplore {
         }
     }
     let places = [
-        Entry(fname: "NewYork", heading: "North America"),
+        Entry(fname: "NewYork", heading: "South America"),
         Entry(fname: "LasVegas", heading: "Africa"),
         Entry(fname: "LosAngeles", heading: "Asia")
     ]

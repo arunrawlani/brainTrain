@@ -40,7 +40,7 @@ class SignViewController: UIViewController{
         
         
         //Customizing tint of the text fields
-        var color: UIColor = UIColor(red: 229/255.0, green: 147/255.0, blue: 52/255.0, alpha: 100.0)
+        var color: UIColor = UIColor(red: 55.0/255.0, green: 198.0/255.0, blue: 144.0/255.0, alpha: 100.0)
         self.firstNameTF.tintColor = color
         self.lastNameTF.tintColor = color
         self.usernameTF.tintColor = color
@@ -67,6 +67,8 @@ class SignViewController: UIViewController{
         var username = self.usernameTF.text
         var password = self.passwordTF.text
         var email = self.emailTF.text
+        var pointsEarned = 0
+        var treesPlanted = 0
         
         
         if (count(firstName.utf16) < 1 || count(lastName.utf16) < 1){
@@ -122,6 +124,8 @@ class SignViewController: UIViewController{
             newUser.username = username
             newUser.password = password
             newUser.email = email
+            newUser["pointsEarned"] = pointsEarned
+            newUser["treesPlanted"] = treesPlanted
             
             newUser.signUpInBackgroundWithBlock({ (suceed, error) -> Void in
                 
