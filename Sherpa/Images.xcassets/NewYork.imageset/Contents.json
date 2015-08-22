@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "NewYork@1x.png"
+      "filename" : "northAmerica2.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "NewYork@2x.png"
+      "filename" : "northAmerica2@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "NewYork@3x.png"
+      "filename" : "northAmerica2@3x.png"
     }
   ],
   "info" : {

@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "DASHBOARD Copy@1x.png"
+      "filename" : "dashBackground.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "DASHBOARD Copy@2x.png"
+      "filename" : "dashBackground@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "DASHBOARD Copy@3x.png"
+      "filename" : "dashBackground@3x.png"
     }
   ],
   "info" : {

@@ -176,7 +176,7 @@ extension DashboardViewController: UITableViewDataSource{
     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
         if (scheduledTours.count == 0) {
             var messageLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
-            messageLabel.text = "No scheduled tours"
+            messageLabel.text = "No donations yet"
             messageLabel.textColor = UIColor.whiteColor()
             messageLabel.font = UIFont(name: "Avenir Next", size: 27)
             messageLabel.numberOfLines = 1
