@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "LosAngeles@1x.png"
+      "filename" : "asia.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "LosAngeles@2x.png"
+      "filename" : "asia@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "LosAngeles@3x.png"
+      "filename" : "asia@3x.png"
     }
   ],
   "info" : {

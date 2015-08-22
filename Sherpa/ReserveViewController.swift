@@ -293,6 +293,34 @@ class ReserveViewController: UIViewController, AKPickerViewDataSource, AKPickerV
                 sender.backgroundColor = UIColor.grayColor()
                 var request = PFObject(className: "RequestTour")
                 request["requestedTime"] = self.selectedTime
+                if(selectedTime == "1"){
+                    var trees = PFUser.currentUser()!["treesPlanted"] as! Int + 1
+                    PFUser.currentUser()!["treesPlanted"] = trees
+                    var points = PFUser.currentUser()!["pointsEarned"] as! Int + 10
+                    PFUser.currentUser()!["pointsEarned"] = points
+                    PFUser.currentUser()?.saveInBackgroundWithBlock(nil)
+                }
+                else if (selectedTime == "12"){
+                    var trees = PFUser.currentUser()!["treesPlanted"] as! Int + 12
+                    PFUser.currentUser()!["treesPlanted"] = trees
+                    var points = PFUser.currentUser()!["pointsEarned"] as! Int + 120
+                    PFUser.currentUser()!["pointsEarned"] = points
+                    PFUser.currentUser()?.saveInBackgroundWithBlock(nil)
+                }
+                else if (selectedTime == "40"){
+                    var trees = PFUser.currentUser()!["treesPlanted"] as! Int + 40
+                    PFUser.currentUser()!["treesPlanted"] = trees
+                    var points = PFUser.currentUser()!["pointsEarned"] as! Int + 400
+                    PFUser.currentUser()!["pointsEarned"] = points
+                    PFUser.currentUser()?.saveInBackgroundWithBlock(nil)
+                }
+                else if (selectedTime == "100"){
+                    var trees = PFUser.currentUser()!["treesPlanted"] as! Int + 100
+                    PFUser.currentUser()!["treesPlanted"] = trees
+                    var points = PFUser.currentUser()!["pointsEarned"] as! Int + 1000
+                    PFUser.currentUser()!["pointsEarned"] = points
+                    PFUser.currentUser()?.saveInBackgroundWithBlock(nil)
+                }
                 request["requestedLang"] = self.selectedLanguage
                 request["fromUser"] = PFUser.currentUser()
                 request["isApproved"] = false

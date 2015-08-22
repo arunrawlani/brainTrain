@@ -32,7 +32,7 @@ class DashboardTableViewCell: UITableViewCell {
 
  @IBAction func tourCancelled(sender: AnyObject) {
     
-    self.cancelButton.hidden = true
+   /* self.cancelButton.hidden = true
     self.timelineButton.hidden = true
     self.tourRequest!["isCancelled"] = true
     tourRequest?.saveInBackgroundWithBlock{
@@ -48,6 +48,7 @@ class DashboardTableViewCell: UITableViewCell {
             //fail
             println("Failed to update isCancelled.")
         }
-    }
+    }*/
+    println("Show Details")
 }
 }

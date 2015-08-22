@@ -212,6 +212,7 @@ extension DashboardViewController: UITableViewDataSource{
         //}
         cell.tourDateLabel.text = scheduledTours[indexPath.row].requestedDate
         cell.tourGuideLabel.text = scheduledTours[indexPath.row].toUser!.username
+        cell.tourGuideLabel.hidden = true
         cell.timeLabel.text = scheduledTours[indexPath.row].requestedTime
         if (!scheduledTours[indexPath.row].isApproved){
             cell.pendingLabel.hidden = false
