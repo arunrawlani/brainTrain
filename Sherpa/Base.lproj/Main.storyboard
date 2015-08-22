@@ -9,13 +9,13 @@
         <!--Explore-->
         <scene sceneID="N2l-1a-4uA">
             <objects>
-                <tableViewController id="CtT-q8-Sdx" customClass="TableViewForExplore" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="CtT-q8-Sdx" customClass="TableViewForExplore" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="286" sectionHeaderHeight="22" sectionFooterHeight="22" id="2vX-Zw-3RZ">
                         <rect key="frame" x="0.0" y="64" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="286" id="gNw-0g-6RF" customClass="ExploreTableCell" customModule="Sherpa" customModuleProvider="target">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="286" id="gNw-0g-6RF" customClass="ExploreTableCell" customModule="dollarTree" customModuleProvider="target">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gNw-0g-6RF" id="KK0-As-5UR">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -95,7 +95,7 @@
         <!--Tours-->
         <scene sceneID="thQ-gH-tKj">
             <objects>
-                <viewController id="Zjw-NC-q1k" customClass="ToursViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Zjw-NC-q1k" customClass="ToursViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Vmf-gz-Axp"/>
                         <viewControllerLayoutGuide type="bottom" id="cSQ-ca-iiD"/>
@@ -126,7 +126,7 @@
                                 <color key="separatorColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="7Su-TK-lsv" customClass="ToursTableCell" customModule="Sherpa" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" rowHeight="110" id="7Su-TK-lsv" customClass="ToursTableCell" customModule="dollarTree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="598" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7Su-TK-lsv" id="lJb-4n-zTK">
@@ -246,7 +246,7 @@
         <!--Overview-->
         <scene sceneID="74g-8A-NFl">
             <objects>
-                <viewController id="G8P-6K-jD2" customClass="ReserveViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="G8P-6K-jD2" customClass="ReserveViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="WuB-2N-UOl"/>
                         <viewControllerLayoutGuide type="bottom" id="tMC-Ga-5ii"/>
@@ -571,7 +571,7 @@
         <!--Write Review-->
         <scene sceneID="zVx-G2-uZu">
             <objects>
-                <viewController id="nNO-qS-U6N" customClass="ReviewViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="nNO-qS-U6N" customClass="ReviewViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Wyo-1l-C0k"/>
                         <viewControllerLayoutGuide type="bottom" id="N20-CL-3Wb"/>
@@ -711,7 +711,7 @@
                                 <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPL-76-GDX" customClass="FloatRatingView" customModule="Sherpa" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fPL-76-GDX" customClass="FloatRatingView" customModule="dollarTree" customModuleProvider="target">
                                 <rect key="frame" x="75" y="129" width="451" height="28"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -851,7 +851,7 @@
         <!--Main View Controller-->
         <scene sceneID="2in-1F-DlT">
             <objects>
-                <viewController storyboardIdentifier="NavigationControllerView" id="dRK-XQ-8tj" customClass="MainViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="NavigationControllerView" id="dRK-XQ-8tj" customClass="MainViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="TwG-De-8gl"/>
                         <viewControllerLayoutGuide type="bottom" id="aDA-Z0-F8D"/>
@@ -865,14 +865,14 @@
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c5r-Nr-5PU">
                                 <rect key="frame" x="0.0" y="525" width="600" height="75"/>
-                                <color key="backgroundColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="6ZB-dj-6pt"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="SIGN UP">
-                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
-                                    <color key="titleShadowColor" red="0.81176470588235294" green="0.81176470588235294" blue="0.81176470588235294" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" red="0.16470588235294117" green="0.74901960784313726" blue="0.48627450980392156" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 </state>
                                 <connections>
                                     <segue destination="bCe-M1-vWW" kind="presentation" modalPresentationStyle="overFullScreen" id="R0D-UJ-GRs"/>
@@ -880,27 +880,33 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-Ft-L7q">
                                 <rect key="frame" x="0.0" y="450" width="600" height="75"/>
-                                <color key="backgroundColor" red="1" green="0.6373136909296645" blue="0.17866591423710154" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.17311041526875515" green="0.78033881279281614" blue="0.56233394132417458" alpha="1" colorSpace="calibratedRGB"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="CTf-1X-0Hd"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="18"/>
                                 <state key="normal" title="LOG IN">
-                                    <color key="titleColor" cocoaTouchSystemColor="tableCellGroupedBackgroundColor"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <segue destination="r4I-M6-alE" kind="presentation" modalPresentationStyle="overFullScreen" id="U6B-Xy-65X"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHERPA-black@1x" translatesAutoresizingMaskIntoConstraints="NO" id="16r-Pe-C3h">
-                                <rect key="frame" x="173" y="45" width="254" height="60"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="One dollar. One tree." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkk-h9-pf5">
+                                <rect key="frame" x="168" y="176" width="264.5" height="20.5"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="1.3766541045387456e-05" green="0.0026099280973451711" blue="3.511384301180005e-05" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="SHERPA-black@1x" translatesAutoresizingMaskIntoConstraints="NO" id="16r-Pe-C3h">
+                                <rect key="frame" x="145" y="84" width="311" height="87"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="254" id="6vt-1y-Pex"/>
-                                    <constraint firstAttribute="height" constant="60" id="DQo-kP-PJ2"/>
+                                    <constraint firstAttribute="height" constant="87" id="DQo-kP-PJ2"/>
                                     <constraint firstAttribute="height" constant="60" id="oJR-k9-VFH"/>
-                                    <constraint firstAttribute="width" constant="254" id="vE9-iS-TLV"/>
+                                    <constraint firstAttribute="width" constant="311" id="vE9-iS-TLV"/>
                                 </constraints>
                                 <variation key="default">
                                     <mask key="constraints">
@@ -909,12 +915,6 @@
                                     </mask>
                                 </variation>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Find your guide, anywhere you go." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mkk-h9-pf5">
-                                <rect key="frame" x="168" y="120" width="264.5" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -930,9 +930,9 @@
                             <constraint firstAttribute="trailing" secondItem="16r-Pe-C3h" secondAttribute="trailing" constant="173" id="Chm-Ah-PaJ"/>
                             <constraint firstItem="16r-Pe-C3h" firstAttribute="leading" secondItem="FAT-CC-lNm" secondAttribute="leadingMargin" constant="40" id="Hv6-ub-9aq"/>
                             <constraint firstAttribute="trailing" secondItem="BKK-Ft-L7q" secondAttribute="trailing" id="IUk-6I-9Pc"/>
-                            <constraint firstAttribute="centerY" secondItem="mkk-h9-pf5" secondAttribute="centerY" priority="250" constant="149" id="OOT-1R-o4e"/>
+                            <constraint firstAttribute="centerY" secondItem="mkk-h9-pf5" secondAttribute="centerY" priority="250" constant="113.75" id="OOT-1R-o4e"/>
                             <constraint firstItem="aDA-Z0-F8D" firstAttribute="top" secondItem="c5r-Nr-5PU" secondAttribute="bottom" id="PiG-pz-s7A"/>
-                            <constraint firstAttribute="centerY" secondItem="16r-Pe-C3h" secondAttribute="centerY" priority="250" constant="225" id="Yua-58-ryU"/>
+                            <constraint firstAttribute="centerY" secondItem="16r-Pe-C3h" secondAttribute="centerY" priority="250" constant="172.5" id="Yua-58-ryU"/>
                             <constraint firstItem="c5r-Nr-5PU" firstAttribute="top" secondItem="BKK-Ft-L7q" secondAttribute="bottom" id="a8C-G2-ZMR"/>
                             <constraint firstItem="c5r-Nr-5PU" firstAttribute="top" secondItem="1Ct-v0-Kma" secondAttribute="bottom" constant="-75" id="gGJ-Wh-i3w"/>
                             <constraint firstAttribute="trailing" secondItem="c5r-Nr-5PU" secondAttribute="trailing" id="jgq-qk-i0S"/>
@@ -942,8 +942,8 @@
                             <constraint firstItem="16r-Pe-C3h" firstAttribute="leading" secondItem="FAT-CC-lNm" secondAttribute="leading" constant="173" id="syn-qe-g4d"/>
                             <constraint firstItem="c5r-Nr-5PU" firstAttribute="leading" secondItem="FAT-CC-lNm" secondAttribute="leading" id="tev-My-v63"/>
                             <constraint firstItem="1Ct-v0-Kma" firstAttribute="leading" secondItem="FAT-CC-lNm" secondAttribute="leading" id="xdI-ek-Qdi"/>
-                            <constraint firstItem="mkk-h9-pf5" firstAttribute="top" secondItem="16r-Pe-C3h" secondAttribute="bottom" constant="15" id="y7G-n3-50V"/>
-                            <constraint firstItem="1Ct-v0-Kma" firstAttribute="top" secondItem="16r-Pe-C3h" secondAttribute="bottom" constant="-105" id="yNU-Pf-kN7"/>
+                            <constraint firstItem="mkk-h9-pf5" firstAttribute="top" secondItem="16r-Pe-C3h" secondAttribute="bottom" constant="5" id="y7G-n3-50V"/>
+                            <constraint firstItem="1Ct-v0-Kma" firstAttribute="top" secondItem="16r-Pe-C3h" secondAttribute="bottom" constant="-171" id="yNU-Pf-kN7"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -969,7 +969,7 @@
         <!--LOG IN-->
         <scene sceneID="cc7-gn-XfO">
             <objects>
-                <viewController id="hBj-7q-QnE" customClass="LoginViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hBj-7q-QnE" customClass="LoginViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="1DW-3o-82b"/>
                         <viewControllerLayoutGuide type="bottom" id="dW1-8f-ubl"/>
@@ -1002,13 +1002,13 @@
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
                                         </textField>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rQ3-ZO-gJR">
-                                            <rect key="frame" x="191" y="207" width="196" height="48"/>
+                                            <rect key="frame" x="191" y="207" width="196" height="40"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="196" id="ytk-FC-hzj"/>
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                             <state key="normal" title="LOG IN" backgroundImage="Login Button">
-                                                <color key="titleColor" red="0.83529411764705885" green="0.54117647058823526" blue="0.25098039215686274" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" red="0.21568627450980393" green="0.77647058823529413" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -1097,7 +1097,7 @@
         <!--Sign Up View Controller-->
         <scene sceneID="0ks-rf-IJw">
             <objects>
-                <viewController id="ck4-65-Wqy" userLabel="Sign Up View Controller" customClass="SignViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="ck4-65-Wqy" userLabel="Sign Up View Controller" customClass="SignViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="kfM-m9-qeV"/>
                         <viewControllerLayoutGuide type="bottom" id="R5x-VU-1Qy"/>
@@ -1311,7 +1311,7 @@
                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sao-wv-WMh">
                                             <rect key="frame" x="0.0" y="137" width="568" height="363"/>
                                             <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
-                                            <string key="text">Sherpa does not hold responsibilty for any of the tours being fixed over the platform. It is your own responsibilty to ensure all safety measures are taken to allow for for more comfortable and fun experience.</string>
+                                            <string key="text">dollarTree does not hold responsibilty for any donations given over the platform. However, it ensures that once the donation is received, it will be used to plant trees in deforested regions only. </string>
                                             <color key="textColor" red="0.99111587389380529" green="0.99111587389380529" blue="0.99111587389380529" alpha="0.60999999999999999" colorSpace="calibratedRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="14"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1345,7 +1345,7 @@
         <!--Dashboard-->
         <scene sceneID="x49-Px-Pxi">
             <objects>
-                <viewController title="Dashboard" id="bJY-D6-CfU" customClass="DashboardViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="bJY-D6-CfU" customClass="DashboardViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="usy-5S-UKe"/>
                         <viewControllerLayoutGuide type="bottom" id="By8-Rc-5Wx"/>
@@ -1403,7 +1403,7 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="X2b-RC-0L0">
                                 <rect key="frame" x="0.0" y="288.5" width="600" height="261.5"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="RequestCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="121" id="Cf7-bl-Nnn" customClass="DashboardTableViewCell" customModule="Sherpa" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="RequestCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="RequestCell" rowHeight="121" id="Cf7-bl-Nnn" customClass="DashboardTableViewCell" customModule="dollarTree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Cf7-bl-Nnn" id="mwh-ea-FbE">
@@ -1611,7 +1611,7 @@
         <!--Requests-->
         <scene sceneID="4Oy-Bt-RLs">
             <objects>
-                <viewController title="Requests" id="fhS-MA-6Zi" customClass="RequestViewController" customModule="Sherpa" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Requests" id="fhS-MA-6Zi" customClass="RequestViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8ur-d3-7RI"/>
                         <viewControllerLayoutGuide type="bottom" id="6tq-kK-ZiM"/>
@@ -1645,7 +1645,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="ScheduleCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" rowHeight="121" id="6qe-yt-k5O" customClass="RequestTableViewCell" customModule="Sherpa" customModuleProvider="target">
+                                    <tableViewCell contentMode="scaleToFill" restorationIdentifier="ScheduleCell" selectionStyle="default" indentationWidth="10" reuseIdentifier="ScheduleCell" rowHeight="121" id="6qe-yt-k5O" customClass="RequestTableViewCell" customModule="dollarTree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="240" width="600" height="121"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6qe-yt-k5O" id="twt-OY-6H3">
@@ -1935,11 +1935,11 @@
         <image name="DisplayPicture" width="79" height="77"/>
         <image name="ExploreIcon" width="22" height="22"/>
         <image name="HumanIcon" width="14" height="20"/>
-        <image name="Login Button" width="236" height="48"/>
+        <image name="Login Button" width="228" height="40"/>
         <image name="NewYork" width="375" height="257"/>
         <image name="Or" width="287" height="26"/>
         <image name="Rectangle" width="375" height="2"/>
-        <image name="SHERPA-black@1x" width="251" height="66"/>
+        <image name="SHERPA-black@1x" width="333" height="60"/>
         <image name="Signup Button" width="236" height="48"/>
         <image name="StarEmpty" width="46" height="44"/>
         <image name="StarFull" width="46" height="44"/>

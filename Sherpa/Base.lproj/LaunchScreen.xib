@@ -9,10 +9,24 @@
         <view contentMode="scaleToFill" id="iN0-l3-epB">
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-            <color key="backgroundColor" red="0.24145977681127956" green="0.87450980392156863" blue="0.46224496235696122" alpha="1" colorSpace="calibratedRGB"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LaunchScreen" translatesAutoresizingMaskIntoConstraints="NO" id="KP2-lI-BDd">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="KP2-lI-BDd" secondAttribute="bottom" id="JDJ-dB-vvc"/>
+                <constraint firstItem="KP2-lI-BDd" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="P9D-9l-h79"/>
+                <constraint firstAttribute="trailing" secondItem="KP2-lI-BDd" secondAttribute="trailing" id="PJH-Px-xqL"/>
+                <constraint firstItem="KP2-lI-BDd" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SKb-uT-FV7"/>
+            </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
             <point key="canvasLocation" x="490.5" y="209.5"/>
         </view>
     </objects>
+    <resources>
+        <image name="LaunchScreen" width="375" height="667"/>
+    </resources>
 </document>

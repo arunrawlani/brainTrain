@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "SHERPA-black@1x.png"
+      "filename" : "dollarTreeLogo.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "SHERPA-black@2x.png"
+      "filename" : "dollarTreeLogo@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "SHERPA-black@3x.png"
+      "filename" : "dollarTreeLogo@3x.png"
     }
   ],
   "info" : {
