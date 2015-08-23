@@ -148,7 +148,7 @@ extension RequestViewController: UITableViewDataSource{
         else{
             if (approvedTour.count == 0) {
                 var messageLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
-                messageLabel.text = "No approved tours"
+                messageLabel.text = "No purchased items"
                 messageLabel.textColor = UIColor.whiteColor()
                 messageLabel.font = UIFont(name: "Avenir Next", size: 24)
                 messageLabel.numberOfLines = 1
@@ -173,9 +173,18 @@ extension RequestViewController: UITableViewDataSource{
         if (requestSegment.selectedSegmentIndex == 0){
         let test = requestedTour[indexPath.row].toTour
         requestedTour[indexPath.row].toTour!.fetchIfNeeded()
-        cell.tourNameLabel.text = requestedTour[indexPath.row].toTour!["tourName"] as? String
-        cell.tourDateLabel.text = requestedTour[indexPath.row].requestedDate
-        cell.touristLabel.text = requestedTour[indexPath.row].fromUser!.username
+        cell.tourNameLabel.text = requestedTour[indexPath.row].productType
+       // cell.tourDateLabel.text = requestedTour[indexPath.row].requestedDate
+      //  cell.touristLabel.text = requestedTour[indexPath.row].fromUser!.username
+        if (requestedTour[indexPath.row].productImage == nil){
+                cell.productImage.image = UIImage(named:"newUser")
+        }
+        else {
+                var userImageFile: AnyObject? = requestedTour[indexPath.row].productImage
+                let data = userImageFile?.getData()
+                cell.productImage.image = UIImage(data: data!, scale: 1.0)
+        }
+        cell.companyName.text = requestedTour[indexPath.row].companyName
         cell.timeLabel.text = requestedTour[indexPath.row].requestedTime
         cell.request = requestedTour[indexPath.row]
          
@@ -186,14 +195,14 @@ extension RequestViewController: UITableViewDataSource{
                 cell.rejectMessage.hidden = true
                 cell.processingMessage.hidden = true
                 cell.approveButton.hidden = false
-                cell.rejectButton.hidden = false
+                
             }
             else if (requestedTour[indexPath.row].isApproved && !requestedTour[indexPath.row].isRejected) {
                 cell.approveMessage.hidden = false
                 cell.rejectMessage.hidden = true
                 cell.processingMessage.hidden = true
                 cell.approveButton.hidden = true
-                cell.rejectButton.hidden = true
+                
                 
             }
             else if (!requestedTour[indexPath.row].isApproved && requestedTour[indexPath.row].isRejected){
@@ -201,7 +210,7 @@ extension RequestViewController: UITableViewDataSource{
                 cell.rejectMessage.hidden = false
                 cell.processingMessage.hidden = true
                 cell.approveButton.hidden = true
-                cell.rejectButton.hidden = true
+               
             }
             
         cell.selectionStyle = UITableViewCellSelectionStyle.None
@@ -210,16 +219,16 @@ extension RequestViewController: UITableViewDataSource{
         else {
         let test = approvedTour[indexPath.row].toTour
         approvedTour[indexPath.row].toTour!.fetchIfNeeded()
-        cell.tourNameLabel.text = approvedTour[indexPath.row].toTour!["tourName"] as? String
-        cell.tourDateLabel.text = approvedTour[indexPath.row].requestedDate
-        cell.touristLabel.text = approvedTour[indexPath.row].fromUser!.username
+        cell.tourNameLabel.text = approvedTour[indexPath.row].productType
+       // cell.tourDateLabel.text = approvedTour[indexPath.row].companyName
+      //  cell.touristLabel.text = approvedTour[indexPath.row].fromUser!.username
         cell.approveMessage.hidden = true
         cell.rejectMessage.hidden = true
         cell.processingMessage.hidden = true
         cell.approveButton.hidden = true
-        cell.rejectButton.hidden = true
         cell.timeLabel.text = approvedTour[indexPath.row].requestedTime
         cell.request = approvedTour[indexPath.row]
+        
         cell.selectionStyle = UITableViewCellSelectionStyle.None
             
         }

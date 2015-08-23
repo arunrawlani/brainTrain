@@ -33,7 +33,6 @@ extension ActivityViewController: UITableViewDataSource, UITableViewDelegate{
     
     func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return self.allActivity.count ?? 0
-        println(self.allActivity.count)
     }
 
     func numberOfSectionsInTableView(tableView: UITableView) -> Int{
@@ -75,6 +74,8 @@ extension ActivityViewController: UITableViewDataSource, UITableViewDelegate{
         cell.userImage.clipsToBounds = true
         cell.userImage.layer.borderWidth = 1.0
         cell.userImage.layer.borderColor = UIColor.whiteColor().CGColor
+        
+        cell.selectionStyle = UITableViewCellSelectionStyle.None
         
         return cell
     }

@@ -40,6 +40,9 @@ class Request:PFObject, PFSubclassing{
     @NSManaged var toUser: PFUser?
     @NSManaged var requestedDate: String?
     @NSManaged var isRejected: Bool
+    @NSManaged var companyName: String?
+    @NSManaged var productImage: PFFile?
+    @NSManaged var productType: String?
 
     
     //MARK : PFSubclassing Protocol

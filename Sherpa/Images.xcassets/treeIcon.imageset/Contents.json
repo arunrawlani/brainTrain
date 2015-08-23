@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "Explore.png"
+      "filename" : "treeIcon.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "Explore@2x.png"
+      "filename" : "treeIcon@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "Explore@3x.png"
+      "filename" : "treeIcon@3x.png"
     }
   ],
   "info" : {
