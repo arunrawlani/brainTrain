@@ -36,6 +36,8 @@
 		F109F9161B898D9000B14050 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F9151B898D9000B14050 /* JSON.swift */; };
 		F109F9181B898DF200B14050 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F109F9171B898DF200B14050 /* PublicArt.json */; };
 		F109F9201B89CA5E00B14050 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F91F1B89CA5E00B14050 /* Activity.swift */; };
+		F109F9221B89CE5C00B14050 /* ActivityViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F9211B89CE5C00B14050 /* ActivityViewCell.swift */; };
+		F109F9241B89CE6F00B14050 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F9231B89CE6F00B14050 /* ActivityViewController.swift */; };
 		F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E8D821B693A790037E340 /* ReserveViewController.swift */; };
 		F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */; };
 		F171EF151B757F1F001ADD9B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF141B757F1F001ADD9B /* ReviewViewController.swift */; };
@@ -112,6 +114,8 @@
 		F109F9151B898D9000B14050 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		F109F9171B898DF200B14050 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
 		F109F91F1B89CA5E00B14050 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
+		F109F9211B89CE5C00B14050 /* ActivityViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewCell.swift; sourceTree = "<group>"; };
+		F109F9231B89CE6F00B14050 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		F10E8D821B693A790037E340 /* ReserveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingStarReview.swift; sourceTree = "<group>"; };
 		F171EF141B757F1F001ADD9B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
@@ -226,6 +230,8 @@
 				F171EF111B757E95001ADD9B /* FloatingStar */,
 				F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */,
 				659F00441B5ADECE00E4267B /* AppDelegate.swift */,
+				F109F9231B89CE6F00B14050 /* ActivityViewController.swift */,
+				F109F9211B89CE5C00B14050 /* ActivityViewCell.swift */,
 				F109F9111B898D4100B14050 /* MapViewController.swift */,
 				F109F9131B898D6A00B14050 /* Artwork.swift */,
 				F109F9151B898D9000B14050 /* JSON.swift */,
@@ -508,6 +514,7 @@
 				F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */,
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
 				F1BB0B8B1B7708B50031FB6A /* SignViewController.swift in Sources */,
+				F109F9221B89CE5C00B14050 /* ActivityViewCell.swift in Sources */,
 				F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */,
 				F178CEFA1B7BCAF000B5642D /* DateUtils.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
@@ -526,6 +533,7 @@
 				E2A344401B5B0516004CAF3A /* AppData.swift in Sources */,
 				A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */,
 				E2A3444A1B5B22E8004CAF3A /* DashboardTableViewCell.swift in Sources */,
+				F109F9241B89CE6F00B14050 /* ActivityViewController.swift in Sources */,
 				F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */,
 				659F00451B5ADECE00E4267B /* AppDelegate.swift in Sources */,
 				F178CEF61B7BC72000B5642D /* PopDateViewController.swift in Sources */,

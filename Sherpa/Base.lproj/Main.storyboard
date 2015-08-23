@@ -817,10 +817,10 @@
             </objects>
             <point key="canvasLocation" x="1232" y="-1096"/>
         </scene>
-        <!--Item-->
+        <!--Activity Feed-->
         <scene sceneID="bv8-sP-aa2">
             <objects>
-                <viewController id="QcI-Eg-GMb" sceneMemberID="viewController">
+                <viewController id="QcI-Eg-GMb" customClass="ActivityViewController" customModule="dollarTree" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="E8H-Fj-J6R"/>
                         <viewControllerLayoutGuide type="bottom" id="zh7-ta-RGj"/>
@@ -833,10 +833,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="121" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="YCf-EM-ubt">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <rect key="frame" x="0.0" y="64" width="600" height="487"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="121" id="JcR-mF-DDo">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ActivityCell" rowHeight="121" id="JcR-mF-DDo" customClass="ActivityViewCell" customModule="dollarTree" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="JcR-mF-DDo" id="NUD-rV-xhW">
@@ -880,8 +880,18 @@
                                             </constraints>
                                         </tableViewCellContentView>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="extraDetail" destination="Xdh-ss-ki7" id="1a1-md-l4S"/>
+                                            <outlet property="numberTrees" destination="J0m-vY-GMs" id="qB5-2A-AeO"/>
+                                            <outlet property="userImage" destination="4JM-gt-bqb" id="dXD-j3-M1n"/>
+                                            <outlet property="userName" destination="K4v-wG-CVq" id="tAw-o6-OWp"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="QcI-Eg-GMb" id="q2A-5E-dvz"/>
+                                    <outlet property="delegate" destination="QcI-Eg-GMb" id="2ie-ny-Sxv"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -890,17 +900,32 @@
                             <constraint firstItem="Prt-Z9-vY9" firstAttribute="leading" secondItem="OnJ-No-cUW" secondAttribute="leading" id="MHk-Ii-aVG"/>
                             <constraint firstAttribute="trailing" secondItem="Prt-Z9-vY9" secondAttribute="trailing" id="X6u-FT-X3O"/>
                             <constraint firstAttribute="trailing" secondItem="YCf-EM-ubt" secondAttribute="trailing" id="bZA-PW-FpZ"/>
-                            <constraint firstItem="YCf-EM-ubt" firstAttribute="top" secondItem="OnJ-No-cUW" secondAttribute="top" id="dey-Xz-pk8"/>
+                            <constraint firstItem="YCf-EM-ubt" firstAttribute="top" secondItem="OnJ-No-cUW" secondAttribute="top" constant="50" id="dey-Xz-pk8"/>
+                            <constraint firstAttribute="trailing" secondItem="YCf-EM-ubt" secondAttribute="trailing" id="fhl-vg-yCy"/>
+                            <constraint firstItem="YCf-EM-ubt" firstAttribute="leading" secondItem="OnJ-No-cUW" secondAttribute="leading" id="hph-0d-wS7"/>
                             <constraint firstItem="zh7-ta-RGj" firstAttribute="top" secondItem="YCf-EM-ubt" secondAttribute="bottom" id="oXw-2g-TgR"/>
+                            <constraint firstItem="zh7-ta-RGj" firstAttribute="top" secondItem="YCf-EM-ubt" secondAttribute="bottom" id="s7Z-df-lho"/>
+                            <constraint firstItem="YCf-EM-ubt" firstAttribute="top" secondItem="E8H-Fj-J6R" secondAttribute="bottom" id="tKQ-ir-vzN"/>
                             <constraint firstItem="zh7-ta-RGj" firstAttribute="top" secondItem="Prt-Z9-vY9" secondAttribute="bottom" id="xir-F4-JmN"/>
                             <constraint firstItem="Prt-Z9-vY9" firstAttribute="top" secondItem="OnJ-No-cUW" secondAttribute="top" id="xu2-mL-BjU"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="Ajd-D9-0ug"/>
+                                <exclude reference="bZA-PW-FpZ"/>
+                                <exclude reference="dey-Xz-pk8"/>
+                                <exclude reference="oXw-2g-TgR"/>
+                            </mask>
+                        </variation>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item" id="8hj-98-fbP"/>
+                    <navigationItem key="navigationItem" title="Activity Feed" id="fxh-Ob-vlE"/>
+                    <connections>
+                        <outlet property="tableView" destination="YCf-EM-ubt" id="IlY-oA-q1b"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PRA-Qy-8mk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1521" y="534"/>
+            <point key="canvasLocation" x="2333" y="534"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="h3M-32-FKR">
@@ -978,7 +1003,7 @@
                         <segue destination="A40-0j-2if" kind="relationship" relationship="viewControllers" id="hA6-oJ-5pG"/>
                         <segue destination="1fV-Xa-jrg" kind="relationship" relationship="viewControllers" id="0Fh-3C-F0g"/>
                         <segue destination="0LE-0d-zFh" kind="relationship" relationship="viewControllers" id="7eC-5a-iMS"/>
-                        <segue destination="QcI-Eg-GMb" kind="relationship" relationship="viewControllers" id="8u8-wX-JbE"/>
+                        <segue destination="wGQ-iF-KBO" kind="relationship" relationship="viewControllers" id="8u8-wX-JbE"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pft-h7-h35" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -2124,6 +2149,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NeE-3e-NJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1639" y="-807"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="98j-3L-FMd">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="wGQ-iF-KBO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="8hj-98-fbP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="sdm-g3-Stb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="QcI-Eg-GMb" kind="relationship" relationship="rootViewController" id="Fsd-fJ-N5n"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HIs-CD-Zgc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1521" y="534"/>
         </scene>
     </scenes>
     <resources>
