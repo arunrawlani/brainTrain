@@ -1,7 +1,7 @@
 //  TourOverviewViewController.swift
 //  Sherpa
 //
-//  Created by Arun Rawlani on 7/19/15.
+//  Created by Arun Rawlani on 23/8/15.
 //  Copyright (c) 2015 Arun Rawlani. All rights reserved.
 //
 

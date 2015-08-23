@@ -2,8 +2,8 @@
 //  TimelineViewController.swift
 //  Sherpa
 //
-//  Created by Akhil Nadendla on 7/19/15.
-//  Copyright (c) 2015 Derek Argueta. All rights reserved.
+//  Created by Arun Rawlani on 23/8/15.
+//  Copyright (c) 2015 Arun Rawlani. All rights reserved.
 //
 
 import UIKit

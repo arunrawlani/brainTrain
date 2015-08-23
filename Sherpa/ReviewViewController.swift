@@ -2,8 +2,8 @@
 //  ReviewViewController.swift
 //  Rating Demo
 //
-//  Created by Arun Rawlani
-//  Copyright (c) Arun Rawlani. All rights reserved.
+//  Created by Arun Rawlani on 23/8/15.
+//  Copyright (c) 2015 Arun Rawlani. All rights reserved.
 //
 
 import UIKit
