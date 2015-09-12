@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "africa.png"
+      "filename" : "time.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "africa@2x.png"
+      "filename" : "time@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "africa@3x.png"
+      "filename" : "time@3x.png"
     }
   ],
   "info" : {

@@ -6,7 +6,7 @@
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
-        <!--Regions-->
+        <!--Discover-->
         <scene sceneID="N2l-1a-4uA">
             <objects>
                 <tableViewController id="CtT-q8-Sdx" customClass="TableViewForExplore" customModule="autism" customModuleProvider="target" sceneMemberID="viewController">
@@ -83,7 +83,7 @@
                             <outlet property="delegate" destination="CtT-q8-Sdx" id="So1-xc-ySY"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Regions" id="ogJ-L0-juL"/>
+                    <navigationItem key="navigationItem" title="Discover" id="ogJ-L0-juL"/>
                     <connections>
                         <segue destination="Zjw-NC-q1k" kind="show" identifier="goToTours" id="iLm-cj-bm7"/>
                     </connections>
@@ -108,17 +108,17 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="487"/>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="NewYork" translatesAutoresizingMaskIntoConstraints="NO" id="gVc-v6-6nt">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="265"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="280"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KOU-C8-IXd">
-                                <rect key="frame" x="21" y="227" width="50.5" height="27.5"/>
+                                <rect key="frame" x="21" y="242" width="50.5" height="27.5"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="20"/>
                                 <color key="textColor" red="0.99574806415929207" green="0.99574806415929207" blue="0.99574806415929207" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="110" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="vsc-Nq-d1h">
-                                <rect key="frame" x="0.0" y="285" width="600" height="202"/>
+                                <rect key="frame" x="0.0" y="300" width="600" height="187"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="598" id="lZ4-X8-JnJ"/>
@@ -799,7 +799,7 @@
                     <tabBarItem key="tabBarItem" title="Data" image="treeIcon" id="RHQ-dC-QUp">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.21568627450980393" green="0.77647058823529413" blue="0.60392156862745094" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="value" red="0.12941176470588237" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                             <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
                         </userDefinedRuntimeAttributes>
@@ -934,7 +934,7 @@
                     <tabBarItem key="tabBarItem" title="Dashboard" image="HumanIcon" id="jWc-Ik-RPE">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.21568627450980393" green="0.77647058823529413" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.12941176470588237" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -960,11 +960,11 @@
             <objects>
                 <tabBarController storyboardIdentifier="TabBarViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Brn-2y-zUV" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
-                    <tabBar key="tabBar" alpha="0.90000000000000024" contentMode="scaleToFill" barStyle="black" id="lVT-TB-UBf">
+                    <tabBar key="tabBar" alpha="0.90000000000000024" contentMode="scaleToFill" id="lVT-TB-UBf">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" red="1" green="0.994922124498683" blue="0.98974637319346059" alpha="0.20000000000000001" colorSpace="calibratedRGB"/>
-                        <color key="selectedImageTintColor" red="0.83529411764705885" green="0.83529411764705885" blue="0.83529411764705885" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="selectedImageTintColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="A40-0j-2if" kind="relationship" relationship="viewControllers" id="hA6-oJ-5pG"/>
@@ -2082,7 +2082,7 @@
                     <tabBarItem key="tabBarItem" title="Activity" image="activityIcon" id="8hj-98-fbP">
                         <userDefinedRuntimeAttributes>
                             <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
-                                <color key="value" red="0.21568627450980393" green="0.77647058823529413" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="value" red="0.12941176470588237" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </userDefinedRuntimeAttribute>
                         </userDefinedRuntimeAttributes>
                     </tabBarItem>
@@ -2109,7 +2109,7 @@
         <image name="DisplayPicture" width="79" height="77"/>
         <image name="HumanIcon" width="20" height="28"/>
         <image name="Login Button" width="228" height="40"/>
-        <image name="NewYork" width="375" height="265"/>
+        <image name="NewYork" width="375" height="280"/>
         <image name="Or" width="287" height="26"/>
         <image name="Rectangle" width="375" height="2"/>
         <image name="SHERPA-black@1x" width="239" height="52"/>
