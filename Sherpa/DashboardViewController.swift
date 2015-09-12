@@ -12,7 +12,6 @@ import Parse
 class DashboardViewController: UIViewController {
     
 
-    @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var changePicture: UIButton!
     var photoTakingHelper: PhotoTakingHelper?
@@ -51,26 +50,25 @@ class DashboardViewController: UIViewController {
    
         super.viewDidLoad()
         //Calling query from Parse
-        var isCancelledQuery: PFQuery?
-        
-        let requestQuery = Request.query()
-        requestQuery!.whereKey("fromUser", equalTo: PFUser.currentUser()!)
-        
-        if let requestQuery = requestQuery{
-        isCancelledQuery = PFQuery.orQueryWithSubqueries([requestQuery])
-            isCancelledQuery!.whereKey("isCancelled", equalTo: false)
-
-        isCancelledQuery!.includeKey("toUser")
-        isCancelledQuery!.includeKey("fromUser")
-        isCancelledQuery!.includeKey("toTour")
-        }
-        
-        isCancelledQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
-            
-            self.scheduledTours = result as? [Request] ?? []
-            self.tableView.reloadData()
-
-            }
+//        var isCancelledQuery: PFQuery?
+//        
+//        let requestQuery = Request.query()
+//        requestQuery!.whereKey("fromUser", equalTo: PFUser.currentUser()!)
+//        
+//        if let requestQuery = requestQuery{
+//        isCancelledQuery = PFQuery.orQueryWithSubqueries([requestQuery])
+//            isCancelledQuery!.whereKey("isCancelled", equalTo: false)
+//
+//        isCancelledQuery!.includeKey("toUser")
+//        isCancelledQuery!.includeKey("fromUser")
+//        isCancelledQuery!.includeKey("toTour")
+//        }
+//        
+//        isCancelledQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
+//            
+//            self.scheduledTours = result as? [Request] ?? []
+//
+//            }
         var firstName: String = PFUser.currentUser()!["firstName"] as! String
         var lastName: String = PFUser.currentUser()!["lastName"] as! String
         var fullName: String = "\(firstName) \(lastName)"
@@ -121,7 +119,7 @@ class DashboardViewController: UIViewController {
             isCancelledQuery!.findObjectsInBackgroundWithBlock {(result: [AnyObject]?, error: NSError?) -> Void in
                 
                 self.scheduledTours = result as? [Request] ?? []
-                self.tableView.reloadData()
+              
                 
             }
             
@@ -171,64 +169,5 @@ class DashboardViewController: UIViewController {
 }
 
 
-extension DashboardViewController: UITableViewDataSource{
-
-    
-    func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.scheduledTours.count ?? 0
-    }
-    
-    
-    func numberOfSectionsInTableView(tableView: UITableView) -> Int{
-        if (scheduledTours.count == 0) {
-            var messageLabel = UILabel(frame: CGRectMake(0, 0, self.view.bounds.size.width, self.view.bounds.size.height))
-            messageLabel.text = "No donations yet"
-            messageLabel.textColor = UIColor.whiteColor()
-            messageLabel.font = UIFont(name: "Avenir Next", size: 27)
-            messageLabel.numberOfLines = 1
-            messageLabel.textAlignment = NSTextAlignment.Center
-            messageLabel.sizeToFit()
-            self.tableView.backgroundView = messageLabel
-            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.None
-            return 0
-        }
-        else {
-            self.tableView.backgroundView = nil
-            self.tableView.separatorStyle = UITableViewCellSeparatorStyle.SingleLine
-            return 1
-        }
-    }
-    
-    func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("RequestCell") as! DashboardTableViewCell
-        //Cell parameters:
-       // if scheduledTours[indexPath.row].toTour!.tourName != nil {
-        let test = scheduledTours[indexPath.row].toTour
-        scheduledTours[indexPath.row].toTour!.fetchIfNeeded()
-        cell.cancelButton.hidden = false
-        cell.timelineButton.hidden = true
-        cell.tourNameLabel.text = scheduledTours[indexPath.row].toTour!["tourName"] as? String
-        //}
-        cell.tourDateLabel.text = scheduledTours[indexPath.row].requestedDate
-        cell.tourGuideLabel.text = scheduledTours[indexPath.row].toUser!.username
-        cell.tourGuideLabel.hidden = true
-        cell.timeLabel.text = scheduledTours[indexPath.row].requestedTime
-        if (!scheduledTours[indexPath.row].isApproved){
-            cell.pendingLabel.hidden = false
-            cell.approvedLabel.hidden = true
-        }
-        else{
-            cell.pendingLabel.hidden = true
-            cell.approvedLabel.hidden = false
-        }
-        cell.tourRequest = scheduledTours[indexPath.row]
-        cell.confirmationLabel.hidden = true
-        cell.selectionStyle = UITableViewCellSelectionStyle.None
-        //TODO implement price range cell.rating = allBusinesses[indexPath.row].reviews
-        return cell
-    }
-    
-}
 
 

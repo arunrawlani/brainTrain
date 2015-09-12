@@ -128,7 +128,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     */
     
     //MARK: Changing the colour of the naviagtion bar
-    UINavigationBar.appearance().barTintColor = UIColor(red: 33/225.0, green: 150/255.0, blue: 243/255.0, alpha: 100.0)
+    UINavigationBar.appearance().barTintColor = UIColor(red: 95/225.0, green: 147/255.0, blue: 232/255.0, alpha: 100.0)
     UINavigationBar.appearance().tintColor = UIColor.whiteColor()
     UINavigationBar.appearance().titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
     UINavigationBar.appearance().translucent = false

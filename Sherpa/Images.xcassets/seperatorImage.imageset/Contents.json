@@ -3,17 +3,17 @@
     {
       "idiom" : "universal",
       "scale" : "1x",
-      "filename" : "dashboardBackground.png"
+      "filename" : "seperatorLine.png"
     },
     {
       "idiom" : "universal",
       "scale" : "2x",
-      "filename" : "dashboardBackground@2x.png"
+      "filename" : "seperatorLine@2x.png"
     },
     {
       "idiom" : "universal",
       "scale" : "3x",
-      "filename" : "dashboardBackground@3x.png"
+      "filename" : "seperatorLine@3x.png"
     }
   ],
   "info" : {
