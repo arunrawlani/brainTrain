@@ -15,23 +15,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "659F003E1B5ADECE00E4267B"
-               BuildableName = "dollarTree.app"
-               BlueprintName = "dollarTree"
-               ReferencedContainer = "container:dollarTree.xcodeproj">
-            </BuildableReference>
-         </BuildActionEntry>
-         <BuildActionEntry
-            buildForTesting = "YES"
-            buildForRunning = "YES"
-            buildForProfiling = "NO"
-            buildForArchiving = "NO"
-            buildForAnalyzing = "YES">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "659F00531B5ADECE00E4267B"
-               BuildableName = "dollarTreeTests.xctest"
-               BlueprintName = "dollarTreeTests"
-               ReferencedContainer = "container:dollarTree.xcodeproj">
+               BuildableName = "autism.app"
+               BlueprintName = "autism"
+               ReferencedContainer = "container:autism.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -42,24 +28,14 @@
       shouldUseLaunchSchemeArgsEnv = "YES"
       buildConfiguration = "Debug">
       <Testables>
-         <TestableReference
-            skipped = "NO">
-            <BuildableReference
-               BuildableIdentifier = "primary"
-               BlueprintIdentifier = "659F00531B5ADECE00E4267B"
-               BuildableName = "dollarTreeTests.xctest"
-               BlueprintName = "dollarTreeTests"
-               ReferencedContainer = "container:dollarTree.xcodeproj">
-            </BuildableReference>
-         </TestableReference>
       </Testables>
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "659F003E1B5ADECE00E4267B"
-            BuildableName = "dollarTree.app"
-            BlueprintName = "dollarTree"
-            ReferencedContainer = "container:dollarTree.xcodeproj">
+            BuildableName = "autism.app"
+            BlueprintName = "autism"
+            ReferencedContainer = "container:autism.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
    </TestAction>
@@ -77,9 +53,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "659F003E1B5ADECE00E4267B"
-            BuildableName = "dollarTree.app"
-            BlueprintName = "dollarTree"
-            ReferencedContainer = "container:dollarTree.xcodeproj">
+            BuildableName = "autism.app"
+            BlueprintName = "autism"
+            ReferencedContainer = "container:autism.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
       <AdditionalOptions>
@@ -96,9 +72,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "659F003E1B5ADECE00E4267B"
-            BuildableName = "dollarTree.app"
-            BlueprintName = "dollarTree"
-            ReferencedContainer = "container:dollarTree.xcodeproj">
+            BuildableName = "autism.app"
+            BlueprintName = "autism"
+            ReferencedContainer = "container:autism.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

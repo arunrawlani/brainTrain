@@ -67,8 +67,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, SINClientDelegate{
     Parse.enableLocalDatastore()
         
     // Initialize Parse.
-    Parse.setApplicationId("cllnTXXloq3Ylrju1FqAblZN4xk6rgj4jELTu5d5",
-            clientKey: "7TCS6E7oOlj1YT5wpIEOs2AdkPnJTIiZBxqx94gc")
+    Parse.setApplicationId("U0sjrgMiUdr12WyVZROMZKJJl5FFmTFLh8lngnEk",
+            clientKey: "tVFUFKSiZZLTFXrTBAEzMEJcetrn4PnIszueAqJD")
         
    
     //Initialize Facebook (boilerplate code)
