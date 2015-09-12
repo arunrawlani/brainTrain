@@ -1,4 +1,5 @@
-# dollarTree
+# BrainTrain
+### MHacks Project
 License Grant: Licensor hereby grants Licensee a Personal, Non-assignable & non-transferable, Pepetual, Non-commercial, Without the rights to create derivative works, Non-exclusive license, all with accordance with the terms set forth and other legal restrictions set forth in 3rd party software used while running Software.
 Limited: Licensee may use Software for the purpose of:
 Running Software on Licensee’s Website[s] and Server[s];
