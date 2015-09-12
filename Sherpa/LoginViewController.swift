@@ -30,7 +30,7 @@ class LoginViewController: UIViewController {
     super.viewDidLoad()
     
     //Changing tint color
-    var color: UIColor = UIColor(red: 229/255.0, green: 147/255.0, blue: 52/255.0, alpha: 100.0)
+    var color: UIColor = UIColor(red: 33/225.0, green: 150/255.0, blue: 243/255.0, alpha: 100.0)
     self.usernameTF.tintColor = color
     self.passwordTF.tintColor = color
     

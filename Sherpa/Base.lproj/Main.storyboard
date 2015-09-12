@@ -1008,7 +1008,7 @@
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BKK-Ft-L7q">
                                 <rect key="frame" x="0.0" y="450" width="600" height="75"/>
-                                <color key="backgroundColor" red="0.19909562826728686" green="0.50856377717880052" blue="0.95411401987075806" alpha="0.94000000000000006" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.12941176470588237" green="0.58823529411764708" blue="0.95294117647058818" alpha="0.95999999999999996" colorSpace="custom" customColorSpace="sRGB"/>
                                 <rect key="contentStretch" x="1" y="0.0" width="1" height="1"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="75" id="CTf-1X-0Hd"/>
@@ -1125,7 +1125,7 @@
                                             <rect key="frame" x="40" y="128" width="498" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" red="0.21568627450980393" green="0.77647058823529413" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="done" secureTextEntry="YES"/>
                                         </textField>
@@ -1136,7 +1136,7 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-DemiBold" family="Avenir Next" pointSize="15"/>
                                             <state key="normal" title="LOG IN" backgroundImage="Login Button">
-                                                <color key="titleColor" red="0.21568627450980393" green="0.77647058823529413" blue="0.56470588235294117" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" red="0.12941176470588237" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -1147,7 +1147,7 @@
                                             <rect key="frame" x="40" y="68" width="498" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" red="0.21568627450980393" green="0.77647058823529413" blue="0.59607843137254901" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next"/>
                                         </textField>
@@ -1163,10 +1163,10 @@
                                         <constraint firstItem="fr3-gV-ACv" firstAttribute="top" secondItem="K2D-zY-hbZ" secondAttribute="bottom" constant="30" id="vrJ-W2-f2y"/>
                                     </constraints>
                                 </view>
-                                <blurEffect style="light"/>
+                                <blurEffect style="extraLight"/>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0028346238938052881" green="0.0028346238938052881" blue="0.0028346238938052881" alpha="0.63" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.96010306975962201" blue="0.96678050170060448" alpha="0.10000000000000001" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="DGk-Rf-0Yw" firstAttribute="leading" secondItem="fHK-qZ-wWH" secondAttribute="leadingMargin" constant="21" id="KfG-FL-gKA">
                                 <variation key="widthClass=compact" constant="40"/>
@@ -1259,11 +1259,11 @@
                                         <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SGm-PU-Y0C">
                                             <rect key="frame" x="40" y="45" width="244.5" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
-                                            <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="tintColor" red="0.12941176470588237" green="0.58823529411764708" blue="0.95294117647058818" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="100" id="500-P7-oym"/>
                                             </constraints>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
                                         </textField>
@@ -1274,7 +1274,7 @@
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="100" id="YYr-bI-DqO"/>
                                             </constraints>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" autocapitalizationType="words" keyboardAppearance="alert" returnKeyType="next"/>
                                             <variation key="default">
@@ -1301,7 +1301,7 @@
                                             <rect key="frame" x="40" y="102" width="498" height="30"/>
                                             <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.23999999999999999" colorSpace="calibratedRGB"/>
                                             <color key="tintColor" red="0.88235294117647056" green="0.5490196078431373" blue="0.26666666666666666" alpha="1" colorSpace="calibratedRGB"/>
-                                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="13"/>
                                             <textInputTraits key="textInputTraits" keyboardAppearance="alert" returnKeyType="next"/>
                                         </textField>
@@ -1312,7 +1312,7 @@
                                             </constraints>
                                             <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="13"/>
                                             <state key="normal" title="I accept the Terms &amp; Conditions.">
-                                                <color key="titleColor" red="0.99152058529898468" green="0.99516039823008851" blue="0.93158193254556743" alpha="1" colorSpace="calibratedRGB"/>
+                                                <color key="titleColor" red="0.39215686274509803" green="0.39215686274509803" blue="0.39215686274509803" alpha="1" colorSpace="calibratedRGB"/>
                                                 <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                             </state>
                                             <connections>
@@ -1375,7 +1375,7 @@
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="6Od-Ow-coQ" secondAttribute="leading" constant="140" id="UaH-Qg-ZLQ"/>
                                 </constraints>
-                                <blurEffect style="light"/>
+                                <blurEffect style="extraLight"/>
                                 <variation key="default">
                                     <mask key="constraints">
                                         <exclude reference="UaH-Qg-ZLQ"/>
@@ -1383,7 +1383,7 @@
                                 </variation>
                             </visualEffectView>
                         </subviews>
-                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.75" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="1" green="0.99917445231958768" blue="1" alpha="0.53000000000000003" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="Gxy-gc-9px" firstAttribute="top" secondItem="kfM-m9-qeV" secondAttribute="bottom" constant="15" id="AUO-3R-UjA"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Gxy-gc-9px" secondAttribute="trailing" constant="-5" id="GCY-V4-vEK"/>
