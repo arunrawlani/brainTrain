@@ -39,6 +39,7 @@
 		F109F9241B89CE6F00B14050 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F9231B89CE6F00B14050 /* ActivityViewController.swift */; };
 		F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10E8D821B693A790037E340 /* ReserveViewController.swift */; };
 		F13871CA1BA4FA3F00135EC5 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871C91BA4FA3F00135EC5 /* Session.swift */; };
+		F13871CC1BA50B6D00135EC5 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871CB1BA50B6D00135EC5 /* GameViewController.swift */; };
 		F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */; };
 		F171EF151B757F1F001ADD9B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF141B757F1F001ADD9B /* ReviewViewController.swift */; };
 		F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178CEF31B7BC70900B5642D /* PopDatePicker.swift */; };
@@ -117,6 +118,7 @@
 		F109F9231B89CE6F00B14050 /* ActivityViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		F10E8D821B693A790037E340 /* ReserveViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReserveViewController.swift; sourceTree = "<group>"; };
 		F13871C91BA4FA3F00135EC5 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		F13871CB1BA50B6D00135EC5 /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingStarReview.swift; sourceTree = "<group>"; };
 		F171EF141B757F1F001ADD9B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		F178CEF31B7BC70900B5642D /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
@@ -261,6 +263,7 @@
 				659F004D1B5ADECE00E4267B /* LaunchScreen.xib */,
 				659F00421B5ADECE00E4267B /* Supporting Files */,
 				659895B11B5B270E00607B5E /* Netwerker.swift */,
+				F13871CB1BA50B6D00135EC5 /* GameViewController.swift */,
 			);
 			name = dollarTree;
 			path = Sherpa;
@@ -513,6 +516,7 @@
 				F1EEC4591B5F339F008A04CF /* ErrorHandling.swift in Sources */,
 				F1B7AB2B1B713FC60036DEFE /* Request.swift in Sources */,
 				E2A3444E1B5B370F004CAF3A /* ToursTableCell.swift in Sources */,
+				F13871CC1BA50B6D00135EC5 /* GameViewController.swift in Sources */,
 				F1BB0B8B1B7708B50031FB6A /* SignViewController.swift in Sources */,
 				F109F9221B89CE5C00B14050 /* ActivityViewCell.swift in Sources */,
 				F10E8D831B693A790037E340 /* ReserveViewController.swift in Sources */,
