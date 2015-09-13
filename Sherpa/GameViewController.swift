@@ -87,35 +87,32 @@ class GameViewController: UIViewController {
         SwiftSpinner.showWithDelay(2.0, title: "It's taking longer than expected")
         
         delay(seconds: 0.0, completion: {
-            SwiftSpinner.show("Connecting \nto MUSE...").addTapHandler({
-                println("tapped")
-                SwiftSpinner.hide()
-                }, subtitle: "Tap to hide while connecting! This will affect only the current operation.")
+            SwiftSpinner.show("Connecting \nto MUSE...")
         })
         
-        delay(seconds: 4.0, completion: {
+        delay(seconds: 1.0, completion: {
             SwiftSpinner.show("Authenticating MUSE connection")
         })
         
-        delay(seconds: 8.0, completion: {
+        delay(seconds: 2.0, completion: {
             SwiftSpinner.show("Failed to connect, waiting...", animated: false)
         })
         
-        delay(seconds: 13.0, completion: {
+        delay(seconds: 3.0, completion: {
             SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 22.0))
             SwiftSpinner.show("Retrying to authenticate")
         })
         
-        delay(seconds: 18.0, completion: {
+        delay(seconds: 4.0, completion: {
             SwiftSpinner.show("Connecting...")
         })
         
-        delay(seconds: 21.0, completion: {
+        delay(seconds: 5.0, completion: {
             SwiftSpinner.setTitleFont(nil)
             SwiftSpinner.show("MUSE Connected!", animated: false)
         })
         
-        delay(seconds: 22.0, completion: {
+        delay(seconds: 6.0, completion: {
             SwiftSpinner.hide()
         })
 
@@ -183,6 +180,17 @@ class GameViewController: UIViewController {
         self.sallyAnneImage.hidden = true
         self.command.hidden = true
         
+        var alert = UIAlertController(title: "Congratulations!", message: "You just passed all levels.", preferredStyle: .Alert)
+        let OKAction = UIAlertAction(title: "Session Stats", style: .Default){ (action) in
+            //...
+//            self.navigationController?.popToRootViewControllerAnimated(true)
+            self.performSegueWithIdentifier("showStats", sender: nil)
+        }
+        alert.addAction(OKAction)
+        
+        self.presentViewController(alert, animated: true, completion: nil)
+    
+        
         enableButton(startGame)
         startGame.enabled = false
         startGame.setTitle("Finished", forState: .Normal)
@@ -192,7 +200,7 @@ class GameViewController: UIViewController {
         for var i = 0; i < times.count; i++ {
             totalTime = totalTime + times[i]
         }
-        finishTime.text = "\(totalTime - 18)"
+        finishTime.text = "\(totalTime - 8)"
         finishTime.hidden = false
     }
 }
