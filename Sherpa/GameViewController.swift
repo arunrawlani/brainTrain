@@ -49,7 +49,7 @@ class GameViewController: UIViewController {
         backgroundView.layer.cornerRadius = 10
         backgroundView.layer.backgroundColor = UIColor(red: 230, green: 42, blue: 76, alpha: 0.5).CGColor
         
-        command.text = "Click the Yellow Circle"
+        command.text = "Level 1: Click the Yellow Circle"
         command.hidden = true
         self.disableButton(yellowDot)
         self.disableButton(blueDot)
@@ -138,7 +138,7 @@ class GameViewController: UIViewController {
         self.enableButton(blueDot)
         self.dummyChoice1.image = UIImage(named: self.dummyShapes[Int(arc4random_uniform(UInt32(self.dummyShapes.count)))])
         self.dummyChoice2.image = UIImage(named: self.dummyShapes[Int(arc4random_uniform(UInt32(self.dummyShapes.count)))])
-        command.text = "Click the Blue Circle"
+        command.text = "Level 2: Click the Blue Circle"
     }
     
     //Round 2 COMPLETED, Round 3 STARTS - Stars
@@ -149,7 +149,7 @@ class GameViewController: UIViewController {
         self.enableButton(greenStar)
         self.dummyChoice1.image = UIImage(named: self.dummyShapes[Int(arc4random_uniform(UInt32(self.dummyShapes.count)))])
         self.dummyChoice2.image = UIImage(named: self.dummyShapes[Int(arc4random_uniform(UInt32(self.dummyShapes.count)))])
-        command.text = "Click the Green Star"
+        command.text = "Level 3: Click the Green Star"
     }
     
     
@@ -161,7 +161,7 @@ class GameViewController: UIViewController {
         self.dummyChoice1.hidden = true;
         self.dummyChoice2.hidden = true;
         
-        command.text = "Read the following question"
+        command.text = "Level 4: Read the following question"
         sallyAnneImage.hidden = false
         self.enableButton(choice3)
         self.enableButton(wrongAnswerOne)

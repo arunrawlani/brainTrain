@@ -30,6 +30,7 @@ class DashboardViewController: UIViewController {
     
     
     var allSession: [Session] = []
+    var ranColors = ["redOval", "yellowcircle", "blueoval"]
     let transitionManager = TransitionManager()
     
     
@@ -114,6 +115,12 @@ extension DashboardViewController: UITableViewDataSource, UITableViewDelegate{
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCellWithIdentifier("DashboardCell") as! DashboardTableViewCell
+        
+        let randomIndex = Int(arc4random_uniform(UInt32(ranColors.count)))
+        var colorChosen = (ranColors[randomIndex])
+        
+        cell.ranImage.image = UIImage(named: colorChosen)
+        
         cell.levelDescription.text = allSession[indexPath.row].levelDescription
         cell.reactionTime.text = allSession[indexPath.row].reactionTime
         cell.brainValue.text = allSession[indexPath.row].brainValue
