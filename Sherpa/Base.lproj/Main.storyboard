@@ -271,16 +271,6 @@
                                     <action selector="YellowDotClicked:" destination="QYM-qU-1Bk" eventType="touchUpInside" id="4aa-nb-eci"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bF-p6-ThT">
-                                <rect key="frame" x="241.5" y="245.5" width="117" height="44"/>
-                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="23"/>
-                                <state key="normal" title="Start Game">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="startGameClicked:" destination="QYM-qU-1Bk" eventType="touchUpInside" id="Je2-T8-IJa"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CPZ-Ky-vbT" userLabel="Blue dot">
                                 <rect key="frame" x="269" y="358" width="88" height="88"/>
                                 <state key="normal" image="blueoval">
@@ -347,13 +337,13 @@
                                     <constraint firstAttribute="height" constant="50" id="eHb-hg-gtM"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Finished Task In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av1-wD-etR">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Finished Task In:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Av1-wD-etR">
                                 <rect key="frame" x="241" y="291" width="116" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Black" family="Avenir" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-0F-Vi6">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JDc-0F-Vi6">
                                 <rect key="frame" x="283" y="319.5" width="33.5" height="20.5"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="15"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -365,6 +355,21 @@
                                 <state key="normal" title="Step 4 Choice 2">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6bF-p6-ThT">
+                                <rect key="frame" x="184" y="238" width="232.5" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="232.5" id="8FA-zl-jk1"/>
+                                    <constraint firstAttribute="height" constant="60" id="MTa-KO-Er4"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Avenir-Heavy" family="Avenir" pointSize="23"/>
+                                <state key="normal" title="Start Game" backgroundImage="Signup Button">
+                                    <color key="titleColor" red="1" green="1" blue="0.99816768685567014" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="startGameClicked:" destination="QYM-qU-1Bk" eventType="touchUpInside" id="Je2-T8-IJa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -398,7 +403,7 @@
                             <constraint firstAttribute="trailingMargin" secondItem="0ca-PM-za0" secondAttribute="trailing" constant="109" id="fro-fk-4Sy"/>
                             <constraint firstItem="ypf-cc-nFV" firstAttribute="top" secondItem="bvR-E0-tSB" secondAttribute="bottom" constant="41" id="hls-Lc-ntt"/>
                             <constraint firstAttribute="trailingMargin" secondItem="bvR-E0-tSB" secondAttribute="trailing" id="hmF-em-atX"/>
-                            <constraint firstItem="Av1-wD-etR" firstAttribute="top" secondItem="6bF-p6-ThT" secondAttribute="bottom" constant="7" id="iSv-xj-CgO"/>
+                            <constraint firstItem="Av1-wD-etR" firstAttribute="top" secondItem="6bF-p6-ThT" secondAttribute="bottom" constant="-7" id="iSv-xj-CgO"/>
                             <constraint firstItem="lqa-VO-26H" firstAttribute="top" secondItem="vat-dI-YN2" secondAttribute="bottom" constant="135" id="olZ-Zs-4EX"/>
                             <constraint firstAttribute="centerX" secondItem="ypf-cc-nFV" secondAttribute="centerX" id="sy5-FD-Zci"/>
                             <constraint firstAttribute="centerX" secondItem="mxm-rs-LSZ" secondAttribute="centerX" constant="124" id="vAR-QR-ZQR"/>
