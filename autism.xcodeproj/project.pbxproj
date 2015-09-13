@@ -16,7 +16,6 @@
 		659F004A1B5ADECE00E4267B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 659F00481B5ADECE00E4267B /* Main.storyboard */; };
 		659F004C1B5ADECE00E4267B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 659F004B1B5ADECE00E4267B /* Images.xcassets */; };
 		659F004F1B5ADECE00E4267B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 659F004D1B5ADECE00E4267B /* LaunchScreen.xib */; };
-		659F005B1B5ADECE00E4267B /* SherpaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 659F005A1B5ADECE00E4267B /* SherpaTests.swift */; };
 		A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A49B61321B5B9E0D00F81B3D /* CallViewController.swift */; };
 		A4E6BEE71B5B7E2600F1D0A1 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6BEE61B5B7E2600F1D0A1 /* Security.framework */; };
 		A4E6BEE91B5B7E4F00F1D0A1 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4E6BEE81B5B7E4F00F1D0A1 /* AVFoundation.framework */; };
@@ -73,16 +72,6 @@
 		F1EEC4711B6007C2008A04CF /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F1EEC4701B6007C2008A04CF /* Social.framework */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		659F00551B5ADECE00E4267B /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 659F00371B5ADECE00E4267B /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 659F003E1B5ADECE00E4267B;
-			remoteInfo = Sherpa;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		1502D0D9AE54FAE1581751AF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		2FDF4AD90058FF2F009FC4F2 /* Pods.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,7 +86,6 @@
 		659F00491B5ADECE00E4267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		659F004B1B5ADECE00E4267B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		659F004E1B5ADECE00E4267B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
-		659F00541B5ADECE00E4267B /* autismTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = autismTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		659F00591B5ADECE00E4267B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		659F005A1B5ADECE00E4267B /* SherpaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SherpaTests.swift; sourceTree = "<group>"; };
 		A49B61321B5B9E0D00F81B3D /* CallViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CallViewController.swift; sourceTree = "<group>"; };
@@ -180,13 +168,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		659F00511B5ADECE00E4267B /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -226,7 +207,6 @@
 			isa = PBXGroup;
 			children = (
 				659F003F1B5ADECE00E4267B /* autism.app */,
-				659F00541B5ADECE00E4267B /* autismTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -388,24 +368,6 @@
 			productReference = 659F003F1B5ADECE00E4267B /* autism.app */;
 			productType = "com.apple.product-type.application";
 		};
-		659F00531B5ADECE00E4267B /* autismTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 659F00611B5ADECE00E4267B /* Build configuration list for PBXNativeTarget "autismTests" */;
-			buildPhases = (
-				659F00501B5ADECE00E4267B /* Sources */,
-				659F00511B5ADECE00E4267B /* Frameworks */,
-				659F00521B5ADECE00E4267B /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				659F00561B5ADECE00E4267B /* PBXTargetDependency */,
-			);
-			name = autismTests;
-			productName = SherpaTests;
-			productReference = 659F00541B5ADECE00E4267B /* autismTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -418,10 +380,6 @@
 					659F003E1B5ADECE00E4267B = {
 						CreatedOnToolsVersion = 6.4;
 						DevelopmentTeam = 3KF3DVMFZ8;
-					};
-					659F00531B5ADECE00E4267B = {
-						CreatedOnToolsVersion = 6.4;
-						TestTargetID = 659F003E1B5ADECE00E4267B;
 					};
 				};
 			};
@@ -439,7 +397,6 @@
 			projectRoot = "";
 			targets = (
 				659F003E1B5ADECE00E4267B /* autism */,
-				659F00531B5ADECE00E4267B /* autismTests */,
 			);
 		};
 /* End PBXProject section */
@@ -455,13 +412,6 @@
 				659F004F1B5ADECE00E4267B /* LaunchScreen.xib in Resources */,
 				659F004C1B5ADECE00E4267B /* Images.xcassets in Resources */,
 				F178CEF81B7BC77D00B5642D /* PopDateViewController.xib in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		659F00521B5ADECE00E4267B /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -565,23 +515,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		659F00501B5ADECE00E4267B /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				659F005B1B5ADECE00E4267B /* SherpaTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		659F00561B5ADECE00E4267B /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 659F003E1B5ADECE00E4267B /* autism */;
-			targetProxy = 659F00551B5ADECE00E4267B /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		659F00481B5ADECE00E4267B /* Main.storyboard */ = {
@@ -723,40 +657,6 @@
 			};
 			name = Release;
 		};
-		659F00621B5ADECE00E4267B /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SherpaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = autismTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sherpa.app/Sherpa";
-			};
-			name = Debug;
-		};
-		659F00631B5ADECE00E4267B /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = SherpaTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				PRODUCT_NAME = autismTests;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Sherpa.app/Sherpa";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -774,15 +674,6 @@
 			buildConfigurations = (
 				659F005F1B5ADECE00E4267B /* Debug */,
 				659F00601B5ADECE00E4267B /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		659F00611B5ADECE00E4267B /* Build configuration list for PBXNativeTarget "autismTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				659F00621B5ADECE00E4267B /* Debug */,
-				659F00631B5ADECE00E4267B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

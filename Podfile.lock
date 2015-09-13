@@ -1,23 +1,23 @@
 PODS:
   - AKPickerView-Swift (0.2.1)
-  - Bolts (1.2.0):
-    - Bolts/AppLinks (= 1.2.0)
-    - Bolts/Tasks (= 1.2.0)
-  - Bolts/AppLinks (1.2.0):
+  - Bolts (1.2.2):
+    - Bolts/AppLinks (= 1.2.2)
+    - Bolts/Tasks (= 1.2.2)
+  - Bolts/AppLinks (1.2.2):
     - Bolts/Tasks
-  - Bolts/Tasks (1.2.0)
+  - Bolts/Tasks (1.2.2)
   - Bond (3.10.0)
   - DatePickerCell (1.0.2)
-  - FBSDKCoreKit (4.5.1):
+  - FBSDKCoreKit (4.6.0):
     - Bolts (~> 1.1)
-    - FBSDKCoreKit/arc (= 4.5.1)
-    - FBSDKCoreKit/no-arc (= 4.5.1)
-  - FBSDKCoreKit/arc (4.5.1):
+    - FBSDKCoreKit/arc (= 4.6.0)
+    - FBSDKCoreKit/no-arc (= 4.6.0)
+  - FBSDKCoreKit/arc (4.6.0):
     - Bolts (~> 1.1)
-  - FBSDKCoreKit/no-arc (4.5.1):
+  - FBSDKCoreKit/no-arc (4.6.0):
     - Bolts (~> 1.1)
     - FBSDKCoreKit/arc
-  - FBSDKLoginKit (4.5.1):
+  - FBSDKLoginKit (4.6.0):
     - FBSDKCoreKit
   - Parse (1.8.1):
     - Bolts/Tasks (>= 1.2.0)
@@ -26,7 +26,7 @@ PODS:
     - FBSDKCoreKit (~> 4.0)
     - FBSDKLoginKit (~> 4.0)
     - Parse (~> 1.8.0)
-  - ParseUI (1.1.5):
+  - ParseUI (1.1.6):
     - Bolts/Tasks (~> 1.2)
     - Parse (~> 1.8)
   - SinchRTC (3.5.2)
@@ -38,7 +38,7 @@ DEPENDENCIES:
   - DatePickerCell
   - FBSDKCoreKit
   - FBSDKLoginKit
-  - Parse
+  - Parse (<= 1.8.1)
   - ParseFacebookUtilsV4
   - ParseUI
   - SinchRTC
@@ -46,15 +46,15 @@ DEPENDENCIES:
 
 SPEC CHECKSUMS:
   AKPickerView-Swift: 7989ebd544dc2adcbb56ffd48bbb8d3c3ea2d71d
-  Bolts: d176cb1e0012175589e389a9db49b85e27787576
+  Bolts: 20a2bd788273360cb1e31530dc19b8544eef2544
   Bond: c873dba04a09dde9e422242420979aa8e4c9e133
   DatePickerCell: b2abd1f6ba08f01da11baee73a503d6dc33f3118
-  FBSDKCoreKit: f335eaf6865e1e1597dee1debfb533045500da47
-  FBSDKLoginKit: 225cc9a388a92916ee3f3bb14422017b6e44b65b
+  FBSDKCoreKit: 9954492d90c5fd65ae831395697a1660360d61f1
+  FBSDKLoginKit: 3d07febbfa884b9878cacba54f705bb41f07d4b6
   Parse: 2155953b1565494095d5fa5c83b3c77f2c677c09
   ParseFacebookUtilsV4: 2c54f1c9756f4827417984f42b64bc38571d626b
-  ParseUI: 2c53621ed028ee793f5ab92a551b099689265525
+  ParseUI: 8a22e448c03f825203d8c379c80523517f68baa3
   SinchRTC: b5de8c84210666db5cbac256ff77953905364175
   SwiftSpinner: 034bb8b00675b3e4f4c97531fa9af3f550462192
 
-COCOAPODS: 0.38.0
+COCOAPODS: 0.38.2

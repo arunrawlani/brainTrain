@@ -3,7 +3,7 @@ platform :ios, '8.0'
 
 use_frameworks!
 
-pod 'Parse'
+pod 'Parse', '<= 1.8.1'
 pod 'ParseUI'
 pod 'FBSDKCoreKit'
 pod 'ParseFacebookUtilsV4'

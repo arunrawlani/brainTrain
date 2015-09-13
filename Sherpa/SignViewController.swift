@@ -119,7 +119,7 @@ class SignViewController: UIViewController{
             
             var newUser = PFUser()
             
-            newUser["firstName"] = firstName
+            newUser.setObject(firstName, forKey: "firstName")
             newUser["lastName"] = lastName
             newUser.username = username
             newUser.password = password

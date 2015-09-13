@@ -32,6 +32,10 @@ class GameViewController: UIViewController {
     @IBOutlet weak var sallyAnneImage: UIImageView!
     @IBOutlet weak var wrongAnswerTwo: UIButton!
     
+    //Finished
+    @IBOutlet weak var finishedLabel: UILabel!
+    @IBOutlet weak var finishTime: UILabel!
+    
     //Time
     var times: [Double] = [] //In SECONDS
     var startTime: NSTimeInterval! //In MILLISECONDS
@@ -62,6 +66,9 @@ class GameViewController: UIViewController {
         self.disableButton(wrongAnswerOne)
         self.disableButton(wrongAnswerTwo)
         self.disableButton(choice3)
+        
+        self.finishedLabel.hidden = true
+        self.finishTime.hidden = true
     }
     
     /*.animateWithDuration(0.5, delay: 0.5, options: UIViewAnimationOptions.CurveEaseOut, animations: {self.uiImageView.alpha = 0.0}, completion: nil)*/
@@ -169,7 +176,25 @@ class GameViewController: UIViewController {
     }
     
     //Round 4 COMPLETED
-    
+    @IBAction func choice3Clicked(sender: AnyObject) {
+        self.disableButton(choice3)
+        self.disableButton(wrongAnswerOne)
+        self.disableButton(wrongAnswerTwo)
+        self.sallyAnneImage.hidden = true
+        self.command.hidden = true
+        
+        enableButton(startGame)
+        startGame.enabled = false
+        startGame.setTitle("Finished", forState: .Normal)
+        finishedLabel.hidden = false
+        
+        var totalTime:Double = 0
+        for var i = 0; i < times.count; i++ {
+            totalTime = totalTime + times[i]
+        }
+        finishTime.text = "\(totalTime - 18)"
+        finishTime.hidden = false
+    }
 }
 
 extension GameViewController {

@@ -45,13 +45,15 @@ public class DatePickerCell: UITableViewCell {
     /// The selected date, set to current date/time on initialization.
     public var date:NSDate = NSDate() {
         didSet {
+            datePicker.date = date
             DatePickerCell.Stored.dateFormatter.dateStyle = dateStyle
-            DatePickerCell.Stored.dateFormatter.timeStyle = .NoStyle
+            DatePickerCell.Stored.dateFormatter.timeStyle = timeStyle
             rightLabel.text = DatePickerCell.Stored.dateFormatter.stringFromDate(date)
         }
     }
     /// The timestyle.
-    public var timeStyle = NSDateFormatterStyle.NoStyle    /// The datestyle.
+    public var timeStyle = NSDateFormatterStyle.ShortStyle
+    /// The datestyle.
     public var dateStyle = NSDateFormatterStyle.MediumStyle
     
     /// Label on the left side of the cell.
@@ -67,8 +69,6 @@ public class DatePickerCell: UITableViewCell {
     /// The datepicker embeded in the cell.
     public var datePicker: UIDatePicker = UIDatePicker()
     
-    
-    
     /// Is the cell expanded?
     public var expanded = false
     var unexpandedHeight = CGFloat(44)
@@ -83,7 +83,7 @@ public class DatePickerCell: UITableViewCell {
     */
     override public init(style: UITableViewCellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
-        
+                
         setup()
     }
     
@@ -99,35 +99,6 @@ public class DatePickerCell: UITableViewCell {
         
         datePickerContainer.clipsToBounds = true
         datePickerContainer.addSubview(datePicker)
-        datePicker.datePickerMode = UIDatePickerMode.Date
-        
-        
-        
-        let date = NSDate()
-        let calendar = NSCalendar.currentCalendar()
-        let components = calendar.components( .CalendarUnitYear | .CalendarUnitMonth | .CalendarUnitDay,  fromDate: date)
-        let year = components.year
-        let month = components.month
-        let day = components.day
-        
-        
-        let startTimeComponents = NSDateComponents()
-        startTimeComponents.year = year
-        startTimeComponents.month = month
-        startTimeComponents.day = day
-        let minDate = calendar.dateFromComponents((startTimeComponents))
-        
-        datePicker.minimumDate = minDate
-        
-        
-        let endTimeComponents = NSDateComponents()
-        endTimeComponents.year = year + 1
-        endTimeComponents.month = month
-        endTimeComponents.day = day
-        let maxDate = calendar.dateFromComponents((endTimeComponents))
-        
-        datePicker.maximumDate = maxDate
-        datePicker.setValue(UIColor.orangeColor(), forKeyPath: "textColor")
         
         // Add a seperator between the date text display, and the datePicker. Lighter grey than a normal seperator.
         seperator.lockedBackgroundColor = UIColor(white: 0, alpha: 0.1)
@@ -315,7 +286,7 @@ public class DatePickerCell: UITableViewCell {
     
     /**
     Needed for initialization from a storyboard.
-    
+
     :param: aDecoder An unarchiver object.
     :returns: An initialized DatePickerCell object or nil if the object could not be created.
     */
@@ -339,13 +310,12 @@ public class DatePickerCell: UITableViewCell {
     
     :param: tableView The tableview the DatePickerCell was selected in.
     */
-    
     public func selectedInTableView(tableView: UITableView) {
         expanded = !expanded
         
         UIView.transitionWithView(rightLabel, duration: 0.25, options:UIViewAnimationOptions.TransitionCrossDissolve, animations: { () -> Void in
-            self.rightLabel.textColor = self.expanded ? self.tintColor : self.rightLabelTextColor
-            }, completion: nil)
+                self.rightLabel.textColor = self.expanded ? self.tintColor : self.rightLabelTextColor
+        }, completion: nil)
         
         tableView.beginUpdates()
         tableView.endUpdates()
