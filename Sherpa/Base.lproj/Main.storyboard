@@ -1473,7 +1473,7 @@
         <!--Dashboard-->
         <scene sceneID="x49-Px-Pxi">
             <objects>
-                <viewController title="Dashboard" id="bJY-D6-CfU" sceneMemberID="viewController">
+                <viewController title="Dashboard" id="bJY-D6-CfU" customClass="DashboardViewController" customModule="autism" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="usy-5S-UKe"/>
                         <viewControllerLayoutGuide type="bottom" id="By8-Rc-5Wx"/>
@@ -1540,11 +1540,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-WG-wKh">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" alwaysBounceVertical="YES" indicatorStyle="black" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="105" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="Oea-WG-wKh">
                                 <rect key="frame" x="1" y="263" width="605" height="288"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.5" colorSpace="calibratedRGB"/>
+                                <color key="sectionIndexBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <color key="sectionIndexTrackingBackgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="105" id="cLk-0d-NF1">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DashboardCell" rowHeight="105" id="cLk-0d-NF1" customClass="DashboardTableViewCell" customModule="autism" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="605" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cLk-0d-NF1" id="5Y3-p0-bmX">
@@ -1595,8 +1597,19 @@
                                                 <constraint firstItem="19N-Cv-gbv" firstAttribute="top" secondItem="M55-TQ-lfd" secondAttribute="bottom" constant="7.5" id="vMw-sT-0f5"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="brainValue" destination="19N-Cv-gbv" id="yID-g9-CVC"/>
+                                            <outlet property="levelDescription" destination="M55-TQ-lfd" id="KR2-xv-0IM"/>
+                                            <outlet property="ranImage" destination="liQ-JP-Hx5" id="84x-op-4MF"/>
+                                            <outlet property="reactionTime" destination="gBm-r9-upX" id="Vls-dB-DUO"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="bJY-D6-CfU" id="zzj-x7-e7s"/>
+                                    <outlet property="delegate" destination="bJY-D6-CfU" id="f7v-6c-svU"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -1644,6 +1657,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Oea-WG-wKh" id="hHF-tq-LjJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bbp-t7-w1f" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

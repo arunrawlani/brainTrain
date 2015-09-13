@@ -18,18 +18,12 @@ class DashboardTableViewCell: UITableViewCell {
     
     var delegate: dashboard? = nil
     
-    @IBOutlet var timeLabel: UILabel!
-    @IBOutlet var tourGuideLabel: UILabel!
-    @IBOutlet var tourDateLabel: UILabel!
-    @IBOutlet var tourNameLabel: UILabel!
-    @IBOutlet weak var pendingLabel: UILabel!
-    @IBOutlet weak var approvedLabel: UILabel!
-    @IBOutlet weak var cancelButton: UIButton!
-    @IBOutlet weak var timelineButton: UIButton!
-    @IBOutlet weak var confirmationLabel: UILabel!
-    
-    var tourRequest: Request? = nil
+    @IBOutlet weak var ranImage: UIImageView!
+    @IBOutlet weak var levelDescription: UILabel!
+ 
+    @IBOutlet weak var brainValue: UILabel!
 
+    @IBOutlet weak var reactionTime: UILabel!
  @IBAction func tourCancelled(sender: AnyObject) {
     
    /* self.cancelButton.hidden = true
