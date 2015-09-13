@@ -7,10 +7,11 @@
 //
 
 import UIKit
+import PNChartSwift
 
 class ResultsViewController: UIViewController {
 
-    var alphaGraph : GraphEEGView!
+    /**var alphaGraph : GraphEEGView!
     var betaGraph : GraphEEGView!
     var thetaGraph : GraphEEGView!
     var wavesTitle : UILabel!
@@ -91,6 +92,11 @@ class ResultsViewController: UIViewController {
                 graphOpen = 1;
             }
         }
+    }*/
+    
+    override func viewDidLoad() {
+        let eegData = LineGraph(frame: CGRectMake(20, -80, 330, 200))
+        self.view.addSubview(eegData)
     }
 
     override func didReceiveMemoryWarning() {

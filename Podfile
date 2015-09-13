@@ -13,4 +13,5 @@ pod 'FBSDKLoginKit'
 pod 'AKPickerView-Swift'
 pod 'DatePickerCell'
 pod "SwiftSpinner"
+pod 'PNChartSwift',:git => 'https://github.com/kevinzhow/PNChart-Swift.git'
 

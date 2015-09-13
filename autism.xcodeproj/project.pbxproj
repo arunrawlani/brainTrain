@@ -44,6 +44,7 @@
 		F13871D21BA514B300135EC5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871D11BA514B300135EC5 /* ResultsViewController.swift */; };
 		F13871D41BA52B0700135EC5 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871D31BA52B0700135EC5 /* SwiftSpinner.swift */; };
 		F13871D61BA58C0400135EC5 /* DisplayDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871D51BA58C0400135EC5 /* DisplayDataViewController.swift */; };
+		F13871D81BA5B51E00135EC5 /* LineGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871D71BA5B51E00135EC5 /* LineGraph.swift */; };
 		F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */; };
 		F171EF151B757F1F001ADD9B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF141B757F1F001ADD9B /* ReviewViewController.swift */; };
 		F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178CEF31B7BC70900B5642D /* PopDatePicker.swift */; };
@@ -117,6 +118,7 @@
 		F13871D11BA514B300135EC5 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
 		F13871D31BA52B0700135EC5 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		F13871D51BA58C0400135EC5 /* DisplayDataViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DisplayDataViewController.swift; sourceTree = "<group>"; };
+		F13871D71BA5B51E00135EC5 /* LineGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = LineGraph.swift; path = ../LineGraph.swift; sourceTree = "<group>"; };
 		F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingStarReview.swift; sourceTree = "<group>"; };
 		F171EF141B757F1F001ADD9B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		F178CEF31B7BC70900B5642D /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				659895AC1B5B248500607B5E /* Data Models */,
 				F171EF111B757E95001ADD9B /* FloatingStar */,
 				F1B7AB2C1B72ABF90036DEFE /* TransitionManager.swift */,
+				F13871D71BA5B51E00135EC5 /* LineGraph.swift */,
 				659F00441B5ADECE00E4267B /* AppDelegate.swift */,
 				F109F9231B89CE6F00B14050 /* ActivityViewController.swift */,
 				F109F9211B89CE5C00B14050 /* ActivityViewCell.swift */,
@@ -509,6 +512,7 @@
 				F13871D01BA5146100135EC5 /* GraphReactTimeView.swift in Sources */,
 				F13871CA1BA4FA3F00135EC5 /* Session.swift in Sources */,
 				F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */,
+				F13871D81BA5B51E00135EC5 /* LineGraph.swift in Sources */,
 				659F00451B5ADECE00E4267B /* AppDelegate.swift in Sources */,
 				F178CEF61B7BC72000B5642D /* PopDateViewController.swift in Sources */,
 				F109F9201B89CA5E00B14050 /* Activity.swift in Sources */,
