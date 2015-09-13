@@ -13,7 +13,7 @@ import Parse
 import ParseUI
 
 
-class LoginViewController: UIViewController {
+class LoginViewController: UIViewController, UITextFieldDelegate {
   
     @IBOutlet weak var usernameTF: UITextField!
     @IBOutlet weak var passwordTF: UITextField!
@@ -33,6 +33,7 @@ class LoginViewController: UIViewController {
     var color: UIColor = UIColor(red: 33/225.0, green: 150/255.0, blue: 243/255.0, alpha: 100.0)
     self.usernameTF.tintColor = color
     self.passwordTF.tintColor = color
+    self.passwordTF.delegate = self
     
     
     self.actInd.center = self.view.center
@@ -54,6 +55,11 @@ class LoginViewController: UIViewController {
     
     
   }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        self.view.endEditing(true)
+        return false
+    }
     
     //MARK:Actions
     

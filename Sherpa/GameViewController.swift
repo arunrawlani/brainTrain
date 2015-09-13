@@ -41,13 +41,15 @@ class GameViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        command.font = UIFont(name: "AvenirNext-Medium", size: 17)
+        
         startGame.hidden = false
         
         backgroundView.hidden = true
         backgroundView.layer.cornerRadius = 10
         backgroundView.layer.backgroundColor = UIColor(red: 230, green: 42, blue: 76, alpha: 0.5).CGColor
         
-        command.text = "Click the Yellow Dot"
+        command.text = "Click the Yellow Circle"
         command.hidden = true
         self.disableButton(yellowDot)
         self.disableButton(blueDot)
@@ -84,15 +86,15 @@ class GameViewController: UIViewController {
                 }, subtitle: "Tap to hide while connecting! This will affect only the current operation.")
         })
         
-        delay(seconds: 6.0, completion: {
+        delay(seconds: 4.0, completion: {
             SwiftSpinner.show("Authenticating MUSE connection")
         })
         
-        delay(seconds: 10.0, completion: {
+        delay(seconds: 8.0, completion: {
             SwiftSpinner.show("Failed to connect, waiting...", animated: false)
         })
         
-        delay(seconds: 14.0, completion: {
+        delay(seconds: 13.0, completion: {
             SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 22.0))
             SwiftSpinner.show("Retrying to authenticate")
         })
@@ -109,10 +111,7 @@ class GameViewController: UIViewController {
         delay(seconds: 22.0, completion: {
             SwiftSpinner.hide()
         })
-        
-        delay(seconds: 28.0, completion: {
-            self.demoSpinner()
-        })
+
     }
     
     //END OF SWIFT SPINNER
@@ -139,7 +138,7 @@ class GameViewController: UIViewController {
         self.enableButton(blueDot)
         self.dummyChoice1.image = UIImage(named: self.dummyShapes[Int(arc4random_uniform(UInt32(self.dummyShapes.count)))])
         self.dummyChoice2.image = UIImage(named: self.dummyShapes[Int(arc4random_uniform(UInt32(self.dummyShapes.count)))])
-        command.text = "Click the Blue Dot"
+        command.text = "Click the Blue Circle"
     }
     
     //Round 2 COMPLETED, Round 3 STARTS - Stars
@@ -162,7 +161,7 @@ class GameViewController: UIViewController {
         self.dummyChoice1.hidden = true;
         self.dummyChoice2.hidden = true;
         
-        command.text = "Read the following"
+        command.text = "Read the following question"
         sallyAnneImage.hidden = false
         self.enableButton(choice3)
         self.enableButton(wrongAnswerOne)

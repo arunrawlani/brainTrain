@@ -114,7 +114,7 @@
             </objects>
             <point key="canvasLocation" x="1232" y="-1096"/>
         </scene>
-        <!--View Controller-->
+        <!--AutiBot-->
         <scene sceneID="HBx-og-wSj">
             <objects>
                 <viewController id="Jbx-S4-vBg" sceneMemberID="viewController">
@@ -223,7 +223,7 @@
                             </mask>
                         </variation>
                     </view>
-                    <navigationItem key="navigationItem" id="y8R-gZ-GQL"/>
+                    <navigationItem key="navigationItem" title="AutiBot" id="y8R-gZ-GQL"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Qwb-V5-f2d" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
