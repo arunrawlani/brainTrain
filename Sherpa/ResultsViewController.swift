@@ -25,6 +25,8 @@ class ResultsViewController: UIViewController {
         var betaVals = [1.0, 5.0, 7.0, 2.0, 9.0];
         var thetaVals = [5.0, 5.0, 8.0, 5.0, 6.0];
         
+        
+        
         alphaGraph = GraphEEGView(values: alphaVals, labels: [""], count: alphaVals.count, frame: CGRectMake(20, 50, 335, 200))
         betaGraph = GraphEEGView(values: betaVals, labels: [""], count: betaVals.count, frame: CGRectMake(20, 50, 335, 200))
         thetaGraph = GraphEEGView(values: thetaVals, labels: [""], count: thetaVals.count, frame: CGRectMake(20, 50, 335, 200))
@@ -35,7 +37,7 @@ class ResultsViewController: UIViewController {
         wavesTitle.center = CGPointMake(alphaGraph.center.x, alphaGraph.center.y - alphaGraph.frame.height/2 - 15);
         wavesTitle.textAlignment = NSTextAlignment.Center
         wavesTitle.text = "Alpha Waves"
-        wavesTitle.font = UIFont(name: "AvenirNext-Medium", size: 17)
+        wavesTitle.font = UIFont(name: "AvenirNext-Medium", size: 18)
         self.view.addSubview(wavesTitle)
         
         var swipeLeft = UISwipeGestureRecognizer(target:self, action:"toLeft")
