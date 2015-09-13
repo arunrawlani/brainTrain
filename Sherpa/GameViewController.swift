@@ -39,6 +39,7 @@ class GameViewController: UIViewController {
     //Time
     var times: [Double] = [] //In SECONDS
     var startTime: NSTimeInterval! //In MILLISECONDS
+    var theTotalTime: Double = 0 //To Store Total Time
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -200,8 +201,16 @@ class GameViewController: UIViewController {
         for var i = 0; i < times.count; i++ {
             totalTime = totalTime + times[i]
         }
-        finishTime.text = "\(totalTime - 8)"
+        theTotalTime = totalTime - 6
+        finishTime.text = "\(theTotalTime)"
         finishTime.hidden = false
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        if(segue.identifier == "showStats") {
+            let pathViewController = segue.destinationViewController as! DisplayDataViewController
+            pathViewController.time = theTotalTime
+        }
     }
 }
 
