@@ -64,8 +64,62 @@ class GameViewController: UIViewController {
     
     /*.animateWithDuration(0.5, delay: 0.5, options: UIViewAnimationOptions.CurveEaseOut, animations: {self.uiImageView.alpha = 0.0}, completion: nil)*/
     
+    //ADDING SWIFT SPINNER
+    func delay(#seconds: Double, completion:()->()) {
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
+        
+        dispatch_after(popTime, dispatch_get_main_queue()) {
+            completion()
+        }
+    }
+    
+    func demoSpinner() {
+        
+        SwiftSpinner.showWithDelay(2.0, title: "It's taking longer than expected")
+        
+        delay(seconds: 0.0, completion: {
+            SwiftSpinner.show("Connecting \nto MUSE...").addTapHandler({
+                println("tapped")
+                SwiftSpinner.hide()
+                }, subtitle: "Tap to hide while connecting! This will affect only the current operation.")
+        })
+        
+        delay(seconds: 6.0, completion: {
+            SwiftSpinner.show("Authenticating MUSE connection")
+        })
+        
+        delay(seconds: 10.0, completion: {
+            SwiftSpinner.show("Failed to connect, waiting...", animated: false)
+        })
+        
+        delay(seconds: 14.0, completion: {
+            SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 22.0))
+            SwiftSpinner.show("Retrying to authenticate")
+        })
+        
+        delay(seconds: 18.0, completion: {
+            SwiftSpinner.show("Connecting...")
+        })
+        
+        delay(seconds: 21.0, completion: {
+            SwiftSpinner.setTitleFont(nil)
+            SwiftSpinner.show("MUSE Connected!", animated: false)
+        })
+        
+        delay(seconds: 22.0, completion: {
+            SwiftSpinner.hide()
+        })
+        
+        delay(seconds: 28.0, completion: {
+            self.demoSpinner()
+        })
+    }
+    
+    //END OF SWIFT SPINNER
+    
     //Game STARTS - One Dot
     @IBAction func startGameClicked(sender: AnyObject) {
+        self.demoSpinner()
         startTime = NSDate.timeIntervalSinceReferenceDate()
         self.disableButton(startGame)
         backgroundView.hidden = false

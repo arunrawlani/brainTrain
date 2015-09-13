@@ -218,8 +218,8 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="iAF-vf-N6c"/>
                                 <exclude reference="pcf-lO-pqJ"/>
+                                <exclude reference="iAF-vf-N6c"/>
                             </mask>
                         </variation>
                     </view>
@@ -370,10 +370,10 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
-                                <exclude reference="fob-LT-ObM"/>
                                 <exclude reference="B10-8D-qC5"/>
                                 <exclude reference="Zw2-4I-9M9"/>
                                 <exclude reference="hls-Lc-ntt"/>
+                                <exclude reference="fob-LT-ObM"/>
                             </mask>
                         </variation>
                     </view>

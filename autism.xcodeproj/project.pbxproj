@@ -43,6 +43,7 @@
 		F13871CE1BA5144C00135EC5 /* GraphEEGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871CD1BA5144C00135EC5 /* GraphEEGView.swift */; };
 		F13871D01BA5146100135EC5 /* GraphReactTimeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871CF1BA5146100135EC5 /* GraphReactTimeView.swift */; };
 		F13871D21BA514B300135EC5 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871D11BA514B300135EC5 /* ResultsViewController.swift */; };
+		F13871D41BA52B0700135EC5 /* SwiftSpinner.swift in Sources */ = {isa = PBXBuildFile; fileRef = F13871D31BA52B0700135EC5 /* SwiftSpinner.swift */; };
 		F171EF131B757ED6001ADD9B /* FloatingStarReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */; };
 		F171EF151B757F1F001ADD9B /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F171EF141B757F1F001ADD9B /* ReviewViewController.swift */; };
 		F178CEF41B7BC70900B5642D /* PopDatePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F178CEF31B7BC70900B5642D /* PopDatePicker.swift */; };
@@ -125,6 +126,7 @@
 		F13871CD1BA5144C00135EC5 /* GraphEEGView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphEEGView.swift; sourceTree = "<group>"; };
 		F13871CF1BA5146100135EC5 /* GraphReactTimeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GraphReactTimeView.swift; sourceTree = "<group>"; };
 		F13871D11BA514B300135EC5 /* ResultsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		F13871D31BA52B0700135EC5 /* SwiftSpinner.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftSpinner.swift; sourceTree = "<group>"; };
 		F171EF121B757ED6001ADD9B /* FloatingStarReview.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatingStarReview.swift; sourceTree = "<group>"; };
 		F171EF141B757F1F001ADD9B /* ReviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		F178CEF31B7BC70900B5642D /* PopDatePicker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopDatePicker.swift; sourceTree = "<group>"; };
@@ -248,6 +250,7 @@
 				F1D2835C1B615D1D000E1BD4 /* OptionViewController.swift */,
 				F1A628F41B76E87700ABFB8E /* MainViewController.swift */,
 				A49B61321B5B9E0D00F81B3D /* CallViewController.swift */,
+				F13871D31BA52B0700135EC5 /* SwiftSpinner.swift */,
 				659F00481B5ADECE00E4267B /* Main.storyboard */,
 				F1EEC44F1B5F06B4008A04CF /* ParseLoginHelper.swift */,
 				659895B31B5B989F00607B5E /* LoginViewController.swift */,
@@ -534,6 +537,7 @@
 				F178CEFA1B7BCAF000B5642D /* DateUtils.swift in Sources */,
 				659895B21B5B270E00607B5E /* Netwerker.swift in Sources */,
 				F1EEC4501B5F06B4008A04CF /* ParseLoginHelper.swift in Sources */,
+				F13871D41BA52B0700135EC5 /* SwiftSpinner.swift in Sources */,
 				F1B7AB2D1B72ABF90036DEFE /* TransitionManager.swift in Sources */,
 				E2A344441B5B0550004CAF3A /* ExploreTableCell.swift in Sources */,
 				E2A344421B5B053C004CAF3A /* TableViewForExplore.swift in Sources */,

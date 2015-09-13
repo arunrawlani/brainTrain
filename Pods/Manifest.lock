@@ -30,6 +30,7 @@ PODS:
     - Bolts/Tasks (~> 1.2)
     - Parse (~> 1.8)
   - SinchRTC (3.5.2)
+  - SwiftSpinner (0.7.0)
 
 DEPENDENCIES:
   - AKPickerView-Swift
@@ -41,6 +42,7 @@ DEPENDENCIES:
   - ParseFacebookUtilsV4
   - ParseUI
   - SinchRTC
+  - SwiftSpinner
 
 SPEC CHECKSUMS:
   AKPickerView-Swift: 7989ebd544dc2adcbb56ffd48bbb8d3c3ea2d71d
@@ -53,5 +55,6 @@ SPEC CHECKSUMS:
   ParseFacebookUtilsV4: 2c54f1c9756f4827417984f42b64bc38571d626b
   ParseUI: 2c53621ed028ee793f5ab92a551b099689265525
   SinchRTC: b5de8c84210666db5cbac256ff77953905364175
+  SwiftSpinner: 034bb8b00675b3e4f4c97531fa9af3f550462192
 
 COCOAPODS: 0.38.0

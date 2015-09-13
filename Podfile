@@ -12,4 +12,5 @@ pod 'SinchRTC'
 pod 'FBSDKLoginKit'
 pod 'AKPickerView-Swift'
 pod 'DatePickerCell'
+pod "SwiftSpinner"
 

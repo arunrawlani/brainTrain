@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FF6B5EEA577E7113409D6D8D"
-               BuildableName = "ParseUI.framework"
-               BlueprintName = "ParseUI"
+               BlueprintIdentifier = "641FB895627FAA9614DA237C"
+               BuildableName = "SwiftSpinner.framework"
+               BlueprintName = "SwiftSpinner"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
