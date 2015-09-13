@@ -94,9 +94,14 @@ class ResultsViewController: UIViewController {
         }
     }*/
     
+    @IBOutlet weak var riskButton: UIButton!
+    @IBOutlet weak var riskResult: UILabel!
     override func viewDidLoad() {
+        riskResult.hidden = true
         let eegData = LineGraph(frame: CGRectMake(20, -80, 330, 200))
         self.view.addSubview(eegData)
+        let reactionTimeData = BarGraph(frame:CGRectMake(20, 170, 330, 200))
+        self.view.addSubview(reactionTimeData)
     }
 
     override func didReceiveMemoryWarning() {
@@ -104,6 +109,47 @@ class ResultsViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func riskPressed(sender: AnyObject) {
+        
+        riskButton.hidden = true
+        self.demoSpinner()
+    }
+    
+    func delay(#seconds: Double, completion:()->()) {
+        let popTime = dispatch_time(DISPATCH_TIME_NOW, Int64( Double(NSEC_PER_SEC) * seconds ))
+        
+        dispatch_after(popTime, dispatch_get_main_queue()) {
+            completion()
+        }
+    }
+    
+    func demoSpinner() {
+        
+        SwiftSpinner.showWithDelay(2.0, title: "It's taking longer than expected")
+        
+        delay(seconds: 0.0, completion: {
+            SwiftSpinner.show("Computing autism risk")
+        })
+        
+        delay(seconds: 1.0, completion: {
+            SwiftSpinner.show("Fetching session data")
+        })
+        
+        delay(seconds: 2.0, completion: {
+            SwiftSpinner.show("Analyzing trends", animated: false)
+        })
+        
+        delay(seconds: 3.0, completion: {
+            SwiftSpinner.setTitleFont(UIFont(name: "Futura", size: 22.0))
+            SwiftSpinner.show("Computed")
+        })
+        
+        delay(seconds: 4.0, completion: {
+            SwiftSpinner.hide()
+            self.riskResult.hidden = false
+        })
+        
+    }
 
     /*
     // MARK: - Navigation

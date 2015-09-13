@@ -30,6 +30,7 @@
 		E2A344561B5B8861004CAF3A /* TourOverviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */; };
 		E2A3445A1B5C21CA004CAF3A /* TimelineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */; };
 		E2A3445C1B5C25F8004CAF3A /* incoming.wav in Resources */ = {isa = PBXBuildFile; fileRef = E2A3445B1B5C25F8004CAF3A /* incoming.wav */; };
+		F108436A1BA5BBCE00596F38 /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = F10843691BA5BBCE00596F38 /* BarGraph.swift */; };
 		F109F9141B898D6A00B14050 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F9131B898D6A00B14050 /* Artwork.swift */; };
 		F109F9161B898D9000B14050 /* JSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = F109F9151B898D9000B14050 /* JSON.swift */; };
 		F109F9181B898DF200B14050 /* PublicArt.json in Resources */ = {isa = PBXBuildFile; fileRef = F109F9171B898DF200B14050 /* PublicArt.json */; };
@@ -104,6 +105,7 @@
 		E2A344551B5B8861004CAF3A /* TourOverviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TourOverviewViewController.swift; sourceTree = "<group>"; };
 		E2A344591B5C21CA004CAF3A /* TimelineViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TimelineViewController.swift; sourceTree = "<group>"; };
 		E2A3445B1B5C25F8004CAF3A /* incoming.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = incoming.wav; sourceTree = "<group>"; };
+		F10843691BA5BBCE00596F38 /* BarGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
 		F109F9131B898D6A00B14050 /* Artwork.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		F109F9151B898D9000B14050 /* JSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSON.swift; sourceTree = "<group>"; };
 		F109F9171B898DF200B14050 /* PublicArt.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = PublicArt.json; sourceTree = "<group>"; };
@@ -262,6 +264,7 @@
 				F13871CB1BA50B6D00135EC5 /* GameViewController.swift */,
 				F13871D11BA514B300135EC5 /* ResultsViewController.swift */,
 				F13871D51BA58C0400135EC5 /* DisplayDataViewController.swift */,
+				F10843691BA5BBCE00596F38 /* BarGraph.swift */,
 			);
 			name = dollarTree;
 			path = Sherpa;
@@ -506,6 +509,7 @@
 				E2A3444C1B5B3140004CAF3A /* ToursViewController.swift in Sources */,
 				F1B7AB311B7342120036DEFE /* RequestTableViewCell.swift in Sources */,
 				E2A344401B5B0516004CAF3A /* AppData.swift in Sources */,
+				F108436A1BA5BBCE00596F38 /* BarGraph.swift in Sources */,
 				A49B61331B5B9E0D00F81B3D /* CallViewController.swift in Sources */,
 				E2A3444A1B5B22E8004CAF3A /* DashboardTableViewCell.swift in Sources */,
 				F109F9241B89CE6F00B14050 /* ActivityViewController.swift in Sources */,

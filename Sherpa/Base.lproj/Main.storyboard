@@ -648,12 +648,38 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="536"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nh5-fH-WyU">
-                                <rect key="frame" x="0.0" y="-15" width="600" height="536"/>
-                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xTz-XR-jTx">
+                                <rect key="frame" x="201" y="442" width="199" height="37"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="37" id="Yhz-EA-ykg"/>
+                                    <constraint firstAttribute="width" constant="199" id="sUs-hR-Ll9"/>
+                                </constraints>
+                                <state key="normal" title="Compute Autism Risk" backgroundImage="Login Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="riskPressed:" destination="OHd-vM-Ygl" eventType="touchUpInside" id="JMA-df-UG1"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Risk for developing ASD is mild." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Flh-La-pJi">
+                                <rect key="frame" x="182.5" y="456.5" width="235" height="22"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="16"/>
+                                <color key="textColor" red="0.15841798109367886" green="0.83912760416666665" blue="0.11074609138356135" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="Flh-La-pJi" secondAttribute="centerX" id="1r7-Sy-laT"/>
+                            <constraint firstAttribute="centerX" secondItem="xTz-XR-jTx" secondAttribute="centerX" id="GmS-1s-24t"/>
+                            <constraint firstItem="mS0-52-6eZ" firstAttribute="top" secondItem="Flh-La-pJi" secondAttribute="bottom" constant="8" id="aVO-0X-BR6"/>
+                            <constraint firstItem="mS0-52-6eZ" firstAttribute="top" secondItem="xTz-XR-jTx" secondAttribute="bottom" constant="8" id="cth-DX-Amk"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="riskButton" destination="xTz-XR-jTx" id="sGO-2Z-v3j"/>
+                        <outlet property="riskResult" destination="Flh-La-pJi" id="jw9-pp-F1n"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ivf-Cd-0zt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
