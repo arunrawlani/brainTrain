@@ -35,6 +35,7 @@ class ResultsViewController: UIViewController {
         wavesTitle.center = CGPointMake(alphaGraph.center.x, alphaGraph.center.y - alphaGraph.frame.height/2 - 15);
         wavesTitle.textAlignment = NSTextAlignment.Center
         wavesTitle.text = "Alpha Waves"
+        wavesTitle.font = UIFont(name: "AvenirNext-Medium", size: 17)
         self.view.addSubview(wavesTitle)
         
         var swipeLeft = UISwipeGestureRecognizer(target:self, action:"toLeft")
@@ -54,6 +55,7 @@ class ResultsViewController: UIViewController {
         timeTitle.center = CGPointMake(timeGraph.center.x, timeGraph.center.y - timeGraph.frame.height/2 - 15);
         timeTitle.textAlignment = NSTextAlignment.Center
         timeTitle.text = "Reaction Times"
+        timeTitle.font = UIFont(name: "AvenirNext-Medium", size: 17)
         self.view.addSubview(timeTitle)
     }
     
