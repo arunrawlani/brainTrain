@@ -1,6 +1,6 @@
 # AutiBot
 #### Won Microsoft Award, Best Social Impact Hack and Best Money Saving Hack at MHacks
-######AutiBot is a health hack capable of analyzing brain activity to detect young children's risk for developing autism. It accumulates the concentration levels and reaction times of the child and then uses Azure's Machine Learning capabilities to eliminate anomalies from the data set. This assures a much more reliable data set to do the analysis on.
+######AutiBot is a health hack capable of analyzing brain activity to detect young children's risk for developing autism.
 
 <img src="https://cloud.githubusercontent.com/assets/8840000/10413574/beb3a74a-6f7c-11e5-98f0-c88868a454e6.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413572/beb1c1be-6f7c-11e5-8b4d-293b903e7102.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413575/beb49736-6f7c-11e5-9b9a-cf147ccda5ce.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413576/beb53916-6f7c-11e5-9554-8e5d7078551a.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413577/beb61660-6f7c-11e5-9715-dd8b0b1b9a55.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413573/beb27334-6f7c-11e5-9ae6-cc3847dbd080.png" width="250" height="443.75" />
 
