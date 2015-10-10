@@ -1,15 +1,16 @@
 # AutiBot
-### Won Microsoft Award, Best Social Impact Hack and Best Money Saving Hack
-### MHacks Project
-License Grant: Licensor hereby grants Licensee a Personal, Non-assignable & non-transferable, Pepetual, Non-commercial, Without the rights to create derivative works, Non-exclusive license, all with accordance with the terms set forth and other legal restrictions set forth in 3rd party software used while running Software.
-Limited: Licensee may use Software for the purpose of:
-Running Software on Licensee’s Website[s] and Server[s];
-Allowing 3rd Parties to run Software on Licensee’s Website[s] and Server[s];
-Publishing Software’s output to Licensee and 3rd Parties;
-Distribute verbatim copies of Software’s output (including compiled binaries);
-Modify Software to suit Licensee’s needs and specifications.
-This license is granted perpetually, as long as you do not materially breach it.
-Binary Restricted: Licensee may sublicense Software as a part of a larger work containing more than Software, distributed solely in Object or Binary form under a personal, non-sublicensable, limited license. Such redistribution shall be limited to unlimited codebases.
-Non Assignable & Non-Transferable: Licensee may not assign or transfer his rights and duties under this license.
-Non-Commercial: Licensee may not use Software for commercial purposes. for the purpose of this license, commercial purposes means that a 3rd party has to pay in order to access Software or that the Website that runs Software is behind a paywall.
-With Attribution Requirements﻿: All attributions must be done clearly if the software if reused, once the permission is received.
+#### Won Microsoft Award, Best Social Impact Hack and Best Money Saving Hack at MHacks
+######AutiBot is a health hack capable of analyzing brain activity to detect young children's risk for developing autism. It accumulates the concentration levels and reaction times of the child and then uses Azure's Machine Learning capabilities to eliminate anomalies from the data set. This assures a much more reliable data set to do the analysis on.
+
+<img src="https://cloud.githubusercontent.com/assets/8840000/10413574/beb3a74a-6f7c-11e5-98f0-c88868a454e6.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413572/beb1c1be-6f7c-11e5-8b4d-293b903e7102.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413575/beb49736-6f7c-11e5-9b9a-cf147ccda5ce.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413576/beb53916-6f7c-11e5-9554-8e5d7078551a.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413577/beb61660-6f7c-11e5-9715-dd8b0b1b9a55.png" width="250" height="443.75" /> <img src="https://cloud.githubusercontent.com/assets/8840000/10413573/beb27334-6f7c-11e5-9ae6-cc3847dbd080.png" width="250" height="443.75" />
+
+####Inspiration
+Autism spectrum disorder (ASD) refers to a range of neurological development disorders including Asperger’s Syndrome and autism that affect approximately 1 in 50 American children. Although the onset of these disorders typically occurs before children are three years old, current methods to diagnose ASD at very early ages are often ineffective, depending on the observation of certain distinctive mannerisms (such as inability to make eye contact) that may not be detected or associated with ASD. Recent research studies, however, have indicated that EEGs can offer a better, more scientific diagnosis of ASD. When children are faced with the task of integrating several different visual and audial stimuli, autistic children experience significantly reduced brain activity because of their inability to quickly process these stimuli.
+
+We were inspired by the massive potential of this new technology to make the cheapest possible EEG-based ASD-detection hack. Our goal was to create a multi-sensory game integrating many different types of stimuli, such as color, shape, and sound, to determine children’s chances of developing ASD.
+
+####How it works
+Our hack, AutiBot, is a simple, accessible game that tests the response of young children to several different visual and auditory stimuli at once by asking them to tap certain dots on the screen. While teaching children about color, shape, number, and more, it also records the time taken by the user to respond to the stimuli and values for the EEG brain activity of the user using the Muse headband technology. Then, by running an Anomaly Prediction machine learning model based on pre-existing datasets of non-autistic , the app calculates the probability of the user developing a mental disease like Autism. The app also has features to store and display the user’s results over time in the form of graphs and recommend actions to the child’s family, like contacting a local doctor, based on the results of the autism-prediction machine learning model.
+
+<h6> License Grant: Licensor hereby grants Licensee a Personal, Non-assignable & non-transferable, Pepetual, Non-commercial, Without the rights to create derivative works, Non-exclusive license, all with accordance with the terms set forth and other legal services. </h6>
+
